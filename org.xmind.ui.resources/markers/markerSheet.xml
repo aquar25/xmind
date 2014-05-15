@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <marker-sheet xmlns="urn:xmind:xmap:xmlns:marker:2.0">
+- <marker-group id="codeanalyzerMarkers" name="Анализатор кода 1С" singleton="true">
+  <marker id="codeanalyzer-object" name="Объект метаданных" resource="codeanalyzer-object.png" /> 
+  <marker id="codeanalyzer-proc" name="Процедура" resource="codeanalyzer-proc.png" /> 
+  <marker id="codeanalyzer-module" name="Модуль" resource="codeanalyzer-module.png" /> 
+  <marker id="codeanalyzer-root" name="Корень конфигурации" resource="codeanalyzer-root.png" /> 
+  </marker-group>
+- <marker-group id="codeanalyzerMarkers_search" name="Анализатор кода 1С: поиск" singleton="true">
+  <marker id="codeanalyzer-search_text" name="Поиск по тексту" resource="codeanalyzer-search_text.png" /> 
+  <marker id="codeanalyzer-search-meta" name="Поиск метаданных" resource="codeanalyzer-search_meta.png" /> 
+  <marker id="codeanalyzer-search-procs" name="Поиск по имени процедуры" resource="codeanalyzer-search_procs.png" /> 
+  </marker-group>
+
 	<marker-group id="priorityMarkers" name="%priorityMarkers" singleton="true">
 		<marker id="priority-1" name="%priority1" resource="priority_1.png" />
 		<marker id="priority-2" name="%priority2" resource="priority_2.png" />
