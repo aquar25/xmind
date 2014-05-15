@@ -1,0 +1,14 @@
+//		Bundle bundle = Platform.getBundle("ru.codeAnalyzer");
+//		URL path = bundle.getEntry("icons/markers");
+//		IMarkerSheet sheet = workbook.getMarkerSheet();
+//		try {
+//			sheet.importFrom(new File(FileLocator.resolve(path).toURI()).getAbsolutePath());
+//		} catch (Exception e) {
+//			e.printStackTrace();
+//		}
+		
+//		AtomicReference<ITopic> ref = new AtomicReference<ITopic>();
+
+drug and drop: 
+	https://gist.github.com/marcphilipp/1225023
+	http://www.java2s.com/Code/Java/SWT-JFace-Eclipse/DragandDropexamplesnippetdragleafitemsinatree.htm
