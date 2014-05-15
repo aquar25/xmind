@@ -1,0 +1,102 @@
+# 11/11/13 8:50:50 PM HKT
+# Eclipse Compiler for Java(TM) bundle_qualifier, 3.8.3, Copyright IBM Corp 2000, 2012. All rights reserved.
+----------
+1. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.sharing/src/org/xmind/ui/internal/sharing/MindMapSharingStatusItem.java (at line 43)
+	import org.xmind.ui.internal.editor.MME;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type MME is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+2. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.sharing/src/org/xmind/ui/internal/sharing/MindMapSharingStatusItem.java (at line 138)
+	File file = MME.getFile(input);
+	            ^^^
+Discouraged access: The type MME is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+3. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.sharing/src/org/xmind/ui/internal/sharing/MindMapSharingStatusItem.java (at line 138)
+	File file = MME.getFile(input);
+	            ^^^^^^^^^^^^^^^^^^
+Discouraged access: The method getFile(Object) from the type MME is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+4. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.sharing/src/org/xmind/ui/internal/sharing/MindMapSharingStatusItem.java (at line 204)
+	File file = MME.getFile(input);
+	            ^^^
+Discouraged access: The type MME is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+5. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.sharing/src/org/xmind/ui/internal/sharing/MindMapSharingStatusItem.java (at line 204)
+	File file = MME.getFile(input);
+	            ^^^^^^^^^^^^^^^^^^
+Discouraged access: The method getFile(Object) from the type MME is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+----------
+6. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.sharing/src/org/xmind/ui/internal/sharing/ShareOpenedFileHandler.java (at line 38)
+	import org.xmind.ui.internal.editor.MME;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type MME is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+7. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.sharing/src/org/xmind/ui/internal/sharing/ShareOpenedFileHandler.java (at line 83)
+	File file = MME.getFile(editor.getEditorInput());
+	            ^^^
+Discouraged access: The type MME is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+8. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.sharing/src/org/xmind/ui/internal/sharing/ShareOpenedFileHandler.java (at line 83)
+	File file = MME.getFile(editor.getEditorInput());
+	            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method getFile(Object) from the type MME is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+9. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.sharing/src/org/xmind/ui/internal/sharing/ShareOpenedFileHandler.java (at line 87)
+	file = MME.getFile(editor.getEditorInput());
+	       ^^^
+Discouraged access: The type MME is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+10. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.sharing/src/org/xmind/ui/internal/sharing/ShareOpenedFileHandler.java (at line 87)
+	file = MME.getFile(editor.getEditorInput());
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method getFile(Object) from the type MME is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+----------
+11. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.sharing/src/org/xmind/ui/internal/sharing/SharedWorkbookEditorInput.java (at line 18)
+	import org.xmind.ui.internal.editor.WorkbookEditorInput;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type WorkbookEditorInput is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+12. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.sharing/src/org/xmind/ui/internal/sharing/SharedWorkbookEditorInput.java (at line 20)
+	public class SharedWorkbookEditorInput extends WorkbookEditorInput {
+	                                               ^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type WorkbookEditorInput is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+13. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.sharing/src/org/xmind/ui/internal/sharing/SharedWorkbookEditorInput.java (at line 26)
+	super(name, workbook);
+	^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The constructor WorkbookEditorInput(String, IWorkbook) is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+----------
+14. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.sharing/src/org/xmind/ui/internal/sharing/SharingUtils.java (at line 70)
+	import org.xmind.core.internal.sharing.LocalSharedMap;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type LocalSharedMap is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core.sharing.localnetwork/@dot
+----------
+15. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.sharing/src/org/xmind/ui/internal/sharing/SharingUtils.java (at line 77)
+	import org.xmind.ui.internal.editor.FileEditorInput;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type FileEditorInput is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+16. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.sharing/src/org/xmind/ui/internal/sharing/SharingUtils.java (at line 246)
+	String path = ((LocalSharedMap) map).getResourcePath();
+	              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method getResourcePath() from the type LocalSharedMap is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core.sharing.localnetwork/@dot
+----------
+17. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.sharing/src/org/xmind/ui/internal/sharing/SharingUtils.java (at line 246)
+	String path = ((LocalSharedMap) map).getResourcePath();
+	                ^^^^^^^^^^^^^^
+Discouraged access: The type LocalSharedMap is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core.sharing.localnetwork/@dot
+----------
+18. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.sharing/src/org/xmind/ui/internal/sharing/SharingUtils.java (at line 247)
+	IEditorInput editorInput = new FileEditorInput(new File(path));
+	                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The constructor FileEditorInput(File) is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+19. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.sharing/src/org/xmind/ui/internal/sharing/SharingUtils.java (at line 247)
+	IEditorInput editorInput = new FileEditorInput(new File(path));
+	                               ^^^^^^^^^^^^^^^
+Discouraged access: The type FileEditorInput is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+19 problems (19 warnings)[82 .class files generated]

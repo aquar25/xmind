@@ -1,0 +1,400 @@
+# 11/5/13 10:02:57 PM HKT
+# Eclipse Compiler for Java(TM) bundle_qualifier, 3.8.3, Copyright IBM Corp 2000, 2012. All rights reserved.
+----------
+1. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.share/src/net/xmind/share/jobs/UploadJob.java (at line 21)
+	import net.xmind.signin.internal.Activator;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type Activator is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+2. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.share/src/net/xmind/share/jobs/UploadJob.java (at line 168)
+	return new Status(IStatus.ERROR, Activator.PLUGIN_ID,
+	                                 ^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type Activator is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+3. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.share/src/net/xmind/share/jobs/UploadJob.java (at line 168)
+	return new Status(IStatus.ERROR, Activator.PLUGIN_ID,
+	                                           ^^^^^^^^^
+Discouraged access: The field PLUGIN_ID from the type Activator is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+----------
+4. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.share/src/net/xmind/share/jobs/UploadSession.java (at line 4)
+	import java.io.IOException;
+	       ^^^^^^^^^^^^^^^^^^^
+The import java.io.IOException is never used
+----------
+5. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.share/src/net/xmind/share/jobs/UploadSession.java (at line 10)
+	import net.xmind.signin.internal.XMindNetRequest;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+6. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.share/src/net/xmind/share/jobs/UploadSession.java (at line 15)
+	import org.json.JSONException;
+	       ^^^^^^^^^^^^^^^^^^^^^^
+The import org.json.JSONException is never used
+----------
+7. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.share/src/net/xmind/share/jobs/UploadSession.java (at line 71)
+	private XMindNetRequest prepareRequest = null;
+	        ^^^^^^^^^^^^^^^
+Discouraged access: The type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+8. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.share/src/net/xmind/share/jobs/UploadSession.java (at line 73)
+	private XMindNetRequest transferRequest = null;
+	        ^^^^^^^^^^^^^^^
+Discouraged access: The type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+9. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.share/src/net/xmind/share/jobs/UploadSession.java (at line 75)
+	private XMindNetRequest retrieveProgressRequest = null;
+	        ^^^^^^^^^^^^^^^
+Discouraged access: The type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+10. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.share/src/net/xmind/share/jobs/UploadSession.java (at line 144)
+	XMindNetRequest request = new XMindNetRequest();
+	^^^^^^^^^^^^^^^
+Discouraged access: The type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+11. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.share/src/net/xmind/share/jobs/UploadSession.java (at line 144)
+	XMindNetRequest request = new XMindNetRequest();
+	                          ^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The constructor XMindNetRequest() is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+12. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.share/src/net/xmind/share/jobs/UploadSession.java (at line 144)
+	XMindNetRequest request = new XMindNetRequest();
+	                              ^^^^^^^^^^^^^^^
+Discouraged access: The type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+13. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.share/src/net/xmind/share/jobs/UploadSession.java (at line 146)
+	request.debug();
+	^^^^^^^^^^^^^^^
+Discouraged access: The method debug() from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+14. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.share/src/net/xmind/share/jobs/UploadSession.java (at line 148)
+	request.path(UPLOAD_API, userName);
+	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method path(String, Object[]) from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+15. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.share/src/net/xmind/share/jobs/UploadSession.java (at line 149)
+	request.setAuthToken(authToken);
+	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method setAuthToken(String) from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+16. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.share/src/net/xmind/share/jobs/UploadSession.java (at line 150)
+	request.addParameter("title", title); //$NON-NLS-1$
+	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method addParameter(String, Object) from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+17. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.share/src/net/xmind/share/jobs/UploadSession.java (at line 151)
+	request.post();
+	^^^^^^^^^^^^^^
+Discouraged access: The method post() from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+18. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.share/src/net/xmind/share/jobs/UploadSession.java (at line 153)
+	if (request.isAborted()) {
+	    ^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method isAborted() from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+19. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.share/src/net/xmind/share/jobs/UploadSession.java (at line 158)
+	int code = request.getStatusCode();
+	           ^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method getStatusCode() from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+20. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.share/src/net/xmind/share/jobs/UploadSession.java (at line 159)
+	IDataStore data = request.getData();
+	                  ^^^^^^^^^^^^^^^^^
+Discouraged access: The method getData() from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+21. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.share/src/net/xmind/share/jobs/UploadSession.java (at line 162)
+	debug("[upload][prepare] response text='%s'", request.getResponseText()); //$NON-NLS-1$
+	                                              ^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method getResponseText() from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+22. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.share/src/net/xmind/share/jobs/UploadSession.java (at line 164)
+	if (code == XMindNetRequest.HTTP_OK && data != null) {
+	            ^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+23. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.share/src/net/xmind/share/jobs/UploadSession.java (at line 164)
+	if (code == XMindNetRequest.HTTP_OK && data != null) {
+	                            ^^^^^^^
+Discouraged access: The field HTTP_OK from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+24. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.share/src/net/xmind/share/jobs/UploadSession.java (at line 167)
+	return error(XMindNetRequest.HTTP_INTERNAL_ERROR,
+	             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+25. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.share/src/net/xmind/share/jobs/UploadSession.java (at line 167)
+	return error(XMindNetRequest.HTTP_INTERNAL_ERROR,
+	                             ^^^^^^^^^^^^^^^^^^^
+Discouraged access: The field HTTP_INTERNAL_ERROR from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+26. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.share/src/net/xmind/share/jobs/UploadSession.java (at line 168)
+	request.getResponseText());
+	^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method getResponseText() from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+27. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.share/src/net/xmind/share/jobs/UploadSession.java (at line 180)
+	return error(code, request.getError(), request.getResponseText());
+	                   ^^^^^^^^^^^^^^^^^^
+Discouraged access: The method getError() from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+28. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.share/src/net/xmind/share/jobs/UploadSession.java (at line 180)
+	return error(code, request.getError(), request.getResponseText());
+	                                       ^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method getResponseText() from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+29. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.share/src/net/xmind/share/jobs/UploadSession.java (at line 210)
+	XMindNetRequest request = new XMindNetRequest().multipart();
+	^^^^^^^^^^^^^^^
+Discouraged access: The type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+30. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.share/src/net/xmind/share/jobs/UploadSession.java (at line 210)
+	XMindNetRequest request = new XMindNetRequest().multipart();
+	                          ^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The constructor XMindNetRequest() is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+31. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.share/src/net/xmind/share/jobs/UploadSession.java (at line 210)
+	XMindNetRequest request = new XMindNetRequest().multipart();
+	                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method multipart() from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+32. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.share/src/net/xmind/share/jobs/UploadSession.java (at line 210)
+	XMindNetRequest request = new XMindNetRequest().multipart();
+	                              ^^^^^^^^^^^^^^^
+Discouraged access: The type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+33. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.share/src/net/xmind/share/jobs/UploadSession.java (at line 212)
+	request.debug();
+	^^^^^^^^^^^^^^^
+Discouraged access: The method debug() from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+34. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.share/src/net/xmind/share/jobs/UploadSession.java (at line 214)
+	request.path(SESSION_API, userName, sessionId);
+	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method path(String, Object[]) from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+35. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.share/src/net/xmind/share/jobs/UploadSession.java (at line 215)
+	request.addParameter("map", sourceFile); //$NON-NLS-1$
+	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method addParameter(String, Object) from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+36. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.share/src/net/xmind/share/jobs/UploadSession.java (at line 216)
+	request.post();
+	^^^^^^^^^^^^^^
+Discouraged access: The method post() from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+37. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.share/src/net/xmind/share/jobs/UploadSession.java (at line 218)
+	if (request.isAborted()) {
+	    ^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method isAborted() from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+38. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.share/src/net/xmind/share/jobs/UploadSession.java (at line 223)
+	int code = request.getStatusCode();
+	           ^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method getStatusCode() from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+39. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.share/src/net/xmind/share/jobs/UploadSession.java (at line 225)
+	debug("[upload][transfer] response text=%s", request.getResponseText()); //$NON-NLS-1$
+	                                             ^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method getResponseText() from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+40. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.share/src/net/xmind/share/jobs/UploadSession.java (at line 227)
+	if (code == XMindNetRequest.HTTP_OK)
+	            ^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+41. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.share/src/net/xmind/share/jobs/UploadSession.java (at line 227)
+	if (code == XMindNetRequest.HTTP_OK)
+	                            ^^^^^^^
+Discouraged access: The field HTTP_OK from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+42. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.share/src/net/xmind/share/jobs/UploadSession.java (at line 230)
+	return error(code, request.getError(), request.getResponseText());
+	                   ^^^^^^^^^^^^^^^^^^
+Discouraged access: The method getError() from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+43. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.share/src/net/xmind/share/jobs/UploadSession.java (at line 230)
+	return error(code, request.getError(), request.getResponseText());
+	                                       ^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method getResponseText() from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+44. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.share/src/net/xmind/share/jobs/UploadSession.java (at line 263)
+	XMindNetRequest request = new XMindNetRequest();
+	^^^^^^^^^^^^^^^
+Discouraged access: The type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+45. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.share/src/net/xmind/share/jobs/UploadSession.java (at line 263)
+	XMindNetRequest request = new XMindNetRequest();
+	                          ^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The constructor XMindNetRequest() is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+46. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.share/src/net/xmind/share/jobs/UploadSession.java (at line 263)
+	XMindNetRequest request = new XMindNetRequest();
+	                              ^^^^^^^^^^^^^^^
+Discouraged access: The type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+47. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.share/src/net/xmind/share/jobs/UploadSession.java (at line 265)
+	request.debug();
+	^^^^^^^^^^^^^^^
+Discouraged access: The method debug() from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+48. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.share/src/net/xmind/share/jobs/UploadSession.java (at line 267)
+	request.path(SESSION_API, userName, sessionId);
+	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method path(String, Object[]) from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+49. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.share/src/net/xmind/share/jobs/UploadSession.java (at line 268)
+	request.setAuthToken(authToken);
+	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method setAuthToken(String) from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+50. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.share/src/net/xmind/share/jobs/UploadSession.java (at line 269)
+	request.get();
+	^^^^^^^^^^^^^
+Discouraged access: The method get() from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+51. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.share/src/net/xmind/share/jobs/UploadSession.java (at line 271)
+	if (request.isAborted()) {
+	    ^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method isAborted() from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+52. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.share/src/net/xmind/share/jobs/UploadSession.java (at line 276)
+	int code = request.getStatusCode();
+	           ^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method getStatusCode() from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+53. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.share/src/net/xmind/share/jobs/UploadSession.java (at line 277)
+	IDataStore data = request.getData();
+	                  ^^^^^^^^^^^^^^^^^
+Discouraged access: The method getData() from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+54. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.share/src/net/xmind/share/jobs/UploadSession.java (at line 279)
+	debug("[upload][progress] response text=%s", request.getResponseText()); //$NON-NLS-1$
+	                                             ^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method getResponseText() from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+55. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.share/src/net/xmind/share/jobs/UploadSession.java (at line 281)
+	if (code == XMindNetRequest.HTTP_OK && data != null) {
+	            ^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+56. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.share/src/net/xmind/share/jobs/UploadSession.java (at line 281)
+	if (code == XMindNetRequest.HTTP_OK && data != null) {
+	                            ^^^^^^^
+Discouraged access: The field HTTP_OK from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+57. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.share/src/net/xmind/share/jobs/UploadSession.java (at line 287)
+	request.getResponseText());
+	^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method getResponseText() from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+58. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.share/src/net/xmind/share/jobs/UploadSession.java (at line 289)
+	return error(XMindNetRequest.HTTP_INTERNAL_ERROR,
+	             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+59. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.share/src/net/xmind/share/jobs/UploadSession.java (at line 289)
+	return error(XMindNetRequest.HTTP_INTERNAL_ERROR,
+	                             ^^^^^^^^^^^^^^^^^^^
+Discouraged access: The field HTTP_INTERNAL_ERROR from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+60. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.share/src/net/xmind/share/jobs/UploadSession.java (at line 290)
+	request.getResponseText());
+	^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method getResponseText() from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+61. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.share/src/net/xmind/share/jobs/UploadSession.java (at line 300)
+	return error(code, request.getError(), request.getResponseText());
+	                   ^^^^^^^^^^^^^^^^^^
+Discouraged access: The method getError() from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+62. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.share/src/net/xmind/share/jobs/UploadSession.java (at line 300)
+	return error(code, request.getError(), request.getResponseText());
+	                                       ^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method getResponseText() from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+63. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.share/src/net/xmind/share/jobs/UploadSession.java (at line 322)
+	prepareRequest.abort();
+	^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method abort() from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+64. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.share/src/net/xmind/share/jobs/UploadSession.java (at line 324)
+	transferRequest.abort();
+	^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method abort() from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+65. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.share/src/net/xmind/share/jobs/UploadSession.java (at line 326)
+	retrieveProgressRequest.abort();
+	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method abort() from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+66. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.share/src/net/xmind/share/jobs/UploadSession.java (at line 335)
+	XMindNetRequest request = new XMindNetRequest();
+	^^^^^^^^^^^^^^^
+Discouraged access: The type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+67. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.share/src/net/xmind/share/jobs/UploadSession.java (at line 335)
+	XMindNetRequest request = new XMindNetRequest();
+	                          ^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The constructor XMindNetRequest() is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+68. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.share/src/net/xmind/share/jobs/UploadSession.java (at line 335)
+	XMindNetRequest request = new XMindNetRequest();
+	                              ^^^^^^^^^^^^^^^
+Discouraged access: The type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+69. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.share/src/net/xmind/share/jobs/UploadSession.java (at line 337)
+	request.debug();
+	^^^^^^^^^^^^^^^
+Discouraged access: The method debug() from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+70. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.share/src/net/xmind/share/jobs/UploadSession.java (at line 338)
+	request.path(SESSION_API, userName, sessionId);
+	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method path(String, Object[]) from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+71. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.share/src/net/xmind/share/jobs/UploadSession.java (at line 339)
+	request.setAuthToken(authToken);
+	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method setAuthToken(String) from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+72. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.share/src/net/xmind/share/jobs/UploadSession.java (at line 340)
+	request.delete();
+	^^^^^^^^^^^^^^^^
+Discouraged access: The method delete() from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+73. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.share/src/net/xmind/share/jobs/UploadSession.java (at line 342)
+	if (request.isAborted()) {
+	    ^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method isAborted() from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+74. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.share/src/net/xmind/share/jobs/UploadSession.java (at line 347)
+	int code = request.getStatusCode();
+	           ^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method getStatusCode() from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+75. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.share/src/net/xmind/share/jobs/UploadSession.java (at line 349)
+	debug("[upload][cancel] response text=%s", request.getResponseText()); //$NON-NLS-1$
+	                                           ^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method getResponseText() from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+76. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.share/src/net/xmind/share/jobs/UploadSession.java (at line 351)
+	if (code == XMindNetRequest.HTTP_OK) {
+	            ^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+77. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.share/src/net/xmind/share/jobs/UploadSession.java (at line 351)
+	if (code == XMindNetRequest.HTTP_OK) {
+	                            ^^^^^^^
+Discouraged access: The field HTTP_OK from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+78. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.share/src/net/xmind/share/jobs/UploadSession.java (at line 356)
+	return error(code, request.getError(), request.getResponseText());
+	                   ^^^^^^^^^^^^^^^^^^
+Discouraged access: The method getError() from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+79. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.share/src/net/xmind/share/jobs/UploadSession.java (at line 356)
+	return error(code, request.getError(), request.getResponseText());
+	                                       ^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method getResponseText() from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+79 problems (79 warnings)[36 .class files generated]

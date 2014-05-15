@@ -1,0 +1,333 @@
+# 11/5/13 10:02:56 PM HKT
+# Eclipse Compiler for Java(TM) bundle_qualifier, 3.8.3, Copyright IBM Corp 2000, 2012. All rights reserved.
+----------
+1. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.workbench/src/net/xmind/workbench/internal/CheckForUpdatesJob.java (at line 16)
+	import net.xmind.signin.internal.XMindUpdater;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type XMindUpdater is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+2. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.workbench/src/net/xmind/workbench/internal/CheckForUpdatesJob.java (at line 27)
+	private XMindUpdater updater = null;
+	        ^^^^^^^^^^^^
+Discouraged access: The type XMindUpdater is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+3. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.workbench/src/net/xmind/workbench/internal/CheckForUpdatesJob.java (at line 36)
+	updater = new XMindUpdater(workbench);
+	          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The constructor XMindUpdater(IWorkbench) is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+4. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.workbench/src/net/xmind/workbench/internal/CheckForUpdatesJob.java (at line 36)
+	updater = new XMindUpdater(workbench);
+	              ^^^^^^^^^^^^
+Discouraged access: The type XMindUpdater is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+5. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.workbench/src/net/xmind/workbench/internal/CheckForUpdatesJob.java (at line 37)
+	return updater.run(monitor);
+	       ^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method run(IProgressMonitor) from the type XMindUpdater is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+6. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.workbench/src/net/xmind/workbench/internal/CheckForUpdatesJob.java (at line 43)
+	updater.abort();
+	^^^^^^^^^^^^^^^
+Discouraged access: The method abort() from the type XMindUpdater is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+----------
+7. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.workbench/src/net/xmind/workbench/internal/NewsletterSubscriptionReminder.java (at line 18)
+	import net.xmind.signin.internal.XMindNetRequest;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+8. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.workbench/src/net/xmind/workbench/internal/NewsletterSubscriptionReminder.java (at line 46)
+	private XMindNetRequest subscribeRequest = null;
+	        ^^^^^^^^^^^^^^^
+Discouraged access: The type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+9. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.workbench/src/net/xmind/workbench/internal/NewsletterSubscriptionReminder.java (at line 144)
+	subscribeRequest = new XMindNetRequest(true);
+	                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The constructor XMindNetRequest(boolean) is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+10. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.workbench/src/net/xmind/workbench/internal/NewsletterSubscriptionReminder.java (at line 144)
+	subscribeRequest = new XMindNetRequest(true);
+	                       ^^^^^^^^^^^^^^^
+Discouraged access: The type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+11. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.workbench/src/net/xmind/workbench/internal/NewsletterSubscriptionReminder.java (at line 145)
+	subscribeRequest.debug();
+	^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method debug() from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+12. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.workbench/src/net/xmind/workbench/internal/NewsletterSubscriptionReminder.java (at line 146)
+	subscribeRequest.path("/_res/newsletter/subscribe"); //$NON-NLS-1$
+	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method path(String, Object[]) from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+13. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.workbench/src/net/xmind/workbench/internal/NewsletterSubscriptionReminder.java (at line 147)
+	subscribeRequest.addParameter("email", email); //$NON-NLS-1$
+	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method addParameter(String, Object) from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+14. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.workbench/src/net/xmind/workbench/internal/NewsletterSubscriptionReminder.java (at line 148)
+	subscribeRequest.addParameter("source", "xmind_3.4.0"); //$NON-NLS-1$ //$NON-NLS-2$
+	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method addParameter(String, Object) from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+15. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.workbench/src/net/xmind/workbench/internal/NewsletterSubscriptionReminder.java (at line 149)
+	subscribeRequest.post();
+	^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method post() from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+16. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.workbench/src/net/xmind/workbench/internal/NewsletterSubscriptionReminder.java (at line 213)
+	subscribeRequest.abort();
+	^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method abort() from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+----------
+17. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.workbench/src/net/xmind/workbench/internal/actions/ShowAccountActionDelegate.java (at line 19)
+	import net.xmind.signin.internal.Messages;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type Messages is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+18. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.workbench/src/net/xmind/workbench/internal/actions/ShowAccountActionDelegate.java (at line 81)
+	action.setText(Messages.ShowAccount_text);
+	               ^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type Messages is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+19. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.workbench/src/net/xmind/workbench/internal/actions/ShowAccountActionDelegate.java (at line 81)
+	action.setText(Messages.ShowAccount_text);
+	                        ^^^^^^^^^^^^^^^^
+Discouraged access: The field ShowAccount_text from the type Messages is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+20. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.workbench/src/net/xmind/workbench/internal/actions/ShowAccountActionDelegate.java (at line 82)
+	action.setToolTipText(Messages.ShowAccount_toolTip);
+	                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type Messages is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+21. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.workbench/src/net/xmind/workbench/internal/actions/ShowAccountActionDelegate.java (at line 82)
+	action.setToolTipText(Messages.ShowAccount_toolTip);
+	                               ^^^^^^^^^^^^^^^^^^^
+Discouraged access: The field ShowAccount_toolTip from the type Messages is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+22. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.workbench/src/net/xmind/workbench/internal/actions/ShowAccountActionDelegate.java (at line 84)
+	action.setText(NLS.bind(Messages.ShowAccount_pattern, userID));
+	                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type Messages is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+23. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.workbench/src/net/xmind/workbench/internal/actions/ShowAccountActionDelegate.java (at line 84)
+	action.setText(NLS.bind(Messages.ShowAccount_pattern, userID));
+	                                 ^^^^^^^^^^^^^^^^^^^
+Discouraged access: The field ShowAccount_pattern from the type Messages is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+24. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.workbench/src/net/xmind/workbench/internal/actions/ShowAccountActionDelegate.java (at line 86)
+	Messages.ShowAccount_toolTip_pattern, userID));
+	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type Messages is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+25. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.workbench/src/net/xmind/workbench/internal/actions/ShowAccountActionDelegate.java (at line 86)
+	Messages.ShowAccount_toolTip_pattern, userID));
+	         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The field ShowAccount_toolTip_pattern from the type Messages is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+----------
+26. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.workbench/src/net/xmind/workbench/internal/actions/SignInActionDelegate.java (at line 19)
+	import net.xmind.signin.internal.Messages;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type Messages is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+27. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.workbench/src/net/xmind/workbench/internal/actions/SignInActionDelegate.java (at line 76)
+	action.setText(signedIn ? Messages.SignOut_text : Messages.SignIn_text);
+	                          ^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type Messages is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+28. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.workbench/src/net/xmind/workbench/internal/actions/SignInActionDelegate.java (at line 76)
+	action.setText(signedIn ? Messages.SignOut_text : Messages.SignIn_text);
+	                                   ^^^^^^^^^^^^
+Discouraged access: The field SignOut_text from the type Messages is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+29. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.workbench/src/net/xmind/workbench/internal/actions/SignInActionDelegate.java (at line 76)
+	action.setText(signedIn ? Messages.SignOut_text : Messages.SignIn_text);
+	                                                  ^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type Messages is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+30. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.workbench/src/net/xmind/workbench/internal/actions/SignInActionDelegate.java (at line 76)
+	action.setText(signedIn ? Messages.SignOut_text : Messages.SignIn_text);
+	                                                           ^^^^^^^^^^^
+Discouraged access: The field SignIn_text from the type Messages is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+----------
+31. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.workbench/src/net/xmind/workbench/internal/actions/UpgradeActionDelegate.java (at line 4)
+	import net.xmind.signin.internal.Messages;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type Messages is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+32. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.workbench/src/net/xmind/workbench/internal/actions/UpgradeActionDelegate.java (at line 46)
+	action.setText(Messages.Renew_text);
+	               ^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type Messages is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+33. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.workbench/src/net/xmind/workbench/internal/actions/UpgradeActionDelegate.java (at line 46)
+	action.setText(Messages.Renew_text);
+	                        ^^^^^^^^^^
+Discouraged access: The field Renew_text from the type Messages is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+34. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.workbench/src/net/xmind/workbench/internal/actions/UpgradeActionDelegate.java (at line 47)
+	action.setText(Messages.Renew_toolTip);
+	               ^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type Messages is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+35. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.workbench/src/net/xmind/workbench/internal/actions/UpgradeActionDelegate.java (at line 47)
+	action.setText(Messages.Renew_toolTip);
+	                        ^^^^^^^^^^^^^
+Discouraged access: The field Renew_toolTip from the type Messages is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+----------
+36. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.workbench/src/net/xmind/workbench/internal/actions/WelcomeActionDelegate.java (at line 17)
+	import org.xmind.ui.internal.editor.MME;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type MME is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+37. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.workbench/src/net/xmind/workbench/internal/actions/WelcomeActionDelegate.java (at line 64)
+	IEditorInput input = MME.createTemplatedEditorInput(
+	                     ^^^
+Discouraged access: The type MME is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+38. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.workbench/src/net/xmind/workbench/internal/actions/WelcomeActionDelegate.java (at line 64)
+	IEditorInput input = MME.createTemplatedEditorInput(
+                    Messages.WelcomeToXMind_editorTitle, inputStream);
+	                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method createTemplatedEditorInput(String, InputStream) from the type MME is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+----------
+39. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.workbench/src/net/xmind/workbench/internal/notification/SiteEventNotificationService.java (at line 30)
+	import net.xmind.signin.internal.XMindNetRequest;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+40. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.workbench/src/net/xmind/workbench/internal/notification/SiteEventNotificationService.java (at line 61)
+	private XMindNetRequest request = null;
+	        ^^^^^^^^^^^^^^^
+Discouraged access: The type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+41. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.workbench/src/net/xmind/workbench/internal/notification/SiteEventNotificationService.java (at line 83)
+	this.request.abort();
+	^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method abort() from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+42. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.workbench/src/net/xmind/workbench/internal/notification/SiteEventNotificationService.java (at line 94)
+	request = new XMindNetRequest();
+	          ^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The constructor XMindNetRequest() is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+43. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.workbench/src/net/xmind/workbench/internal/notification/SiteEventNotificationService.java (at line 94)
+	request = new XMindNetRequest();
+	              ^^^^^^^^^^^^^^^
+Discouraged access: The type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+44. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.workbench/src/net/xmind/workbench/internal/notification/SiteEventNotificationService.java (at line 96)
+	request.debug();
+	^^^^^^^^^^^^^^^
+Discouraged access: The method debug() from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+45. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.workbench/src/net/xmind/workbench/internal/notification/SiteEventNotificationService.java (at line 97)
+	request.path("/_api/events"); //$NON-NLS-1$
+	^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method path(String, Object[]) from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+46. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.workbench/src/net/xmind/workbench/internal/notification/SiteEventNotificationService.java (at line 98)
+	request.addParameter("version", productVersion); //$NON-NLS-1$
+	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method addParameter(String, Object) from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+47. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.workbench/src/net/xmind/workbench/internal/notification/SiteEventNotificationService.java (at line 102)
+	request.addParameter("buildid", buildId); //$NON-NLS-1$
+	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method addParameter(String, Object) from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+48. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.workbench/src/net/xmind/workbench/internal/notification/SiteEventNotificationService.java (at line 104)
+	request.addParameter("os", Platform.getOS()); //$NON-NLS-1$
+	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method addParameter(String, Object) from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+49. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.workbench/src/net/xmind/workbench/internal/notification/SiteEventNotificationService.java (at line 105)
+	request.addParameter("arch", Platform.getOSArch()); //$NON-NLS-1$
+	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method addParameter(String, Object) from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+50. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.workbench/src/net/xmind/workbench/internal/notification/SiteEventNotificationService.java (at line 106)
+	request.addParameter("nl", Platform.getNL()); //$NON-NLS-1$
+	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method addParameter(String, Object) from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+51. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.workbench/src/net/xmind/workbench/internal/notification/SiteEventNotificationService.java (at line 107)
+	request.addParameter("distrib", getDistributionId()); //$NON-NLS-1$
+	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method addParameter(String, Object) from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+52. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.workbench/src/net/xmind/workbench/internal/notification/SiteEventNotificationService.java (at line 108)
+	request.addParameter("account_type", getAccountType()); //$NON-NLS-1$
+	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method addParameter(String, Object) from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+53. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.workbench/src/net/xmind/workbench/internal/notification/SiteEventNotificationService.java (at line 109)
+	request.addParameter(
+                        "license_info", //$NON-NLS-1$
+                        licenseKeyHeader == null ? "" : licenseKeyHeader.toEncoded()); //$NON-NLS-1$
+	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method addParameter(String, Object) from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+54. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.workbench/src/net/xmind/workbench/internal/notification/SiteEventNotificationService.java (at line 112)
+	request.get();
+	^^^^^^^^^^^^^
+Discouraged access: The method get() from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+55. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.workbench/src/net/xmind/workbench/internal/notification/SiteEventNotificationService.java (at line 114)
+	if (!isRunning() || request.isAborted())
+	                    ^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method isAborted() from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+56. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.workbench/src/net/xmind/workbench/internal/notification/SiteEventNotificationService.java (at line 117)
+	int code = request.getStatusCode();
+	           ^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method getStatusCode() from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+57. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.workbench/src/net/xmind/workbench/internal/notification/SiteEventNotificationService.java (at line 118)
+	IDataStore data = request.getData();
+	                  ^^^^^^^^^^^^^^^^^
+Discouraged access: The method getData() from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+58. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.workbench/src/net/xmind/workbench/internal/notification/SiteEventNotificationService.java (at line 119)
+	if (code == XMindNetRequest.HTTP_OK) {
+	            ^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+59. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.workbench/src/net/xmind/workbench/internal/notification/SiteEventNotificationService.java (at line 119)
+	if (code == XMindNetRequest.HTTP_OK) {
+	                            ^^^^^^^
+Discouraged access: The field HTTP_OK from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+60. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.workbench/src/net/xmind/workbench/internal/notification/SiteEventNotificationService.java (at line 123)
+	XMindNetWorkbench.log(request.getError(),
+	                      ^^^^^^^^^^^^^^^^^^
+Discouraged access: The method getError() from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+61. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.workbench/src/net/xmind/workbench/internal/notification/SiteEventNotificationService.java (at line 126)
+	} else if (code == XMindNetRequest.HTTP_ERROR) {
+	                   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+62. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.workbench/src/net/xmind/workbench/internal/notification/SiteEventNotificationService.java (at line 126)
+	} else if (code == XMindNetRequest.HTTP_ERROR) {
+	                                   ^^^^^^^^^^
+Discouraged access: The field HTTP_ERROR from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+63. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.workbench/src/net/xmind/workbench/internal/notification/SiteEventNotificationService.java (at line 127)
+	XMindNetWorkbench.log(request.getError(),
+	                      ^^^^^^^^^^^^^^^^^^
+Discouraged access: The method getError() from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+64. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.workbench/src/net/xmind/workbench/internal/notification/SiteEventNotificationService.java (at line 130)
+	XMindNetWorkbench.log(request.getError(),
+	                      ^^^^^^^^^^^^^^^^^^
+Discouraged access: The method getError() from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+64 problems (64 warnings)[32 .class files generated]

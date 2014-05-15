@@ -1,0 +1,73 @@
+# 11/11/13 8:50:42 PM HKT
+# Eclipse Compiler for Java(TM) bundle_qualifier, 3.8.3, Copyright IBM Corp 2000, 2012. All rights reserved.
+----------
+1. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.browser/src/org/xmind/ui/internal/browser/BrowserContributionManager.java (at line 25)
+	import org.eclipse.ui.internal.registry.IWorkbenchRegistryConstants;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type IWorkbenchRegistryConstants is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+2. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.browser/src/org/xmind/ui/internal/browser/BrowserContributionManager.java (at line 26)
+	import org.eclipse.ui.internal.registry.RegistryReader;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type RegistryReader is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+3. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.browser/src/org/xmind/ui/internal/browser/BrowserContributionManager.java (at line 29)
+	public class BrowserContributionManager extends RegistryReader {
+	                                                ^^^^^^^^^^^^^^
+Discouraged access: The type RegistryReader is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+4. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.browser/src/org/xmind/ui/internal/browser/BrowserContributionManager.java (at line 54)
+	readRegistry(Platform.getExtensionRegistry(), BrowserPlugin.PLUGIN_ID,
+                EXT_POINT_ID);
+	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method readRegistry(IExtensionRegistry, String, String) from the type RegistryReader is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+5. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.browser/src/org/xmind/ui/internal/browser/BrowserContributionManager.java (at line 62)
+	readElementChildren(element);
+	^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method readElementChildren(IConfigurationElement) from the type RegistryReader is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+6. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.browser/src/org/xmind/ui/internal/browser/BrowserContributionManager.java (at line 69)
+	if (getClassValue(element, IWorkbenchRegistryConstants.ATT_CLASS) == null) {
+	    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method getClassValue(IConfigurationElement, String) from the type RegistryReader is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+7. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.browser/src/org/xmind/ui/internal/browser/BrowserContributionManager.java (at line 69)
+	if (getClassValue(element, IWorkbenchRegistryConstants.ATT_CLASS) == null) {
+	                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type IWorkbenchRegistryConstants is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+8. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.browser/src/org/xmind/ui/internal/browser/BrowserContributionManager.java (at line 69)
+	if (getClassValue(element, IWorkbenchRegistryConstants.ATT_CLASS) == null) {
+	                                                       ^^^^^^^^^
+Discouraged access: The field ATT_CLASS from the type IWorkbenchRegistryConstants is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+9. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.browser/src/org/xmind/ui/internal/browser/BrowserContributionManager.java (at line 78)
+	.createExecutableExtension(IWorkbenchRegistryConstants.ATT_CLASS);
+	                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type IWorkbenchRegistryConstants is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+10. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.browser/src/org/xmind/ui/internal/browser/BrowserContributionManager.java (at line 78)
+	.createExecutableExtension(IWorkbenchRegistryConstants.ATT_CLASS);
+	                                                       ^^^^^^^^^
+Discouraged access: The field ATT_CLASS from the type IWorkbenchRegistryConstants is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+----------
+11. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.browser/src/org/xmind/ui/internal/browser/BrowserEditorInput.java (at line 126)
+	public Object getAdapter(Class adapter) {
+	                         ^^^^^
+Class is a raw type. References to generic type Class<T> should be parameterized
+----------
+----------
+12. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.browser/src/org/xmind/ui/internal/browser/BrowserViewer.java (at line 30)
+	import org.eclipse.swt.SWTException;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The import org.eclipse.swt.SWTException is never used
+----------
+----------
+13. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.browser/src/org/xmind/ui/internal/browser/InternalBrowserView.java (at line 251)
+	public Object getAdapter(Class adapter) {
+	                         ^^^^^
+Class is a raw type. References to generic type Class<T> should be parameterized
+----------
+13 problems (13 warnings)[67 .class files generated]

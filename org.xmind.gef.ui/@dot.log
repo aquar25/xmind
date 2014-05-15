@@ -1,0 +1,177 @@
+# 11/11/13 8:50:41 PM HKT
+# Eclipse Compiler for Java(TM) bundle_qualifier, 3.8.3, Copyright IBM Corp 2000, 2012. All rights reserved.
+----------
+1. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.gef.ui/src/org/xmind/gef/ui/editor/GraphicalEditor.java (at line 501)
+	public Object getAdapter(Class adapter) {
+	                         ^^^^^
+Class is a raw type. References to generic type Class<T> should be parameterized
+----------
+----------
+2. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.gef.ui/src/org/xmind/gef/ui/editor/GraphicalEditorPage.java (at line 337)
+	public Object getAdapter(Class adapter) {
+	                         ^^^^^
+Class is a raw type. References to generic type Class<T> should be parameterized
+----------
+----------
+3. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.gef.ui/src/org/xmind/gef/ui/editor/MiniBarContributor.java (at line 45)
+	public Object getAdapter(Class adapter) {
+	                         ^^^^^
+Class is a raw type. References to generic type Class<T> should be parameterized
+----------
+----------
+4. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.gef.ui/src/org/xmind/gef/ui/editor/MultiGraphicalPageSelectionProvider.java (at line 26)
+	import org.xmind.ui.tabfolder.DelegatedSelectionProvider;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The import org.xmind.ui.tabfolder.DelegatedSelectionProvider is never used
+----------
+----------
+5. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.gef.ui/src/org/xmind/ui/animation/AnimationService.java (at line 346)
+	Map initial = (Map) getInitialState(figure);
+	^^^
+Map is a raw type. References to generic type Map<K,V> should be parameterized
+----------
+6. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.gef.ui/src/org/xmind/ui/animation/AnimationService.java (at line 346)
+	Map initial = (Map) getInitialState(figure);
+	               ^^^
+Map is a raw type. References to generic type Map<K,V> should be parameterized
+----------
+7. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.gef.ui/src/org/xmind/ui/animation/AnimationService.java (at line 347)
+	Map ending = (Map) getFinalState(figure);
+	^^^
+Map is a raw type. References to generic type Map<K,V> should be parameterized
+----------
+8. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.gef.ui/src/org/xmind/ui/animation/AnimationService.java (at line 347)
+	Map ending = (Map) getFinalState(figure);
+	              ^^^
+Map is a raw type. References to generic type Map<K,V> should be parameterized
+----------
+----------
+9. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.gef.ui/src/org/xmind/ui/animation/LayoutPlaybackProvider.java (at line 29)
+	Map initial = (Map) initState;
+	^^^
+Map is a raw type. References to generic type Map<K,V> should be parameterized
+----------
+10. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.gef.ui/src/org/xmind/ui/animation/LayoutPlaybackProvider.java (at line 29)
+	Map initial = (Map) initState;
+	               ^^^
+Map is a raw type. References to generic type Map<K,V> should be parameterized
+----------
+11. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.gef.ui/src/org/xmind/ui/animation/LayoutPlaybackProvider.java (at line 30)
+	Map ending = (Map) finalState;
+	^^^
+Map is a raw type. References to generic type Map<K,V> should be parameterized
+----------
+12. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.gef.ui/src/org/xmind/ui/animation/LayoutPlaybackProvider.java (at line 30)
+	Map ending = (Map) finalState;
+	              ^^^
+Map is a raw type. References to generic type Map<K,V> should be parameterized
+----------
+13. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.gef.ui/src/org/xmind/ui/animation/LayoutPlaybackProvider.java (at line 31)
+	List children = getAnimatableChildren(figure, part);
+	^^^^
+List is a raw type. References to generic type List<E> should be parameterized
+----------
+14. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.gef.ui/src/org/xmind/ui/animation/LayoutPlaybackProvider.java (at line 71)
+	protected List getAnimatableChildren(IFigure figure, IGraphicalPart part) {
+	          ^^^^
+List is a raw type. References to generic type List<E> should be parameterized
+----------
+15. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.gef.ui/src/org/xmind/ui/animation/LayoutPlaybackProvider.java (at line 77)
+	List children = getAnimatableChildren(figure, part);
+	^^^^
+List is a raw type. References to generic type List<E> should be parameterized
+----------
+----------
+16. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.gef.ui/src/org/xmind/ui/datepicker/CalendarAnimation.java (at line 90)
+	List dayFigures = advisor.getPanel().getChildren();
+	^^^^
+List is a raw type. References to generic type List<E> should be parameterized
+----------
+17. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.gef.ui/src/org/xmind/ui/datepicker/CalendarAnimation.java (at line 179)
+	List dayFigures = newPanel.getChildren();
+	^^^^
+List is a raw type. References to generic type List<E> should be parameterized
+----------
+----------
+18. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.gef.ui/src/org/xmind/ui/datepicker/ConstraintStackLayout.java (at line 17)
+	List children = container.getChildren();
+	^^^^
+List is a raw type. References to generic type List<E> should be parameterized
+----------
+----------
+19. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.gef.ui/src/org/xmind/ui/datepicker/DatePanelLayout.java (at line 19)
+	List children = container.getChildren();
+	^^^^
+List is a raw type. References to generic type List<E> should be parameterized
+----------
+20. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.gef.ui/src/org/xmind/ui/datepicker/DatePanelLayout.java (at line 65)
+	List children = container.getChildren();
+	^^^^
+List is a raw type. References to generic type List<E> should be parameterized
+----------
+----------
+21. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.gef.ui/src/org/xmind/ui/datepicker/DatePicker.java (at line 856)
+	private void updateDayFigures(List dayFigures, int year, int month) {
+	                              ^^^^
+List is a raw type. References to generic type List<E> should be parameterized
+----------
+----------
+22. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.gef.ui/src/org/xmind/ui/datepicker/NextMonthAnimation.java (at line 34)
+	List oldDayFigures = advisor.getPanel().getChildren();
+	^^^^
+List is a raw type. References to generic type List<E> should be parameterized
+----------
+----------
+23. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.gef.ui/src/org/xmind/ui/gallery/CategorizedGalleryViewer.java (at line 325)
+	protected void fillSelection(Object category, List selection) {
+	                                              ^^^^
+List is a raw type. References to generic type List<E> should be parameterized
+----------
+----------
+24. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.gef.ui/src/org/xmind/ui/gallery/ContentPanePart.java (at line 37)
+	return ((Collection) model).toArray();
+	         ^^^^^^^^^^
+Collection is a raw type. References to generic type Collection<E> should be parameterized
+----------
+----------
+25. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.gef.ui/src/org/xmind/ui/gallery/FrameBorderLayout.java (at line 17)
+	import org.eclipse.draw2d.AbstractLayout;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The import org.eclipse.draw2d.AbstractLayout is never used
+----------
+----------
+26. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.gef.ui/src/org/xmind/ui/gallery/Gallery.java (at line 159)
+	List slides = contentPane.getChildren();
+	^^^^
+List is a raw type. References to generic type List<E> should be parameterized
+----------
+----------
+27. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.gef.ui/src/org/xmind/ui/gallery/GalleryViewer.java (at line 156)
+	public Object getAdapter(Class adapter) {
+	                         ^^^^^
+Class is a raw type. References to generic type Class<T> should be parameterized
+----------
+----------
+28. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.gef.ui/src/org/xmind/ui/gallery/NavigationAnimationService.java (at line 80)
+	List children = parent.getChildren();
+	^^^^
+List is a raw type. References to generic type List<E> should be parameterized
+----------
+29. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.gef.ui/src/org/xmind/ui/gallery/NavigationAnimationService.java (at line 171)
+	List children = container.getChildren();
+	^^^^
+List is a raw type. References to generic type List<E> should be parameterized
+----------
+----------
+30. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.gef.ui/src/org/xmind/ui/gallery/NavigationItemLayout.java (at line 94)
+	List children = container.getChildren();
+	^^^^
+List is a raw type. References to generic type List<E> should be parameterized
+----------
+----------
+31. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.gef.ui/src/org/xmind/ui/gallery/NavigationViewer.java (at line 156)
+	public Object getAdapter(Class adapter) {
+	                         ^^^^^
+Class is a raw type. References to generic type Class<T> should be parameterized
+----------
+31 problems (31 warnings)[190 .class files generated]

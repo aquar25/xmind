@@ -1,0 +1,1231 @@
+# 11/11/13 8:51:37 PM HKT
+# Eclipse Compiler for Java(TM) bundle_qualifier, 3.8.3, Copyright IBM Corp 2000, 2012. All rights reserved.
+----------
+1. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/AutoSaveService.java (at line 24)
+	import org.xmind.ui.internal.editor.BackgroundWorkbookSaver;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type BackgroundWorkbookSaver is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+2. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/AutoSaveService.java (at line 48)
+	BackgroundWorkbookSaver.getInstance().reset(intervals, enabled);
+	^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type BackgroundWorkbookSaver is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+3. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/AutoSaveService.java (at line 48)
+	BackgroundWorkbookSaver.getInstance().reset(intervals, enabled);
+	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method getInstance() from the type BackgroundWorkbookSaver is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+4. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/AutoSaveService.java (at line 48)
+	BackgroundWorkbookSaver.getInstance().reset(intervals, enabled);
+	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method reset(int, boolean) from the type BackgroundWorkbookSaver is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+5. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/AutoSaveService.java (at line 81)
+	BackgroundWorkbookSaver.getInstance().stopAll();
+	^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type BackgroundWorkbookSaver is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+6. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/AutoSaveService.java (at line 81)
+	BackgroundWorkbookSaver.getInstance().stopAll();
+	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method getInstance() from the type BackgroundWorkbookSaver is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+7. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/AutoSaveService.java (at line 81)
+	BackgroundWorkbookSaver.getInstance().stopAll();
+	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method stopAll() from the type BackgroundWorkbookSaver is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+----------
+8. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyApplication.java (at line 18)
+	import net.xmind.signin.internal.XMindNetErrorReporter;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type XMindNetErrorReporter is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+9. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyApplication.java (at line 19)
+	import net.xmind.signin.internal.XMindUpdater;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type XMindUpdater is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+10. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyApplication.java (at line 29)
+	import org.xmind.ui.internal.statushandlers.IErrorReporter;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type IErrorReporter is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.toolkit/@dot
+----------
+11. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyApplication.java (at line 53)
+	IErrorReporter.Default.setDelegate(new XMindNetErrorReporter());
+	^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type IErrorReporter is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.toolkit/@dot
+----------
+12. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyApplication.java (at line 53)
+	IErrorReporter.Default.setDelegate(new XMindNetErrorReporter());
+	^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type IErrorReporter.Default is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.toolkit/@dot
+----------
+13. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyApplication.java (at line 53)
+	IErrorReporter.Default.setDelegate(new XMindNetErrorReporter());
+	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method setDelegate(IErrorReporter) from the type IErrorReporter.Default is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.toolkit/@dot
+----------
+14. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyApplication.java (at line 53)
+	IErrorReporter.Default.setDelegate(new XMindNetErrorReporter());
+	                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The constructor XMindNetErrorReporter() is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+15. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyApplication.java (at line 53)
+	IErrorReporter.Default.setDelegate(new XMindNetErrorReporter());
+	                                       ^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type XMindNetErrorReporter is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+16. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyApplication.java (at line 140)
+	Class clazz = bundle
+	^^^^^
+Class is a raw type. References to generic type Class<T> should be parameterized
+----------
+17. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyApplication.java (at line 152)
+	return XMindUpdater.checkSoftwareUpdateOnStart();
+	       ^^^^^^^^^^^^
+Discouraged access: The type XMindUpdater is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+18. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyApplication.java (at line 152)
+	return XMindUpdater.checkSoftwareUpdateOnStart();
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method checkSoftwareUpdateOnStart() from the type XMindUpdater is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+----------
+19. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyPlugin.java (at line 24)
+	import org.xmind.core.internal.XmindCore;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type XmindCore is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core.runtime/@dot
+----------
+20. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyPlugin.java (at line 146)
+	XmindCore.getDefault();
+	^^^^^^^^^
+Discouraged access: The type XmindCore is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core.runtime/@dot
+----------
+21. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyPlugin.java (at line 146)
+	XmindCore.getDefault();
+	^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method getDefault() from the type XmindCore is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core.runtime/@dot
+----------
+----------
+22. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchActionBuilder.java (at line 35)
+	import org.eclipse.ui.internal.IWorkbenchHelpContextIds;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type IWorkbenchHelpContextIds is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+23. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchActionBuilder.java (at line 36)
+	import org.eclipse.ui.internal.handlers.IActionCommandMappingService;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type IActionCommandMappingService is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+24. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchActionBuilder.java (at line 37)
+	import org.eclipse.ui.internal.provisional.application.IActionBarConfigurer2;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type IActionBarConfigurer2 is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+25. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchActionBuilder.java (at line 43)
+	import org.xmind.ui.internal.actions.ActionConstants;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type ActionConstants is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+26. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchActionBuilder.java (at line 44)
+	import org.xmind.ui.internal.actions.NewWorkbookAction;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type NewWorkbookAction is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+27. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchActionBuilder.java (at line 45)
+	import org.xmind.ui.internal.actions.NewWorkbookWizardAction;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type NewWorkbookWizardAction is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+28. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchActionBuilder.java (at line 46)
+	import org.xmind.ui.internal.actions.OpenHomeMapAction;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type OpenHomeMapAction is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+29. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchActionBuilder.java (at line 47)
+	import org.xmind.ui.internal.actions.OpenWorkbookAction;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type OpenWorkbookAction is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+30. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchActionBuilder.java (at line 48)
+	import org.xmind.ui.internal.actions.ReopenWorkbookMenu;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type ReopenWorkbookMenu is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+31. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchActionBuilder.java (at line 49)
+	import org.xmind.ui.internal.editor.SaveActionUpdater;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type SaveActionUpdater is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+32. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchActionBuilder.java (at line 102)
+	private SaveActionUpdater saveActionUpdater;
+	        ^^^^^^^^^^^^^^^^^
+Discouraged access: The type SaveActionUpdater is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+33. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchActionBuilder.java (at line 121)
+	newWizardAction = new NewWorkbookWizardAction(window);
+	                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The constructor NewWorkbookWizardAction(IWorkbenchWindow) is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+34. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchActionBuilder.java (at line 121)
+	newWizardAction = new NewWorkbookWizardAction(window);
+	                      ^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type NewWorkbookWizardAction is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+35. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchActionBuilder.java (at line 124)
+	newBlankAction = new NewWorkbookAction(window);
+	                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The constructor NewWorkbookAction(IWorkbenchWindow) is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+36. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchActionBuilder.java (at line 124)
+	newBlankAction = new NewWorkbookAction(window);
+	                     ^^^^^^^^^^^^^^^^^
+Discouraged access: The type NewWorkbookAction is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+37. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchActionBuilder.java (at line 127)
+	openAction = new OpenWorkbookAction(window);
+	             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The constructor OpenWorkbookAction(IWorkbenchWindow) is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+38. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchActionBuilder.java (at line 127)
+	openAction = new OpenWorkbookAction(window);
+	                 ^^^^^^^^^^^^^^^^^^
+Discouraged access: The type OpenWorkbookAction is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+39. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchActionBuilder.java (at line 130)
+	openHomeMapAction = new OpenHomeMapAction(window);
+	                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The constructor OpenHomeMapAction(IWorkbenchWindow) is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+40. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchActionBuilder.java (at line 130)
+	openHomeMapAction = new OpenHomeMapAction(window);
+	                        ^^^^^^^^^^^^^^^^^
+Discouraged access: The type OpenHomeMapAction is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+41. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchActionBuilder.java (at line 172)
+	reopenEditors = new ReopenWorkbookMenu(window);
+	                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The constructor ReopenWorkbookMenu(IWorkbenchWindow) is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+42. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchActionBuilder.java (at line 172)
+	reopenEditors = new ReopenWorkbookMenu(window);
+	                    ^^^^^^^^^^^^^^^^^^
+Discouraged access: The type ReopenWorkbookMenu is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+43. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchActionBuilder.java (at line 184)
+	this.saveActionUpdater = new SaveActionUpdater(window, saveAction);
+	                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The constructor SaveActionUpdater(IWorkbenchWindow, ActionFactory.IWorkbenchAction) is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+44. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchActionBuilder.java (at line 184)
+	this.saveActionUpdater = new SaveActionUpdater(window, saveAction);
+	                             ^^^^^^^^^^^^^^^^^
+Discouraged access: The type SaveActionUpdater is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+45. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchActionBuilder.java (at line 190)
+	saveActionUpdater.dispose();
+	^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method dispose() from the type SaveActionUpdater is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+46. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchActionBuilder.java (at line 328)
+	IActionBarConfigurer2 actionBarConfigurer = (IActionBarConfigurer2) getActionBarConfigurer();
+	^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type IActionBarConfigurer2 is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+47. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchActionBuilder.java (at line 328)
+	IActionBarConfigurer2 actionBarConfigurer = (IActionBarConfigurer2) getActionBarConfigurer();
+	                                             ^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type IActionBarConfigurer2 is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+48. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchActionBuilder.java (at line 330)
+	coolBar.add(new GroupMarker(ActionConstants.GROUP_FILE));
+	                            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type ActionConstants is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+49. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchActionBuilder.java (at line 330)
+	coolBar.add(new GroupMarker(ActionConstants.GROUP_FILE));
+	                                            ^^^^^^^^^^
+Discouraged access: The field GROUP_FILE from the type ActionConstants is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+50. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchActionBuilder.java (at line 332)
+	IToolBarManager fileBar = actionBarConfigurer.createToolBarManager();
+	                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method createToolBarManager() from the type IActionBarConfigurer2 is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+51. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchActionBuilder.java (at line 345)
+	coolBar.add(actionBarConfigurer.createToolBarContributionItem(fileBar,
+                IWorkbenchActionConstants.TOOLBAR_FILE));
+	            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method createToolBarContributionItem(IToolBarManager, String) from the type IActionBarConfigurer2 is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+52. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchActionBuilder.java (at line 348)
+	coolBar.add(new GroupMarker(ActionConstants.GROUP_UNDO));
+	                            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type ActionConstants is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+53. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchActionBuilder.java (at line 348)
+	coolBar.add(new GroupMarker(ActionConstants.GROUP_UNDO));
+	                                            ^^^^^^^^^^
+Discouraged access: The field GROUP_UNDO from the type ActionConstants is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+54. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchActionBuilder.java (at line 350)
+	IToolBarManager undoBar = actionBarConfigurer.createToolBarManager();
+	                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method createToolBarManager() from the type IActionBarConfigurer2 is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+55. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchActionBuilder.java (at line 355)
+	coolBar.add(actionBarConfigurer.createToolBarContributionItem(undoBar,
+                ActionConstants.TOOLBAR_UNDO));
+	            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method createToolBarContributionItem(IToolBarManager, String) from the type IActionBarConfigurer2 is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+56. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchActionBuilder.java (at line 356)
+	ActionConstants.TOOLBAR_UNDO));
+	^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type ActionConstants is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+57. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchActionBuilder.java (at line 356)
+	ActionConstants.TOOLBAR_UNDO));
+	                ^^^^^^^^^^^^
+Discouraged access: The field TOOLBAR_UNDO from the type ActionConstants is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+58. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchActionBuilder.java (at line 358)
+	coolBar.add(new GroupMarker(ActionConstants.GROUP_EDIT));
+	                            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type ActionConstants is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+59. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchActionBuilder.java (at line 358)
+	coolBar.add(new GroupMarker(ActionConstants.GROUP_EDIT));
+	                                            ^^^^^^^^^^
+Discouraged access: The field GROUP_EDIT from the type ActionConstants is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+60. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchActionBuilder.java (at line 360)
+	IToolBarManager editBar = actionBarConfigurer.createToolBarManager();
+	                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method createToolBarManager() from the type IActionBarConfigurer2 is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+61. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchActionBuilder.java (at line 371)
+	coolBar.add(actionBarConfigurer.createToolBarContributionItem(editBar,
+                ActionConstants.TOOLBAR_EDIT));
+	            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method createToolBarContributionItem(IToolBarManager, String) from the type IActionBarConfigurer2 is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+62. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchActionBuilder.java (at line 372)
+	ActionConstants.TOOLBAR_EDIT));
+	^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type ActionConstants is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+63. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchActionBuilder.java (at line 372)
+	ActionConstants.TOOLBAR_EDIT));
+	                ^^^^^^^^^^^^
+Discouraged access: The field TOOLBAR_EDIT from the type ActionConstants is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+64. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchActionBuilder.java (at line 408)
+	org.eclipse.ui.internal.WorkbenchMessages.Workbench_cut,
+	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type WorkbenchMessages is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+65. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchActionBuilder.java (at line 408)
+	org.eclipse.ui.internal.WorkbenchMessages.Workbench_cut,
+	                                          ^^^^^^^^^^^^^
+Discouraged access: The field Workbench_cut from the type WorkbenchMessages is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+66. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchActionBuilder.java (at line 409)
+	org.eclipse.ui.internal.WorkbenchMessages.Workbench_cutToolTip,
+	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type WorkbenchMessages is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+67. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchActionBuilder.java (at line 409)
+	org.eclipse.ui.internal.WorkbenchMessages.Workbench_cutToolTip,
+	                                          ^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The field Workbench_cutToolTip from the type WorkbenchMessages is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+68. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchActionBuilder.java (at line 419)
+	org.eclipse.ui.internal.WorkbenchMessages.Workbench_copy,
+	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type WorkbenchMessages is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+69. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchActionBuilder.java (at line 419)
+	org.eclipse.ui.internal.WorkbenchMessages.Workbench_copy,
+	                                          ^^^^^^^^^^^^^^
+Discouraged access: The field Workbench_copy from the type WorkbenchMessages is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+70. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchActionBuilder.java (at line 420)
+	org.eclipse.ui.internal.WorkbenchMessages.Workbench_copyToolTip,
+	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type WorkbenchMessages is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+71. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchActionBuilder.java (at line 420)
+	org.eclipse.ui.internal.WorkbenchMessages.Workbench_copyToolTip,
+	                                          ^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The field Workbench_copyToolTip from the type WorkbenchMessages is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+72. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchActionBuilder.java (at line 430)
+	org.eclipse.ui.internal.WorkbenchMessages.Workbench_paste,
+	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type WorkbenchMessages is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+73. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchActionBuilder.java (at line 430)
+	org.eclipse.ui.internal.WorkbenchMessages.Workbench_paste,
+	                                          ^^^^^^^^^^^^^^^
+Discouraged access: The field Workbench_paste from the type WorkbenchMessages is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+74. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchActionBuilder.java (at line 431)
+	org.eclipse.ui.internal.WorkbenchMessages.Workbench_pasteToolTip,
+	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type WorkbenchMessages is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+75. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchActionBuilder.java (at line 431)
+	org.eclipse.ui.internal.WorkbenchMessages.Workbench_pasteToolTip,
+	                                          ^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The field Workbench_pasteToolTip from the type WorkbenchMessages is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+76. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchActionBuilder.java (at line 441)
+	org.eclipse.ui.internal.WorkbenchMessages.Workbench_selectAll,
+	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type WorkbenchMessages is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+77. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchActionBuilder.java (at line 441)
+	org.eclipse.ui.internal.WorkbenchMessages.Workbench_selectAll,
+	                                          ^^^^^^^^^^^^^^^^^^^
+Discouraged access: The field Workbench_selectAll from the type WorkbenchMessages is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+78. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchActionBuilder.java (at line 442)
+	org.eclipse.ui.internal.WorkbenchMessages.Workbench_selectAllToolTip,
+	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type WorkbenchMessages is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+79. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchActionBuilder.java (at line 442)
+	org.eclipse.ui.internal.WorkbenchMessages.Workbench_selectAllToolTip,
+	                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The field Workbench_selectAllToolTip from the type WorkbenchMessages is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+80. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchActionBuilder.java (at line 452)
+	org.eclipse.ui.internal.WorkbenchMessages.Workbench_delete,
+	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type WorkbenchMessages is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+81. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchActionBuilder.java (at line 452)
+	org.eclipse.ui.internal.WorkbenchMessages.Workbench_delete,
+	                                          ^^^^^^^^^^^^^^^^
+Discouraged access: The field Workbench_delete from the type WorkbenchMessages is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+82. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchActionBuilder.java (at line 453)
+	org.eclipse.ui.internal.WorkbenchMessages.Workbench_deleteToolTip,
+	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type WorkbenchMessages is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+83. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchActionBuilder.java (at line 453)
+	org.eclipse.ui.internal.WorkbenchMessages.Workbench_deleteToolTip,
+	                                          ^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The field Workbench_deleteToolTip from the type WorkbenchMessages is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+84. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchActionBuilder.java (at line 454)
+	IWorkbenchHelpContextIds.DELETE_RETARGET_ACTION);
+	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type IWorkbenchHelpContextIds is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+85. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchActionBuilder.java (at line 454)
+	IWorkbenchHelpContextIds.DELETE_RETARGET_ACTION);
+	                         ^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The field DELETE_RETARGET_ACTION from the type IWorkbenchHelpContextIds is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+86. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchActionBuilder.java (at line 463)
+	org.eclipse.ui.internal.WorkbenchMessages.Workbench_print,
+	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type WorkbenchMessages is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+87. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchActionBuilder.java (at line 463)
+	org.eclipse.ui.internal.WorkbenchMessages.Workbench_print,
+	                                          ^^^^^^^^^^^^^^^
+Discouraged access: The field Workbench_print from the type WorkbenchMessages is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+88. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchActionBuilder.java (at line 464)
+	org.eclipse.ui.internal.WorkbenchMessages.Workbench_printToolTip,
+	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type WorkbenchMessages is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+89. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchActionBuilder.java (at line 464)
+	org.eclipse.ui.internal.WorkbenchMessages.Workbench_printToolTip,
+	                                          ^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The field Workbench_printToolTip from the type WorkbenchMessages is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+90. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchActionBuilder.java (at line 474)
+	IActionCommandMappingService acms = (IActionCommandMappingService) getWindow()
+	^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type IActionCommandMappingService is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+91. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchActionBuilder.java (at line 474)
+	IActionCommandMappingService acms = (IActionCommandMappingService) getWindow()
+	                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type IActionCommandMappingService is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+92. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchActionBuilder.java (at line 475)
+	.getService(IActionCommandMappingService.class);
+	            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type IActionCommandMappingService is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+93. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchActionBuilder.java (at line 476)
+	acms.map(actionId, commandId);
+	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method map(String, String) from the type IActionCommandMappingService is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+----------
+94. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchAdvisor.java (at line 45)
+	import org.xmind.core.internal.InternalCore;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type InternalCore is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/@dot
+----------
+95. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchAdvisor.java (at line 46)
+	import org.xmind.ui.internal.dialogs.DialogMessages;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type DialogMessages is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+96. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchAdvisor.java (at line 47)
+	import org.xmind.ui.internal.editor.WorkbookHistory;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type WorkbookHistory is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+97. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchAdvisor.java (at line 89)
+	WorkbookHistory.getInstance().save();
+	^^^^^^^^^^^^^^^
+Discouraged access: The type WorkbookHistory is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+98. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchAdvisor.java (at line 89)
+	WorkbookHistory.getInstance().save();
+	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method getInstance() from the type WorkbookHistory is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+99. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchAdvisor.java (at line 89)
+	WorkbookHistory.getInstance().save();
+	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method save() from the type WorkbookHistory is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+100. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchAdvisor.java (at line 144)
+	DialogMessages.Save_title, null, NLS.bind(
+	^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type DialogMessages is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+101. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchAdvisor.java (at line 144)
+	DialogMessages.Save_title, null, NLS.bind(
+	               ^^^^^^^^^^
+Discouraged access: The field Save_title from the type DialogMessages is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+102. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchAdvisor.java (at line 170)
+	if (InternalCore.DEBUG_WORKBOOK_SAVE)
+	    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type InternalCore is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/@dot
+----------
+103. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchAdvisor.java (at line 170)
+	if (InternalCore.DEBUG_WORKBOOK_SAVE)
+	                 ^^^^^^^^^^^^^^^^^^^
+Discouraged access: The field DEBUG_WORKBOOK_SAVE from the type InternalCore is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/@dot
+----------
+104. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchAdvisor.java (at line 179)
+	if (InternalCore.DEBUG_WORKBOOK_SAVE)
+	    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type InternalCore is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/@dot
+----------
+105. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchAdvisor.java (at line 179)
+	if (InternalCore.DEBUG_WORKBOOK_SAVE)
+	                 ^^^^^^^^^^^^^^^^^^^
+Discouraged access: The field DEBUG_WORKBOOK_SAVE from the type InternalCore is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/@dot
+----------
+----------
+106. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchWindowAdvisor.java (at line 40)
+	import org.eclipse.ui.internal.WorkbenchWindow;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type WorkbenchWindow is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+107. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchWindowAdvisor.java (at line 41)
+	import org.eclipse.ui.internal.tweaklets.TitlePathUpdater;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type TitlePathUpdater is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+108. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchWindowAdvisor.java (at line 42)
+	import org.eclipse.ui.internal.tweaklets.Tweaklets;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type Tweaklets is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+109. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchWindowAdvisor.java (at line 44)
+	import org.xmind.ui.internal.editor.MME;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type MME is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+110. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchWindowAdvisor.java (at line 45)
+	import org.xmind.ui.internal.editor.NewWorkbookEditor;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type NewWorkbookEditor is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+111. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchWindowAdvisor.java (at line 46)
+	import org.xmind.ui.internal.workbench.Util;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type Util is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+112. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchWindowAdvisor.java (at line 57)
+	private TitlePathUpdater titlePathUpdater;
+	        ^^^^^^^^^^^^^^^^
+Discouraged access: The type TitlePathUpdater is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+113. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchWindowAdvisor.java (at line 61)
+	this.titlePathUpdater = (TitlePathUpdater) Tweaklets
+	                         ^^^^^^^^^^^^^^^^
+Discouraged access: The type TitlePathUpdater is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+114. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchWindowAdvisor.java (at line 61)
+	this.titlePathUpdater = (TitlePathUpdater) Tweaklets
+	                                           ^^^^^^^^^
+Discouraged access: The type Tweaklets is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+115. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchWindowAdvisor.java (at line 61)
+	this.titlePathUpdater = (TitlePathUpdater) Tweaklets
+                .get(TitlePathUpdater.KEY);
+	                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method get(Tweaklets.TweakKey) from the type Tweaklets is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+116. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchWindowAdvisor.java (at line 62)
+	.get(TitlePathUpdater.KEY);
+	     ^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type TitlePathUpdater is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+117. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchWindowAdvisor.java (at line 62)
+	.get(TitlePathUpdater.KEY);
+	                      ^^^
+Discouraged access: The field KEY from the type TitlePathUpdater is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+118. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchWindowAdvisor.java (at line 72)
+	configurer.setInitialSize(Util.getInitialWindowSize());
+	                          ^^^^
+Discouraged access: The type Util is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+119. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchWindowAdvisor.java (at line 72)
+	configurer.setInitialSize(Util.getInitialWindowSize());
+	                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method getInitialWindowSize() from the type Util is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+120. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchWindowAdvisor.java (at line 83)
+	CoolBarManager coolBar = ((WorkbenchWindow) window)
+	                           ^^^^^^^^^^^^^^^
+Discouraged access: The type WorkbenchWindow is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+121. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchWindowAdvisor.java (at line 161)
+	&& !NewWorkbookEditor.EDITOR_ID.equals(partRef.getId())) {
+	    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type NewWorkbookEditor is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+122. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchWindowAdvisor.java (at line 161)
+	&& !NewWorkbookEditor.EDITOR_ID.equals(partRef.getId())) {
+	                      ^^^^^^^^^
+Discouraged access: The field EDITOR_ID from the type NewWorkbookEditor is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+123. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchWindowAdvisor.java (at line 211)
+	titlePathUpdater.updateTitlePath(shell, computeTitlePath(page));
+	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method updateTitlePath(Shell, String) from the type TitlePathUpdater is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+124. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchWindowAdvisor.java (at line 220)
+	File file = MME.getFile(editorInput);
+	            ^^^
+Discouraged access: The type MME is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+125. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchWindowAdvisor.java (at line 220)
+	File file = MME.getFile(editorInput);
+	            ^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method getFile(Object) from the type MME is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+126. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchWindowAdvisor.java (at line 252)
+	if (!NewWorkbookEditor.EDITOR_ID.equals(editor.getId())) {
+	     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type NewWorkbookEditor is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+127. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchWindowAdvisor.java (at line 252)
+	if (!NewWorkbookEditor.EDITOR_ID.equals(editor.getId())) {
+	                       ^^^^^^^^^
+Discouraged access: The field EDITOR_ID from the type NewWorkbookEditor is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+128. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchWindowAdvisor.java (at line 259)
+	NewWorkbookEditor.hideFrom(window);
+	^^^^^^^^^^^^^^^^^
+Discouraged access: The type NewWorkbookEditor is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+129. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchWindowAdvisor.java (at line 259)
+	NewWorkbookEditor.hideFrom(window);
+	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method hideFrom(IWorkbenchWindow) from the type NewWorkbookEditor is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+130. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchWindowAdvisor.java (at line 262)
+	NewWorkbookEditor.showIn(window);
+	^^^^^^^^^^^^^^^^^
+Discouraged access: The type NewWorkbookEditor is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+131. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/CathyWorkbenchWindowAdvisor.java (at line 262)
+	NewWorkbookEditor.showIn(window);
+	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method showIn(IWorkbenchWindow) from the type NewWorkbookEditor is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+----------
+132. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/GeneralPrefPage.java (at line 44)
+	import org.eclipse.ui.internal.IPreferenceConstants;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type IPreferenceConstants is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+133. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/GeneralPrefPage.java (at line 45)
+	import org.eclipse.ui.internal.WorkbenchPlugin;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type WorkbenchPlugin is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+134. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/GeneralPrefPage.java (at line 46)
+	import org.xmind.ui.internal.MindMapUIPlugin;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type MindMapUIPlugin is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+135. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/GeneralPrefPage.java (at line 47)
+	import org.xmind.ui.internal.dialogs.DialogMessages;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type DialogMessages is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+136. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/GeneralPrefPage.java (at line 176)
+	} else if (IPreferenceConstants.RECENT_FILES.equals(data)) {
+	           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type IPreferenceConstants is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+137. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/GeneralPrefPage.java (at line 176)
+	} else if (IPreferenceConstants.RECENT_FILES.equals(data)) {
+	                                ^^^^^^^^^^^^
+Discouraged access: The field RECENT_FILES from the type IPreferenceConstants is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+138. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/GeneralPrefPage.java (at line 296)
+	DialogMessages.WorkbookFilterName, xmindExt) });
+	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type DialogMessages is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+139. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/GeneralPrefPage.java (at line 296)
+	DialogMessages.WorkbookFilterName, xmindExt) });
+	               ^^^^^^^^^^^^^^^^^^
+Discouraged access: The field WorkbookFilterName from the type DialogMessages is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+140. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/GeneralPrefPage.java (at line 308)
+	IPreferenceConstants.RECENT_FILES,
+	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type IPreferenceConstants is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+141. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/GeneralPrefPage.java (at line 308)
+	IPreferenceConstants.RECENT_FILES,
+	                     ^^^^^^^^^^^^
+Discouraged access: The field RECENT_FILES from the type IPreferenceConstants is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+142. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/GeneralPrefPage.java (at line 447)
+	homeMapField.setPreferenceStore(MindMapUIPlugin.getDefault()
+	                                ^^^^^^^^^^^^^^^
+Discouraged access: The type MindMapUIPlugin is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+143. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/GeneralPrefPage.java (at line 447)
+	homeMapField.setPreferenceStore(MindMapUIPlugin.getDefault()
+	                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method getDefault() from the type MindMapUIPlugin is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+144. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/GeneralPrefPage.java (at line 453)
+	recentFilesField.setPreferenceStore(WorkbenchPlugin.getDefault()
+	                                    ^^^^^^^^^^^^^^^
+Discouraged access: The type WorkbenchPlugin is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+145. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/GeneralPrefPage.java (at line 453)
+	recentFilesField.setPreferenceStore(WorkbenchPlugin.getDefault()
+	                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method getDefault() from the type WorkbenchPlugin is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+----------
+146. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/actions/NewMenu.java (at line 37)
+	import org.xmind.ui.internal.actions.NewFromMoreTemplateAction;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type NewFromMoreTemplateAction is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+147. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/actions/NewMenu.java (at line 38)
+	import org.xmind.ui.internal.actions.NewFromTemplateFileAction;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type NewFromTemplateFileAction is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+148. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/actions/NewMenu.java (at line 39)
+	import org.xmind.ui.internal.actions.NewFromTemplateURLAction;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type NewFromTemplateURLAction is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+149. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/actions/NewMenu.java (at line 40)
+	import org.xmind.ui.internal.actions.NewWorkbookAction;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type NewWorkbookAction is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+150. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/actions/NewMenu.java (at line 41)
+	import org.xmind.ui.internal.wizards.NewFromTemplateWizard;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type NewFromTemplateWizard is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+151. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/actions/NewMenu.java (at line 41)
+	import org.xmind.ui.internal.wizards.NewFromTemplateWizard;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The import org.xmind.ui.internal.wizards.NewFromTemplateWizard is never used
+----------
+152. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/actions/NewMenu.java (at line 42)
+	import org.xmind.ui.internal.wizards.NewWorkbookWizard;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type NewWorkbookWizard is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+153. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/actions/NewMenu.java (at line 42)
+	import org.xmind.ui.internal.wizards.NewWorkbookWizard;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The import org.xmind.ui.internal.wizards.NewWorkbookWizard is never used
+----------
+154. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/actions/NewMenu.java (at line 65)
+	this.newWorkbookAction = new NewWorkbookAction(window);
+	                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The constructor NewWorkbookAction(IWorkbenchWindow) is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+155. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/actions/NewMenu.java (at line 65)
+	this.newWorkbookAction = new NewWorkbookAction(window);
+	                             ^^^^^^^^^^^^^^^^^
+Discouraged access: The type NewWorkbookAction is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+156. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/actions/NewMenu.java (at line 66)
+	this.newFromTemplateAction = new NewFromMoreTemplateAction(window);
+	                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The constructor NewFromMoreTemplateAction(IWorkbenchWindow) is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+157. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/actions/NewMenu.java (at line 66)
+	this.newFromTemplateAction = new NewFromMoreTemplateAction(window);
+	                                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type NewFromMoreTemplateAction is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+158. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/actions/NewMenu.java (at line 77)
+	protected void addItems(List list) {
+	                        ^^^^
+List is a raw type. References to generic type List<E> should be parameterized
+----------
+159. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/actions/NewMenu.java (at line 90)
+	private void addTemplateFileActions(List list) {
+	                                    ^^^^
+List is a raw type. References to generic type List<E> should be parameterized
+----------
+160. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/actions/NewMenu.java (at line 109)
+	new NewFromTemplateFileAction(getWindow(), path)));
+	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The constructor NewFromTemplateFileAction(IWorkbenchWindow, String) is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+161. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/actions/NewMenu.java (at line 109)
+	new NewFromTemplateFileAction(getWindow(), path)));
+	    ^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type NewFromTemplateFileAction is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+162. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/actions/NewMenu.java (at line 138)
+	IAction action = new NewFromTemplateURLAction(
+                                getWindow(), url, name);
+	                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The constructor NewFromTemplateURLAction(IWorkbenchWindow, URL, String) is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+163. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/actions/NewMenu.java (at line 138)
+	IAction action = new NewFromTemplateURLAction(
+	                     ^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type NewFromTemplateURLAction is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+----------
+164. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/actions/ShowKeyAssistAction.java (at line 17)
+	import org.eclipse.ui.internal.handlers.ShowKeyAssistHandler;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type ShowKeyAssistHandler is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+165. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/actions/ShowKeyAssistAction.java (at line 22)
+	private ShowKeyAssistHandler handler;
+	        ^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type ShowKeyAssistHandler is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+166. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/actions/ShowKeyAssistAction.java (at line 40)
+	handler = new ShowKeyAssistHandler();
+	          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The constructor ShowKeyAssistHandler() is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+167. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/actions/ShowKeyAssistAction.java (at line 40)
+	handler = new ShowKeyAssistHandler();
+	              ^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type ShowKeyAssistHandler is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+168. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/actions/ShowKeyAssistAction.java (at line 41)
+	handler.execute(null);
+	^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method execute(ExecutionEvent) from the type ShowKeyAssistHandler is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+----------
+169. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/jobs/CheckRecoverFilesJob.java (at line 17)
+	import org.xmind.ui.internal.editor.WorkbookRefManager;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type WorkbookRefManager is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+170. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/jobs/CheckRecoverFilesJob.java (at line 72)
+	WorkbookRefManager.getInstance().clearLastSession();
+	^^^^^^^^^^^^^^^^^^
+Discouraged access: The type WorkbookRefManager is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+171. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/jobs/CheckRecoverFilesJob.java (at line 72)
+	WorkbookRefManager.getInstance().clearLastSession();
+	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method getInstance() from the type WorkbookRefManager is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+172. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/jobs/CheckRecoverFilesJob.java (at line 72)
+	WorkbookRefManager.getInstance().clearLastSession();
+	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method clearLastSession() from the type WorkbookRefManager is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+173. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/jobs/CheckRecoverFilesJob.java (at line 78)
+	loadedFiles = WorkbookRefManager.getInstance().loadLastSession();
+	              ^^^^^^^^^^^^^^^^^^
+Discouraged access: The type WorkbookRefManager is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+174. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/jobs/CheckRecoverFilesJob.java (at line 78)
+	loadedFiles = WorkbookRefManager.getInstance().loadLastSession();
+	              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method getInstance() from the type WorkbookRefManager is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+175. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/jobs/CheckRecoverFilesJob.java (at line 78)
+	loadedFiles = WorkbookRefManager.getInstance().loadLastSession();
+	              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method loadLastSession() from the type WorkbookRefManager is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+----------
+176. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/jobs/CheckUpdatesJob.java (at line 18)
+	import net.xmind.signin.internal.XMindNetRequest;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+177. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/jobs/CheckUpdatesJob.java (at line 167)
+	private XMindNetRequest checkVersionRequest = null;
+	        ^^^^^^^^^^^^^^^
+Discouraged access: The type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+178. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/jobs/CheckUpdatesJob.java (at line 217)
+	XMindNetRequest request = new XMindNetRequest();
+	^^^^^^^^^^^^^^^
+Discouraged access: The type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+179. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/jobs/CheckUpdatesJob.java (at line 217)
+	XMindNetRequest request = new XMindNetRequest();
+	                          ^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The constructor XMindNetRequest() is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+180. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/jobs/CheckUpdatesJob.java (at line 217)
+	XMindNetRequest request = new XMindNetRequest();
+	                              ^^^^^^^^^^^^^^^
+Discouraged access: The type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+181. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/jobs/CheckUpdatesJob.java (at line 219)
+	request.path("/_api/checkVersion/%s", currentVersion); //$NON-NLS-1$
+	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method path(String, Object[]) from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+182. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/jobs/CheckUpdatesJob.java (at line 220)
+	request.addParameter("distrib", distribId); //$NON-NLS-1$
+	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method addParameter(String, Object) from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+183. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/jobs/CheckUpdatesJob.java (at line 221)
+	request.get();
+	^^^^^^^^^^^^^
+Discouraged access: The method get() from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+184. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/jobs/CheckUpdatesJob.java (at line 226)
+	if (request.isAborted())
+	    ^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method isAborted() from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+185. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/jobs/CheckUpdatesJob.java (at line 229)
+	if (request.getError() != null)
+	    ^^^^^^^^^^^^^^^^^^
+Discouraged access: The method getError() from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+186. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/jobs/CheckUpdatesJob.java (at line 230)
+	return errorStatus(request.getError(), request.getError()
+	                   ^^^^^^^^^^^^^^^^^^
+Discouraged access: The method getError() from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+187. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/jobs/CheckUpdatesJob.java (at line 230)
+	return errorStatus(request.getError(), request.getError()
+	                                       ^^^^^^^^^^^^^^^^^^
+Discouraged access: The method getError() from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+188. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/jobs/CheckUpdatesJob.java (at line 235)
+	int code = request.getStatusCode();
+	           ^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method getStatusCode() from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+189. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/jobs/CheckUpdatesJob.java (at line 236)
+	IDataStore data = request.getData();
+	                  ^^^^^^^^^^^^^^^^^
+Discouraged access: The method getData() from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+190. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/jobs/CheckUpdatesJob.java (at line 237)
+	if (code == XMindNetRequest.HTTP_OK) {
+	            ^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+191. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/jobs/CheckUpdatesJob.java (at line 237)
+	if (code == XMindNetRequest.HTTP_OK) {
+	                            ^^^^^^^
+Discouraged access: The field HTTP_OK from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+192. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/jobs/CheckUpdatesJob.java (at line 252)
+	request.getResponseText()));
+	^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method getResponseText() from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+193. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/jobs/CheckUpdatesJob.java (at line 253)
+	} else if (code == XMindNetRequest.HTTP_NOT_FOUND) {
+	                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+194. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/jobs/CheckUpdatesJob.java (at line 253)
+	} else if (code == XMindNetRequest.HTTP_NOT_FOUND) {
+	                                   ^^^^^^^^^^^^^^
+Discouraged access: The field HTTP_NOT_FOUND from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+195. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/jobs/CheckUpdatesJob.java (at line 267)
+	checkVersionRequest.abort();
+	^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method abort() from the type XMindNetRequest is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/@dot
+----------
+----------
+196. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/jobs/DownloadAndOpenFileJob.java (at line 27)
+	import org.xmind.ui.internal.editor.MME;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type MME is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+197. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/jobs/DownloadAndOpenFileJob.java (at line 28)
+	import org.xmind.ui.internal.imports.freemind.FreeMindImporter;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type FreeMindImporter is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.imports/@dot
+----------
+198. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/jobs/DownloadAndOpenFileJob.java (at line 29)
+	import org.xmind.ui.internal.imports.mm.MindManagerImporter;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type MindManagerImporter is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.imports/@dot
+----------
+199. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/jobs/DownloadAndOpenFileJob.java (at line 164)
+	MindManagerImporter importer = new MindManagerImporter(
+	^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type MindManagerImporter is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.imports/@dot
+----------
+200. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/jobs/DownloadAndOpenFileJob.java (at line 164)
+	MindManagerImporter importer = new MindManagerImporter(
+                tempFile.getAbsolutePath());
+	                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The constructor MindManagerImporter(String) is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.imports/@dot
+----------
+201. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/jobs/DownloadAndOpenFileJob.java (at line 164)
+	MindManagerImporter importer = new MindManagerImporter(
+	                                   ^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type MindManagerImporter is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.imports/@dot
+----------
+202. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/jobs/DownloadAndOpenFileJob.java (at line 166)
+	importer.build();
+	^^^^^^^^^^^^^^^^
+Discouraged access: The method build() from the type MindManagerImporter is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.imports/@dot
+----------
+203. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/jobs/DownloadAndOpenFileJob.java (at line 172)
+	FreeMindImporter importer = new FreeMindImporter(
+	^^^^^^^^^^^^^^^^
+Discouraged access: The type FreeMindImporter is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.imports/@dot
+----------
+204. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/jobs/DownloadAndOpenFileJob.java (at line 172)
+	FreeMindImporter importer = new FreeMindImporter(
+                tempFile.getAbsolutePath());
+	                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The constructor FreeMindImporter(String) is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.imports/@dot
+----------
+205. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/jobs/DownloadAndOpenFileJob.java (at line 172)
+	FreeMindImporter importer = new FreeMindImporter(
+	                                ^^^^^^^^^^^^^^^^
+Discouraged access: The type FreeMindImporter is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.imports/@dot
+----------
+206. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/jobs/DownloadAndOpenFileJob.java (at line 174)
+	importer.build();
+	^^^^^^^^^^^^^^^^
+Discouraged access: The method build() from the type FreeMindImporter is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.imports/@dot
+----------
+207. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/jobs/DownloadAndOpenFileJob.java (at line 199)
+	IEditorInput input = MME
+	                     ^^^
+Discouraged access: The type MME is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+208. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/jobs/DownloadAndOpenFileJob.java (at line 199)
+	IEditorInput input = MME
+                        .createLoadedEditorInput(name, workbook);
+	                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method createLoadedEditorInput(String, IWorkbook) from the type MME is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+----------
+209. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/jobs/OpenFilesJob.java (at line 38)
+	import org.xmind.ui.internal.MarkerImpExpUtils;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type MarkerImpExpUtils is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+210. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/jobs/OpenFilesJob.java (at line 39)
+	import org.xmind.ui.internal.editor.MME;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type MME is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+211. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/jobs/OpenFilesJob.java (at line 40)
+	import org.xmind.ui.internal.editor.WorkbookEditorInput;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type WorkbookEditorInput is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+212. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/jobs/OpenFilesJob.java (at line 41)
+	import org.xmind.ui.internal.imports.freemind.FreeMindImporter;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type FreeMindImporter is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.imports/@dot
+----------
+213. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/jobs/OpenFilesJob.java (at line 42)
+	import org.xmind.ui.internal.imports.mm.MindManagerImporter;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type MindManagerImporter is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.imports/@dot
+----------
+214. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/jobs/OpenFilesJob.java (at line 43)
+	import org.xmind.ui.internal.prefs.MarkerManagerPrefPage;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type MarkerManagerPrefPage is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+215. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/jobs/OpenFilesJob.java (at line 198)
+	return MME.createFileEditorInput(path);
+	       ^^^
+Discouraged access: The type MME is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+216. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/jobs/OpenFilesJob.java (at line 198)
+	return MME.createFileEditorInput(path);
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method createFileEditorInput(String) from the type MME is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+217. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/jobs/OpenFilesJob.java (at line 203)
+	return MME.createTemplatedEditorInput(new FileInputStream(path));
+	       ^^^
+Discouraged access: The type MME is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+218. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/jobs/OpenFilesJob.java (at line 203)
+	return MME.createTemplatedEditorInput(new FileInputStream(path));
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method createTemplatedEditorInput(InputStream) from the type MME is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+219. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/jobs/OpenFilesJob.java (at line 207)
+	MindMapImporter importer = new MindManagerImporter(path);
+	                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The constructor MindManagerImporter(String) is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.imports/@dot
+----------
+220. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/jobs/OpenFilesJob.java (at line 207)
+	MindMapImporter importer = new MindManagerImporter(path);
+	                               ^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type MindManagerImporter is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.imports/@dot
+----------
+221. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/jobs/OpenFilesJob.java (at line 210)
+	return workbook == null ? null : new WorkbookEditorInput(workbook);
+	                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The constructor WorkbookEditorInput(IWorkbook) is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+222. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/jobs/OpenFilesJob.java (at line 210)
+	return workbook == null ? null : new WorkbookEditorInput(workbook);
+	                                     ^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type WorkbookEditorInput is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+223. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/jobs/OpenFilesJob.java (at line 214)
+	FreeMindImporter importer = new FreeMindImporter(path);
+	^^^^^^^^^^^^^^^^
+Discouraged access: The type FreeMindImporter is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.imports/@dot
+----------
+224. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/jobs/OpenFilesJob.java (at line 214)
+	FreeMindImporter importer = new FreeMindImporter(path);
+	                            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The constructor FreeMindImporter(String) is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.imports/@dot
+----------
+225. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/jobs/OpenFilesJob.java (at line 214)
+	FreeMindImporter importer = new FreeMindImporter(path);
+	                                ^^^^^^^^^^^^^^^^
+Discouraged access: The type FreeMindImporter is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.imports/@dot
+----------
+226. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/jobs/OpenFilesJob.java (at line 215)
+	importer.build();
+	^^^^^^^^^^^^^^^^
+Discouraged access: The method build() from the type FreeMindImporter is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.imports/@dot
+----------
+227. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/jobs/OpenFilesJob.java (at line 217)
+	return workbook == null ? null : new WorkbookEditorInput(workbook);
+	                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The constructor WorkbookEditorInput(IWorkbook) is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+228. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/jobs/OpenFilesJob.java (at line 217)
+	return workbook == null ? null : new WorkbookEditorInput(workbook);
+	                                     ^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type WorkbookEditorInput is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+229. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/jobs/OpenFilesJob.java (at line 221)
+	MarkerImpExpUtils.importMarkerPackage(path);
+	^^^^^^^^^^^^^^^^^
+Discouraged access: The type MarkerImpExpUtils is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+230. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/jobs/OpenFilesJob.java (at line 221)
+	MarkerImpExpUtils.importMarkerPackage(path);
+	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method importMarkerPackage(String) from the type MarkerImpExpUtils is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+231. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/jobs/OpenFilesJob.java (at line 233)
+	PrefUtils.openPrefDialog(null, MarkerManagerPrefPage.ID);
+	                               ^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type MarkerManagerPrefPage is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+232. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/jobs/OpenFilesJob.java (at line 233)
+	PrefUtils.openPrefDialog(null, MarkerManagerPrefPage.ID);
+	                                                     ^^
+Discouraged access: The field ID from the type MarkerManagerPrefPage is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+----------
+233. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/jobs/StartupJob.java (at line 18)
+	import org.xmind.ui.internal.actions.OpenHomeMapAction;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type OpenHomeMapAction is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+234. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/jobs/StartupJob.java (at line 19)
+	import org.xmind.ui.internal.editor.MME;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type MME is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+235. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/jobs/StartupJob.java (at line 20)
+	import org.xmind.ui.internal.editor.NewWorkbookEditor;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type NewWorkbookEditor is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+236. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/jobs/StartupJob.java (at line 99)
+	OpenHomeMapAction.openHomeMap(shell,
+	^^^^^^^^^^^^^^^^^
+Discouraged access: The type OpenHomeMapAction is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+237. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/jobs/StartupJob.java (at line 99)
+	OpenHomeMapAction.openHomeMap(shell,
+                                                page);
+	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method openHomeMap(Shell, IWorkbenchPage) from the type OpenHomeMapAction is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+238. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/jobs/StartupJob.java (at line 124)
+	NewWorkbookEditor.showIn(window);
+	^^^^^^^^^^^^^^^^^
+Discouraged access: The type NewWorkbookEditor is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+239. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/jobs/StartupJob.java (at line 124)
+	NewWorkbookEditor.showIn(window);
+	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method showIn(IWorkbenchWindow) from the type NewWorkbookEditor is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+240. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/jobs/StartupJob.java (at line 181)
+	return openEditor(MME.createNonExistingEditorInput());
+	                  ^^^
+Discouraged access: The type MME is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+241. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.cathy/src/org/xmind/cathy/internal/jobs/StartupJob.java (at line 181)
+	return openEditor(MME.createNonExistingEditorInput());
+	                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method createNonExistingEditorInput() from the type MME is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+241 problems (241 warnings)[62 .class files generated]

@@ -1,0 +1,20 @@
+# 11/11/13 8:50:44 PM HKT
+# Eclipse Compiler for Java(TM) bundle_qualifier, 3.8.3, Copyright IBM Corp 2000, 2012. All rights reserved.
+----------
+1. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.spelling/src/org/xmind/ui/internal/spelling/SpellingCheckView.java (at line 179)
+	public List suggestions;
+	       ^^^^
+List is a raw type. References to generic type List<E> should be parameterized
+----------
+----------
+2. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.spelling/src/org/xmind/ui/internal/spelling/SpellingHelper.java (at line 122)
+	List list = range.getSuggestions();
+	^^^^
+List is a raw type. References to generic type List<E> should be parameterized
+----------
+3. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.spelling/src/org/xmind/ui/internal/spelling/SpellingHelper.java (at line 446)
+	public Object getAdapter(Class adapter) {
+	                         ^^^^^
+Class is a raw type. References to generic type Class<T> should be parameterized
+----------
+3 problems (3 warnings)[64 .class files generated]

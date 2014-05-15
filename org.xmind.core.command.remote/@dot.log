@@ -1,0 +1,30 @@
+# 11/11/13 8:50:35 PM HKT
+# Eclipse Compiler for Java(TM) bundle_qualifier, 3.8.3, Copyright IBM Corp 2000, 2012. All rights reserved.
+----------
+1. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core.command.remote/src/org/xmind/core/command/remote/socket/SocketAddress.java (at line 17)
+	import org.eclipse.core.runtime.AssertionFailedException;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The import org.eclipse.core.runtime.AssertionFailedException is never used
+----------
+----------
+2. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core.command.remote/src/org/xmind/core/internal/command/remote/RemoteCommandPlugin.java (at line 26)
+	import org.xmind.core.internal.command.XMindCommandPlugin;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type XMindCommandPlugin is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core.command/@dot
+----------
+3. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core.command.remote/src/org/xmind/core/internal/command/remote/RemoteCommandPlugin.java (at line 96)
+	return XMindCommandPlugin.getDefault().getCommandService();
+	       ^^^^^^^^^^^^^^^^^^
+Discouraged access: The type XMindCommandPlugin is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core.command/@dot
+----------
+4. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core.command.remote/src/org/xmind/core/internal/command/remote/RemoteCommandPlugin.java (at line 96)
+	return XMindCommandPlugin.getDefault().getCommandService();
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method getDefault() from the type XMindCommandPlugin is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core.command/@dot
+----------
+5. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core.command.remote/src/org/xmind/core/internal/command/remote/RemoteCommandPlugin.java (at line 96)
+	return XMindCommandPlugin.getDefault().getCommandService();
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method getCommandService() from the type XMindCommandPlugin is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core.command/@dot
+----------
+5 problems (5 warnings)[45 .class files generated]

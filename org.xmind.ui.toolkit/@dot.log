@@ -1,0 +1,315 @@
+# 11/11/13 8:50:39 PM HKT
+# Eclipse Compiler for Java(TM) bundle_qualifier, 3.8.3, Copyright IBM Corp 2000, 2012. All rights reserved.
+----------
+1. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.toolkit/src/org/xmind/ui/animation/AnimationViewer.java (at line 319)
+	protected List getSelectionFromWidget() {
+	          ^^^^
+List is a raw type. References to generic type List<E> should be parameterized
+----------
+2. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.toolkit/src/org/xmind/ui/animation/AnimationViewer.java (at line 329)
+	protected void setSelectionToWidget(List l, boolean reveal) {
+	                                    ^^^^
+List is a raw type. References to generic type List<E> should be parameterized
+----------
+----------
+3. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.toolkit/src/org/xmind/ui/dialogs/PopupDialog.java (at line 1435)
+	List exclusions) {
+	^^^^
+List is a raw type. References to generic type List<E> should be parameterized
+----------
+4. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.toolkit/src/org/xmind/ui/dialogs/PopupDialog.java (at line 1460)
+	List exclusions) {
+	^^^^
+List is a raw type. References to generic type List<E> should be parameterized
+----------
+5. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.toolkit/src/org/xmind/ui/dialogs/PopupDialog.java (at line 1515)
+	protected List getForegroundColorExclusions() {
+	          ^^^^
+List is a raw type. References to generic type List<E> should be parameterized
+----------
+6. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.toolkit/src/org/xmind/ui/dialogs/PopupDialog.java (at line 1516)
+	List list = new ArrayList(3);
+	^^^^
+List is a raw type. References to generic type List<E> should be parameterized
+----------
+7. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.toolkit/src/org/xmind/ui/dialogs/PopupDialog.java (at line 1516)
+	List list = new ArrayList(3);
+	                ^^^^^^^^^
+ArrayList is a raw type. References to generic type ArrayList<E> should be parameterized
+----------
+8. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.toolkit/src/org/xmind/ui/dialogs/PopupDialog.java (at line 1537)
+	protected List getBackgroundColorExclusions() {
+	          ^^^^
+List is a raw type. References to generic type List<E> should be parameterized
+----------
+9. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.toolkit/src/org/xmind/ui/dialogs/PopupDialog.java (at line 1538)
+	List list = new ArrayList(2);
+	^^^^
+List is a raw type. References to generic type List<E> should be parameterized
+----------
+10. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.toolkit/src/org/xmind/ui/dialogs/PopupDialog.java (at line 1538)
+	List list = new ArrayList(2);
+	                ^^^^^^^^^
+ArrayList is a raw type. References to generic type ArrayList<E> should be parameterized
+----------
+----------
+11. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.toolkit/src/org/xmind/ui/dialogs/PopupFilteredList.java (at line 71)
+	import org.eclipse.ui.internal.misc.StringMatcher;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type StringMatcher is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+12. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.toolkit/src/org/xmind/ui/dialogs/PopupFilteredList.java (at line 100)
+	private StringMatcher matcher = null;
+	        ^^^^^^^^^^^^^
+Discouraged access: The type StringMatcher is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+13. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.toolkit/src/org/xmind/ui/dialogs/PopupFilteredList.java (at line 145)
+	matcher = new StringMatcher(pattern, ignoresCase(),
+                        !usesWildCards());
+	          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The constructor StringMatcher(String, boolean, boolean) is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+14. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.toolkit/src/org/xmind/ui/dialogs/PopupFilteredList.java (at line 145)
+	matcher = new StringMatcher(pattern, ignoresCase(),
+	              ^^^^^^^^^^^^^
+Discouraged access: The type StringMatcher is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+15. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.toolkit/src/org/xmind/ui/dialogs/PopupFilteredList.java (at line 195)
+	return matcher.match(elementName);
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method match(String) from the type StringMatcher is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+----------
+16. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.toolkit/src/org/xmind/ui/dialogs/SmoothPopupDialog.java (at line 21)
+	import org.eclipse.jface.dialogs.PopupDialog;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The import org.eclipse.jface.dialogs.PopupDialog is never used
+----------
+17. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.toolkit/src/org/xmind/ui/dialogs/SmoothPopupDialog.java (at line 475)
+	List exclusions) {
+	^^^^
+List is a raw type. References to generic type List<E> should be parameterized
+----------
+18. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.toolkit/src/org/xmind/ui/dialogs/SmoothPopupDialog.java (at line 500)
+	List exclusions) {
+	^^^^
+List is a raw type. References to generic type List<E> should be parameterized
+----------
+19. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.toolkit/src/org/xmind/ui/dialogs/SmoothPopupDialog.java (at line 553)
+	protected List getForegroundColorExclusions() {
+	          ^^^^
+List is a raw type. References to generic type List<E> should be parameterized
+----------
+20. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.toolkit/src/org/xmind/ui/dialogs/SmoothPopupDialog.java (at line 554)
+	List list = new ArrayList(3);
+	^^^^
+List is a raw type. References to generic type List<E> should be parameterized
+----------
+21. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.toolkit/src/org/xmind/ui/dialogs/SmoothPopupDialog.java (at line 554)
+	List list = new ArrayList(3);
+	                ^^^^^^^^^
+ArrayList is a raw type. References to generic type ArrayList<E> should be parameterized
+----------
+22. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.toolkit/src/org/xmind/ui/dialogs/SmoothPopupDialog.java (at line 565)
+	protected List getBackgroundColorExclusions() {
+	          ^^^^
+List is a raw type. References to generic type List<E> should be parameterized
+----------
+23. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.toolkit/src/org/xmind/ui/dialogs/SmoothPopupDialog.java (at line 566)
+	List list = new ArrayList(2);
+	^^^^
+List is a raw type. References to generic type List<E> should be parameterized
+----------
+24. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.toolkit/src/org/xmind/ui/dialogs/SmoothPopupDialog.java (at line 566)
+	List list = new ArrayList(2);
+	                ^^^^^^^^^
+ArrayList is a raw type. References to generic type ArrayList<E> should be parameterized
+----------
+----------
+25. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.toolkit/src/org/xmind/ui/internal/statushandlers/RuntimeErrorDialog.java (at line 32)
+	import org.eclipse.ui.internal.progress.ProgressManagerUtil;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type ProgressManagerUtil is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+26. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.toolkit/src/org/xmind/ui/internal/statushandlers/RuntimeErrorDialog.java (at line 47)
+	super(ProgressManagerUtil.getDefaultParent());
+	      ^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type ProgressManagerUtil is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+27. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.toolkit/src/org/xmind/ui/internal/statushandlers/RuntimeErrorDialog.java (at line 47)
+	super(ProgressManagerUtil.getDefaultParent());
+	      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method getDefaultParent() from the type ProgressManagerUtil is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+----------
+28. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.toolkit/src/org/xmind/ui/properties/PropertyEditingEntry.java (at line 120)
+	public Object getAdapter(Class adapter) {
+	                         ^^^^^
+Class is a raw type. References to generic type Class<T> should be parameterized
+----------
+----------
+29. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.toolkit/src/org/xmind/ui/richtext/RichDocumentUndoManager.java (at line 41)
+	import org.eclipse.text.undo.IDocumentUndoListener;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The import org.eclipse.text.undo.IDocumentUndoListener is never used
+----------
+----------
+30. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.toolkit/src/org/xmind/ui/richtext/RichDocumentUndoManagerRegistry.java (at line 20)
+	import org.eclipse.jface.text.IDocument;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The import org.eclipse.jface.text.IDocument is never used
+----------
+----------
+31. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.toolkit/src/org/xmind/ui/tabfolder/NestedPageSite.java (at line 45)
+	public Object getAdapter(Class adapter) {
+	                         ^^^^^
+Class is a raw type. References to generic type Class<T> should be parameterized
+----------
+32. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.toolkit/src/org/xmind/ui/tabfolder/NestedPageSite.java (at line 51)
+	public Object getService(Class api) {
+	                         ^^^^^
+Class is a raw type. References to generic type Class<T> should be parameterized
+----------
+33. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.toolkit/src/org/xmind/ui/tabfolder/NestedPageSite.java (at line 55)
+	public boolean hasService(Class api) {
+	                          ^^^^^
+Class is a raw type. References to generic type Class<T> should be parameterized
+----------
+----------
+34. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.toolkit/src/org/xmind/ui/tabfolder/PageBookPage.java (at line 136)
+	Entry entry = (Entry) pages[i];
+	^^^^^
+Map.Entry is a raw type. References to generic type Map<K,V>.Entry<K,V> should be parameterized
+----------
+35. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.toolkit/src/org/xmind/ui/tabfolder/PageBookPage.java (at line 136)
+	Entry entry = (Entry) pages[i];
+	               ^^^^^
+Map.Entry is a raw type. References to generic type Map<K,V>.Entry<K,V> should be parameterized
+----------
+36. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.toolkit/src/org/xmind/ui/tabfolder/PageBookPage.java (at line 250)
+	Map newActionHandlers = ((SubActionBars) page.getSite()
+	^^^
+Map is a raw type. References to generic type Map<K,V> should be parameterized
+----------
+37. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.toolkit/src/org/xmind/ui/tabfolder/PageBookPage.java (at line 253)
+	Set keys = newActionHandlers.entrySet();
+	^^^
+Set is a raw type. References to generic type Set<E> should be parameterized
+----------
+38. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.toolkit/src/org/xmind/ui/tabfolder/PageBookPage.java (at line 254)
+	Iterator iter = keys.iterator();
+	^^^^^^^^
+Iterator is a raw type. References to generic type Iterator<E> should be parameterized
+----------
+39. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.toolkit/src/org/xmind/ui/tabfolder/PageBookPage.java (at line 256)
+	Map.Entry entry = (Map.Entry) iter.next();
+	^^^^^^^^^
+Map.Entry is a raw type. References to generic type Map<K,V>.Entry<K,V> should be parameterized
+----------
+40. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.toolkit/src/org/xmind/ui/tabfolder/PageBookPage.java (at line 256)
+	Map.Entry entry = (Map.Entry) iter.next();
+	                   ^^^^^^^^^
+Map.Entry is a raw type. References to generic type Map<K,V>.Entry<K,V> should be parameterized
+----------
+----------
+41. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.toolkit/src/org/xmind/ui/util/IChained.java (at line 16)
+	public interface IChained<T extends IChained> {
+	                                    ^^^^^^^^
+IChained is a raw type. References to generic type IChained<T> should be parameterized
+----------
+----------
+42. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.toolkit/src/org/xmind/ui/viewers/CategorizedViewer.java (at line 488)
+	protected List getSelectionFromWidget() {
+	          ^^^^
+List is a raw type. References to generic type List<E> should be parameterized
+----------
+43. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.toolkit/src/org/xmind/ui/viewers/CategorizedViewer.java (at line 489)
+	List list = new ArrayList();
+	^^^^
+List is a raw type. References to generic type List<E> should be parameterized
+----------
+44. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.toolkit/src/org/xmind/ui/viewers/CategorizedViewer.java (at line 489)
+	List list = new ArrayList();
+	                ^^^^^^^^^
+ArrayList is a raw type. References to generic type ArrayList<E> should be parameterized
+----------
+45. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.toolkit/src/org/xmind/ui/viewers/CategorizedViewer.java (at line 496)
+	protected void setSelectionToWidget(List l, boolean reveal) {
+	                                    ^^^^
+List is a raw type. References to generic type List<E> should be parameterized
+----------
+46. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.toolkit/src/org/xmind/ui/viewers/CategorizedViewer.java (at line 542)
+	protected abstract void fillSelection(Object category, List selection);
+	                                                       ^^^^
+List is a raw type. References to generic type List<E> should be parameterized
+----------
+----------
+47. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.toolkit/src/org/xmind/ui/viewers/CheckListViewer.java (at line 31)
+	import org.eclipse.jface.viewers.IColorProvider;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The import org.eclipse.jface.viewers.IColorProvider is never used
+----------
+48. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.toolkit/src/org/xmind/ui/viewers/CheckListViewer.java (at line 33)
+	import org.eclipse.jface.viewers.IFontProvider;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The import org.eclipse.jface.viewers.IFontProvider is never used
+----------
+49. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.toolkit/src/org/xmind/ui/viewers/CheckListViewer.java (at line 807)
+	protected List getSelectionFromWidget() {
+	          ^^^^
+List is a raw type. References to generic type List<E> should be parameterized
+----------
+50. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.toolkit/src/org/xmind/ui/viewers/CheckListViewer.java (at line 889)
+	List selection = getSelectionFromWidget();
+	^^^^
+List is a raw type. References to generic type List<E> should be parameterized
+----------
+51. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.toolkit/src/org/xmind/ui/viewers/CheckListViewer.java (at line 1033)
+	protected void setSelectionToWidget(List in, boolean reveal) {
+	                                    ^^^^
+List is a raw type. References to generic type List<E> should be parameterized
+----------
+----------
+52. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.toolkit/src/org/xmind/ui/viewers/FileUtils.java (at line 26)
+	import org.eclipse.ui.internal.misc.StringMatcher;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type StringMatcher is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+53. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.toolkit/src/org/xmind/ui/viewers/FileUtils.java (at line 86)
+	final StringMatcher matcher = new StringMatcher(
+	      ^^^^^^^^^^^^^
+Discouraged access: The type StringMatcher is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+54. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.toolkit/src/org/xmind/ui/viewers/FileUtils.java (at line 86)
+	final StringMatcher matcher = new StringMatcher(
+                            filePattern, true, false);
+	                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The constructor StringMatcher(String, boolean, boolean) is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+55. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.toolkit/src/org/xmind/ui/viewers/FileUtils.java (at line 86)
+	final StringMatcher matcher = new StringMatcher(
+	                                  ^^^^^^^^^^^^^
+Discouraged access: The type StringMatcher is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+56. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.toolkit/src/org/xmind/ui/viewers/FileUtils.java (at line 90)
+	return matcher.match(name)
+	       ^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method match(String) from the type StringMatcher is not accessible due to restriction on classpath entry /Users/frankshaka/Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.ui.workbench_3.8.2.v20121128-133708.jar
+----------
+----------
+57. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.toolkit/src/org/xmind/ui/viewers/MComboViewer.java (at line 90)
+	private static final List EMPTY_LIST = Collections.emptyList();
+	                     ^^^^
+List is a raw type. References to generic type List<E> should be parameterized
+----------
+58. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.toolkit/src/org/xmind/ui/viewers/MComboViewer.java (at line 334)
+	protected List getSelectionFromWidget() {
+	          ^^^^
+List is a raw type. References to generic type List<E> should be parameterized
+----------
+59. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.toolkit/src/org/xmind/ui/viewers/MComboViewer.java (at line 415)
+	protected void setSelectionToWidget(List l, boolean reveal) {
+	                                    ^^^^
+List is a raw type. References to generic type List<E> should be parameterized
+----------
+59 problems (59 warnings)[470 .class files generated]

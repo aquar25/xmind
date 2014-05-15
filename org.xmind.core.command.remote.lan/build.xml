@@ -1,0 +1,868 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="org.xmind.core.command.remote.lan" default="build.jars" basedir=".">
+
+	<property name="p2.build.repo" value="file:${buildDirectory}/buildRepo"/>
+	<property name="basews" value="${ws}"/>
+	<property name="baseos" value="${os}"/>
+	<property name="basearch" value="${arch}"/>
+	<property name="basenl" value="${nl}"/>
+	<property name="bundleId" value="org.xmind.core.command.remote.lan"/>
+	<property name="bundleVersion" value="3.4.0.201311050558"/>
+	<property name="p2.publishonerror" value="false"/>
+
+	<!-- Compiler settings. -->
+	<property name="javacFailOnError" value="false"/>
+	<property name="javacDebugInfo" value="on"/>
+	<property name="javacVerbose" value="false"/>
+	<property name="logExtension" value=".log"/>
+	<property name="compilerArg" value=""/>
+	<property name="compilation.prereq.log" value="${buildDirectory}/prereqErrors.log"/>
+	<property name="javacSource" value="1.3"/>
+	<property name="javacTarget" value="1.2"/>
+	<condition property="dir_bootclasspath" value="${java.home}/../Classes">
+		<and>
+			<os family="mac"/>
+			<available file="${java.home}/../Classes" type="dir"/>
+		</and>
+	</condition>
+	<property name="dir_bootclasspath" value="${java.home}/lib"/>
+	<path id="path_bootclasspath">
+		<fileset dir="${dir_bootclasspath}">
+			<include name="*.jar"/>
+		</fileset>
+	</path>
+	<property name="bootclasspath" refid="path_bootclasspath"/>
+	<condition property="bundleBootClasspath" value="${J2SE-1.5}"	>
+		<isset property="J2SE-1.5"/>
+	</condition>
+	<condition property="bundleJavacSource" value="1.5"	>
+		<isset property="J2SE-1.5"/>
+	</condition>
+	<condition property="bundleJavacTarget" value="1.5"	>
+		<isset property="J2SE-1.5"/>
+	</condition>
+	<property name="bundleJavacSource" value="${javacSource}"/>
+	<property name="bundleJavacTarget" value="${javacTarget}"/>
+	<property name="bundleBootClasspath" value="${bootclasspath}"/>
+
+	<target name="init" depends="properties">
+		<condition property="pluginTemp" value="${buildTempFolder}/plugins"		>
+			<isset property="buildTempFolder"/>
+		</condition>
+		<property name="pluginTemp" value="${basedir}"/>
+		<condition property="build.result.folder" value="${pluginTemp}/org.xmind.core.command.remote.lan_3.4.0.201311050558"		>
+			<isset property="buildTempFolder"/>
+		</condition>
+		<property name="build.result.folder" value="${basedir}"/>
+		<property name="temp.folder" value="${basedir}/temp.folder"/>
+		<property name="plugin.destination" value="${basedir}"/>
+		<condition property="p2.publish.parts" value="true"		>
+			<istrue value="${p2.gathering}"/>
+		</condition>
+		<property name="compilation.problem.marker" value="${build.result.folder}/compilation.problem"/>
+		<condition property="compilation.problem.marker.exists" value="true"		>
+			<and>
+			<available file="${compilation.problem.marker}"/>
+			<isfalse value="${p2.publishonerror}"/>
+			</and>
+		</condition>
+	</target>
+
+	<target name="properties" if="eclipse.running">
+		<property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+
+	</target>
+
+	<target name="build.update.jar" depends="init" description="Build the plug-in: org.xmind.core.command.remote.lan for an update site.">
+		<delete dir="${temp.folder}"/>
+		<mkdir dir="${temp.folder}"/>
+		<antcall target="build.jars"/>
+		<antcall target="gather.bin.parts">
+			<param name="destination.temp.folder" value="${temp.folder}/"/>
+		</antcall>
+		<jar destfile="${plugin.destination}/org.xmind.core.command.remote.lan_3.4.0.201311050558.jar" basedir="${temp.folder}/org.xmind.core.command.remote.lan_3.4.0.201311050558" filesetmanifest="merge"/>
+		<delete dir="${temp.folder}"/>
+	</target>
+
+	<target name="@dot.nestedJars">
+		<mkdir dir="${buildDirectory}/nestedJars/org.eclipse.equinox.registry_3.5.200.v20120522-1841"/>
+		<unzip src="../../../../../Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.equinox.registry_3.5.200.v20120522-1841.jar" dest="${buildDirectory}/nestedJars/org.eclipse.equinox.registry_3.5.200.v20120522-1841" overwrite="false">
+			<patternset includes="runtime_registry_compatibility.jar"/>
+		</unzip>
+		<mkdir dir="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_ar_4.2.0.v20121120043402"/>
+		<unzip src="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.registry.nl_ar_4.2.0.v20121120043402.jar" dest="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_ar_4.2.0.v20121120043402" overwrite="false">
+			<patternset includes="runtime_registry_compatibility.jar"/>
+		</unzip>
+		<mkdir dir="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_bg_4.2.0.v20121120043402"/>
+		<unzip src="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.registry.nl_bg_4.2.0.v20121120043402.jar" dest="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_bg_4.2.0.v20121120043402" overwrite="false">
+			<patternset includes="runtime_registry_compatibility.jar"/>
+		</unzip>
+		<mkdir dir="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_cs_4.2.0.v20121120043402"/>
+		<unzip src="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.registry.nl_cs_4.2.0.v20121120043402.jar" dest="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_cs_4.2.0.v20121120043402" overwrite="false">
+			<patternset includes="runtime_registry_compatibility.jar"/>
+		</unzip>
+		<mkdir dir="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_da_4.2.0.v20121120043402"/>
+		<unzip src="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.registry.nl_da_4.2.0.v20121120043402.jar" dest="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_da_4.2.0.v20121120043402" overwrite="false">
+			<patternset includes="runtime_registry_compatibility.jar"/>
+		</unzip>
+		<mkdir dir="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_de_4.2.0.v20121120043402"/>
+		<unzip src="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.registry.nl_de_4.2.0.v20121120043402.jar" dest="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_de_4.2.0.v20121120043402" overwrite="false">
+			<patternset includes="runtime_registry_compatibility.jar"/>
+		</unzip>
+		<mkdir dir="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_el_4.2.0.v20121120043402"/>
+		<unzip src="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.registry.nl_el_4.2.0.v20121120043402.jar" dest="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_el_4.2.0.v20121120043402" overwrite="false">
+			<patternset includes="runtime_registry_compatibility.jar"/>
+		</unzip>
+		<mkdir dir="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_en_AA_4.2.0.v20121120043402"/>
+		<unzip src="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.registry.nl_en_AA_4.2.0.v20121120043402.jar" dest="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_en_AA_4.2.0.v20121120043402" overwrite="false">
+			<patternset includes="runtime_registry_compatibility.jar"/>
+		</unzip>
+		<mkdir dir="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_en_AU_4.2.0.v20121120043402"/>
+		<unzip src="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.registry.nl_en_AU_4.2.0.v20121120043402.jar" dest="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_en_AU_4.2.0.v20121120043402" overwrite="false">
+			<patternset includes="runtime_registry_compatibility.jar"/>
+		</unzip>
+		<mkdir dir="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_es_4.2.0.v20121120043402"/>
+		<unzip src="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.registry.nl_es_4.2.0.v20121120043402.jar" dest="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_es_4.2.0.v20121120043402" overwrite="false">
+			<patternset includes="runtime_registry_compatibility.jar"/>
+		</unzip>
+		<mkdir dir="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_et_4.2.0.v20121120043402"/>
+		<unzip src="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.registry.nl_et_4.2.0.v20121120043402.jar" dest="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_et_4.2.0.v20121120043402" overwrite="false">
+			<patternset includes="runtime_registry_compatibility.jar"/>
+		</unzip>
+		<mkdir dir="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_fi_4.2.0.v20121120043402"/>
+		<unzip src="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.registry.nl_fi_4.2.0.v20121120043402.jar" dest="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_fi_4.2.0.v20121120043402" overwrite="false">
+			<patternset includes="runtime_registry_compatibility.jar"/>
+		</unzip>
+		<mkdir dir="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_fr_4.2.0.v20121120043402"/>
+		<unzip src="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.registry.nl_fr_4.2.0.v20121120043402.jar" dest="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_fr_4.2.0.v20121120043402" overwrite="false">
+			<patternset includes="runtime_registry_compatibility.jar"/>
+		</unzip>
+		<mkdir dir="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_hi_4.2.0.v20121120043402"/>
+		<unzip src="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.registry.nl_hi_4.2.0.v20121120043402.jar" dest="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_hi_4.2.0.v20121120043402" overwrite="false">
+			<patternset includes="runtime_registry_compatibility.jar"/>
+		</unzip>
+		<mkdir dir="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_hu_4.2.0.v20121120043402"/>
+		<unzip src="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.registry.nl_hu_4.2.0.v20121120043402.jar" dest="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_hu_4.2.0.v20121120043402" overwrite="false">
+			<patternset includes="runtime_registry_compatibility.jar"/>
+		</unzip>
+		<mkdir dir="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_id_4.2.0.v20121120043402"/>
+		<unzip src="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.registry.nl_id_4.2.0.v20121120043402.jar" dest="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_id_4.2.0.v20121120043402" overwrite="false">
+			<patternset includes="runtime_registry_compatibility.jar"/>
+		</unzip>
+		<mkdir dir="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_it_4.2.0.v20121120043402"/>
+		<unzip src="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.registry.nl_it_4.2.0.v20121120043402.jar" dest="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_it_4.2.0.v20121120043402" overwrite="false">
+			<patternset includes="runtime_registry_compatibility.jar"/>
+		</unzip>
+		<mkdir dir="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_iw_4.2.0.v20121120043402"/>
+		<unzip src="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.registry.nl_iw_4.2.0.v20121120043402.jar" dest="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_iw_4.2.0.v20121120043402" overwrite="false">
+			<patternset includes="runtime_registry_compatibility.jar"/>
+		</unzip>
+		<mkdir dir="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_ja_4.2.0.v20121120043402"/>
+		<unzip src="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.registry.nl_ja_4.2.0.v20121120043402.jar" dest="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_ja_4.2.0.v20121120043402" overwrite="false">
+			<patternset includes="runtime_registry_compatibility.jar"/>
+		</unzip>
+		<mkdir dir="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_ko_4.2.0.v20121120043402"/>
+		<unzip src="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.registry.nl_ko_4.2.0.v20121120043402.jar" dest="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_ko_4.2.0.v20121120043402" overwrite="false">
+			<patternset includes="runtime_registry_compatibility.jar"/>
+		</unzip>
+		<mkdir dir="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_mn_4.2.0.v20121120043402"/>
+		<unzip src="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.registry.nl_mn_4.2.0.v20121120043402.jar" dest="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_mn_4.2.0.v20121120043402" overwrite="false">
+			<patternset includes="runtime_registry_compatibility.jar"/>
+		</unzip>
+		<mkdir dir="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_nl_4.2.0.v20121120043402"/>
+		<unzip src="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.registry.nl_nl_4.2.0.v20121120043402.jar" dest="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_nl_4.2.0.v20121120043402" overwrite="false">
+			<patternset includes="runtime_registry_compatibility.jar"/>
+		</unzip>
+		<mkdir dir="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_no_4.2.0.v20121120043402"/>
+		<unzip src="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.registry.nl_no_4.2.0.v20121120043402.jar" dest="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_no_4.2.0.v20121120043402" overwrite="false">
+			<patternset includes="runtime_registry_compatibility.jar"/>
+		</unzip>
+		<mkdir dir="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_pl_4.2.0.v20121120043402"/>
+		<unzip src="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.registry.nl_pl_4.2.0.v20121120043402.jar" dest="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_pl_4.2.0.v20121120043402" overwrite="false">
+			<patternset includes="runtime_registry_compatibility.jar"/>
+		</unzip>
+		<mkdir dir="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_pt_4.2.0.v20121120043402"/>
+		<unzip src="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.registry.nl_pt_4.2.0.v20121120043402.jar" dest="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_pt_4.2.0.v20121120043402" overwrite="false">
+			<patternset includes="runtime_registry_compatibility.jar"/>
+		</unzip>
+		<mkdir dir="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_pt_BR_4.2.0.v20121120043402"/>
+		<unzip src="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.registry.nl_pt_BR_4.2.0.v20121120043402.jar" dest="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_pt_BR_4.2.0.v20121120043402" overwrite="false">
+			<patternset includes="runtime_registry_compatibility.jar"/>
+		</unzip>
+		<mkdir dir="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_ro_4.2.0.v20121120043402"/>
+		<unzip src="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.registry.nl_ro_4.2.0.v20121120043402.jar" dest="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_ro_4.2.0.v20121120043402" overwrite="false">
+			<patternset includes="runtime_registry_compatibility.jar"/>
+		</unzip>
+		<mkdir dir="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_ru_4.2.0.v20121120043402"/>
+		<unzip src="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.registry.nl_ru_4.2.0.v20121120043402.jar" dest="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_ru_4.2.0.v20121120043402" overwrite="false">
+			<patternset includes="runtime_registry_compatibility.jar"/>
+		</unzip>
+		<mkdir dir="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_sl_4.2.0.v20121120043402"/>
+		<unzip src="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.registry.nl_sl_4.2.0.v20121120043402.jar" dest="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_sl_4.2.0.v20121120043402" overwrite="false">
+			<patternset includes="runtime_registry_compatibility.jar"/>
+		</unzip>
+		<mkdir dir="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_sv_4.2.0.v20121120043402"/>
+		<unzip src="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.registry.nl_sv_4.2.0.v20121120043402.jar" dest="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_sv_4.2.0.v20121120043402" overwrite="false">
+			<patternset includes="runtime_registry_compatibility.jar"/>
+		</unzip>
+		<mkdir dir="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_tr_4.2.0.v20121120043402"/>
+		<unzip src="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.registry.nl_tr_4.2.0.v20121120043402.jar" dest="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_tr_4.2.0.v20121120043402" overwrite="false">
+			<patternset includes="runtime_registry_compatibility.jar"/>
+		</unzip>
+		<mkdir dir="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_uk_4.2.0.v20121120043402"/>
+		<unzip src="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.registry.nl_uk_4.2.0.v20121120043402.jar" dest="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_uk_4.2.0.v20121120043402" overwrite="false">
+			<patternset includes="runtime_registry_compatibility.jar"/>
+		</unzip>
+		<mkdir dir="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_zh_4.2.0.v20121120043402"/>
+		<unzip src="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.registry.nl_zh_4.2.0.v20121120043402.jar" dest="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_zh_4.2.0.v20121120043402" overwrite="false">
+			<patternset includes="runtime_registry_compatibility.jar"/>
+		</unzip>
+		<mkdir dir="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_zh_TW_4.2.0.v20121120043402"/>
+		<unzip src="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.registry.nl_zh_TW_4.2.0.v20121120043402.jar" dest="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_zh_TW_4.2.0.v20121120043402" overwrite="false">
+			<patternset includes="runtime_registry_compatibility.jar"/>
+		</unzip>
+	</target>
+	<target name="@dot" depends="init,@dot.nestedJars" unless="@dot" description="Create jar: org.xmind.core.command.remote.lan @dot.">
+		<delete dir="${build.result.folder}/@dot"/>
+		<mkdir dir="${build.result.folder}/@dot"/>
+		<path id="@dot.classpath">
+			<pathelement path="../../../../../Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.core.runtime_3.8.0.v20120521-2346.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.runtime.nl_ar_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.runtime.nl_bg_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.runtime.nl_cs_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.runtime.nl_da_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.runtime.nl_de_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.runtime.nl_el_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.runtime.nl_en_AA_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.runtime.nl_en_AU_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.runtime.nl_en_CA_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.runtime.nl_es_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.runtime.nl_et_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.runtime.nl_fa_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.runtime.nl_fi_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.runtime.nl_fr_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.runtime.nl_hi_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.runtime.nl_hu_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.runtime.nl_id_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.runtime.nl_it_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.runtime.nl_iw_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.runtime.nl_ja_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.runtime.nl_ko_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.runtime.nl_ku_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.runtime.nl_mn_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.runtime.nl_nl_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.runtime.nl_no_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.runtime.nl_pl_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.runtime.nl_pt_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.runtime.nl_pt_BR_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.runtime.nl_ro_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.runtime.nl_ru_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.runtime.nl_sl_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.runtime.nl_sr_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.runtime.nl_sv_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.runtime.nl_tr_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.runtime.nl_uk_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.runtime.nl_zh_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.runtime.nl_zh_TW_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../../../Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.osgi_3.8.2.v20130124-134944.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.osgi.nl_ar_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.osgi.nl_bg_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.osgi.nl_cs_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.osgi.nl_da_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.osgi.nl_de_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.osgi.nl_el_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.osgi.nl_en_AA_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.osgi.nl_en_AU_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.osgi.nl_es_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.osgi.nl_et_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.osgi.nl_fa_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.osgi.nl_fi_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.osgi.nl_fr_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.osgi.nl_hi_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.osgi.nl_hu_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.osgi.nl_id_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.osgi.nl_it_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.osgi.nl_iw_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.osgi.nl_ja_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.osgi.nl_ko_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.osgi.nl_mn_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.osgi.nl_nl_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.osgi.nl_no_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.osgi.nl_pl_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.osgi.nl_pt_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.osgi.nl_pt_BR_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.osgi.nl_ro_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.osgi.nl_ru_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.osgi.nl_sl_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.osgi.nl_sv_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.osgi.nl_tr_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.osgi.nl_uk_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.osgi.nl_zh_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.osgi.nl_zh_TW_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../../../Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.equinox.common_3.6.100.v20120522-1841.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.common.nl_ar_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.common.nl_bg_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.common.nl_cs_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.common.nl_da_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.common.nl_de_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.common.nl_el_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.common.nl_en_AA_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.common.nl_en_AU_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.common.nl_es_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.common.nl_et_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.common.nl_fa_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.common.nl_fi_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.common.nl_fr_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.common.nl_hi_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.common.nl_hu_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.common.nl_id_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.common.nl_it_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.common.nl_iw_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.common.nl_ja_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.common.nl_ko_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.common.nl_mn_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.common.nl_nl_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.common.nl_no_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.common.nl_pl_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.common.nl_pt_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.common.nl_pt_BR_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.common.nl_ro_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.common.nl_ru_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.common.nl_sl_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.common.nl_sv_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.common.nl_tr_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.common.nl_uk_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.common.nl_zh_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.common.nl_zh_TW_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../../../Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.core.jobs_3.5.200.v20120521-2346.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.jobs.nl_ar_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.jobs.nl_bg_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.jobs.nl_cs_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.jobs.nl_da_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.jobs.nl_de_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.jobs.nl_el_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.jobs.nl_en_AA_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.jobs.nl_en_AU_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.jobs.nl_en_CA_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.jobs.nl_es_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.jobs.nl_et_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.jobs.nl_fa_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.jobs.nl_fi_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.jobs.nl_fr_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.jobs.nl_hi_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.jobs.nl_hu_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.jobs.nl_id_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.jobs.nl_it_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.jobs.nl_iw_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.jobs.nl_ja_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.jobs.nl_ko_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.jobs.nl_ku_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.jobs.nl_mn_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.jobs.nl_nl_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.jobs.nl_no_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.jobs.nl_pl_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.jobs.nl_pt_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.jobs.nl_pt_BR_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.jobs.nl_ro_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.jobs.nl_ru_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.jobs.nl_sr_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.jobs.nl_sv_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.jobs.nl_tr_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.jobs.nl_uk_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.jobs.nl_zh_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.jobs.nl_zh_TW_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../../../Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.core.runtime.compatibility.registry_3.5.100.v20120521-2346/runtime_registry_compatibility.jar"/>
+			<pathelement path="../../../../../Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.core.runtime.compatibility.registry_3.5.100.v20120521-2346"/>
+			<pathelement path="${buildDirectory}/nestedJars/org.eclipse.equinox.registry_3.5.200.v20120522-1841/runtime_registry_compatibility.jar"/>
+			<pathelement path="../../../../../Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.equinox.registry_3.5.200.v20120522-1841.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.registry.nl_ar_4.2.0.v20121120043402.jar"/>
+			<pathelement path="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_ar_4.2.0.v20121120043402/runtime_registry_compatibility.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.registry.nl_bg_4.2.0.v20121120043402.jar"/>
+			<pathelement path="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_bg_4.2.0.v20121120043402/runtime_registry_compatibility.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.registry.nl_cs_4.2.0.v20121120043402.jar"/>
+			<pathelement path="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_cs_4.2.0.v20121120043402/runtime_registry_compatibility.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.registry.nl_da_4.2.0.v20121120043402.jar"/>
+			<pathelement path="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_da_4.2.0.v20121120043402/runtime_registry_compatibility.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.registry.nl_de_4.2.0.v20121120043402.jar"/>
+			<pathelement path="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_de_4.2.0.v20121120043402/runtime_registry_compatibility.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.registry.nl_el_4.2.0.v20121120043402.jar"/>
+			<pathelement path="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_el_4.2.0.v20121120043402/runtime_registry_compatibility.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.registry.nl_en_AA_4.2.0.v20121120043402.jar"/>
+			<pathelement path="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_en_AA_4.2.0.v20121120043402/runtime_registry_compatibility.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.registry.nl_en_AU_4.2.0.v20121120043402.jar"/>
+			<pathelement path="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_en_AU_4.2.0.v20121120043402/runtime_registry_compatibility.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.registry.nl_es_4.2.0.v20121120043402.jar"/>
+			<pathelement path="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_es_4.2.0.v20121120043402/runtime_registry_compatibility.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.registry.nl_et_4.2.0.v20121120043402.jar"/>
+			<pathelement path="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_et_4.2.0.v20121120043402/runtime_registry_compatibility.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.registry.nl_fi_4.2.0.v20121120043402.jar"/>
+			<pathelement path="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_fi_4.2.0.v20121120043402/runtime_registry_compatibility.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.registry.nl_fr_4.2.0.v20121120043402.jar"/>
+			<pathelement path="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_fr_4.2.0.v20121120043402/runtime_registry_compatibility.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.registry.nl_hi_4.2.0.v20121120043402.jar"/>
+			<pathelement path="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_hi_4.2.0.v20121120043402/runtime_registry_compatibility.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.registry.nl_hu_4.2.0.v20121120043402.jar"/>
+			<pathelement path="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_hu_4.2.0.v20121120043402/runtime_registry_compatibility.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.registry.nl_id_4.2.0.v20121120043402.jar"/>
+			<pathelement path="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_id_4.2.0.v20121120043402/runtime_registry_compatibility.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.registry.nl_it_4.2.0.v20121120043402.jar"/>
+			<pathelement path="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_it_4.2.0.v20121120043402/runtime_registry_compatibility.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.registry.nl_iw_4.2.0.v20121120043402.jar"/>
+			<pathelement path="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_iw_4.2.0.v20121120043402/runtime_registry_compatibility.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.registry.nl_ja_4.2.0.v20121120043402.jar"/>
+			<pathelement path="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_ja_4.2.0.v20121120043402/runtime_registry_compatibility.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.registry.nl_ko_4.2.0.v20121120043402.jar"/>
+			<pathelement path="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_ko_4.2.0.v20121120043402/runtime_registry_compatibility.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.registry.nl_mn_4.2.0.v20121120043402.jar"/>
+			<pathelement path="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_mn_4.2.0.v20121120043402/runtime_registry_compatibility.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.registry.nl_nl_4.2.0.v20121120043402.jar"/>
+			<pathelement path="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_nl_4.2.0.v20121120043402/runtime_registry_compatibility.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.registry.nl_no_4.2.0.v20121120043402.jar"/>
+			<pathelement path="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_no_4.2.0.v20121120043402/runtime_registry_compatibility.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.registry.nl_pl_4.2.0.v20121120043402.jar"/>
+			<pathelement path="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_pl_4.2.0.v20121120043402/runtime_registry_compatibility.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.registry.nl_pt_4.2.0.v20121120043402.jar"/>
+			<pathelement path="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_pt_4.2.0.v20121120043402/runtime_registry_compatibility.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.registry.nl_pt_BR_4.2.0.v20121120043402.jar"/>
+			<pathelement path="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_pt_BR_4.2.0.v20121120043402/runtime_registry_compatibility.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.registry.nl_ro_4.2.0.v20121120043402.jar"/>
+			<pathelement path="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_ro_4.2.0.v20121120043402/runtime_registry_compatibility.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.registry.nl_ru_4.2.0.v20121120043402.jar"/>
+			<pathelement path="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_ru_4.2.0.v20121120043402/runtime_registry_compatibility.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.registry.nl_sl_4.2.0.v20121120043402.jar"/>
+			<pathelement path="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_sl_4.2.0.v20121120043402/runtime_registry_compatibility.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.registry.nl_sv_4.2.0.v20121120043402.jar"/>
+			<pathelement path="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_sv_4.2.0.v20121120043402/runtime_registry_compatibility.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.registry.nl_tr_4.2.0.v20121120043402.jar"/>
+			<pathelement path="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_tr_4.2.0.v20121120043402/runtime_registry_compatibility.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.registry.nl_uk_4.2.0.v20121120043402.jar"/>
+			<pathelement path="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_uk_4.2.0.v20121120043402/runtime_registry_compatibility.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.registry.nl_zh_4.2.0.v20121120043402.jar"/>
+			<pathelement path="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_zh_4.2.0.v20121120043402/runtime_registry_compatibility.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.registry.nl_zh_TW_4.2.0.v20121120043402.jar"/>
+			<pathelement path="${buildDirectory}/nestedJars/org.eclipse.equinox.registry.nl_zh_TW_4.2.0.v20121120043402/runtime_registry_compatibility.jar"/>
+			<pathelement path="../../../../../Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.equinox.preferences_3.5.1.v20121031-182809.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.preferences.nl_ar_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.preferences.nl_bg_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.preferences.nl_cs_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.preferences.nl_da_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.preferences.nl_de_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.preferences.nl_el_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.preferences.nl_en_AA_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.preferences.nl_en_AU_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.preferences.nl_es_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.preferences.nl_et_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.preferences.nl_fa_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.preferences.nl_fi_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.preferences.nl_fr_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.preferences.nl_hi_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.preferences.nl_hu_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.preferences.nl_id_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.preferences.nl_it_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.preferences.nl_iw_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.preferences.nl_ja_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.preferences.nl_ko_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.preferences.nl_mn_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.preferences.nl_nl_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.preferences.nl_no_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.preferences.nl_pl_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.preferences.nl_pt_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.preferences.nl_pt_BR_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.preferences.nl_ro_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.preferences.nl_ru_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.preferences.nl_sv_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.preferences.nl_tr_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.preferences.nl_uk_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.preferences.nl_zh_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.preferences.nl_zh_TW_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../../../Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.core.contenttype_3.4.200.v20120523-2004.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.contenttype.nl_ar_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.contenttype.nl_bg_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.contenttype.nl_cs_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.contenttype.nl_da_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.contenttype.nl_de_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.contenttype.nl_el_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.contenttype.nl_en_AA_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.contenttype.nl_en_AU_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.contenttype.nl_en_CA_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.contenttype.nl_es_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.contenttype.nl_et_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.contenttype.nl_fa_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.contenttype.nl_fi_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.contenttype.nl_fr_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.contenttype.nl_hi_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.contenttype.nl_hu_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.contenttype.nl_id_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.contenttype.nl_it_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.contenttype.nl_iw_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.contenttype.nl_ja_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.contenttype.nl_ko_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.contenttype.nl_ku_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.contenttype.nl_mn_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.contenttype.nl_nl_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.contenttype.nl_no_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.contenttype.nl_pl_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.contenttype.nl_pt_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.contenttype.nl_pt_BR_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.contenttype.nl_ro_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.contenttype.nl_ru_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.contenttype.nl_sr_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.contenttype.nl_sv_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.contenttype.nl_tr_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.contenttype.nl_uk_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.contenttype.nl_zh_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.contenttype.nl_zh_TW_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../../../Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.core.runtime.compatibility.auth_3.2.300.v20120523-2004.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.runtime.compatibility.auth.nl_ar_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.runtime.compatibility.auth.nl_bg_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.runtime.compatibility.auth.nl_cs_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.runtime.compatibility.auth.nl_da_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.runtime.compatibility.auth.nl_de_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.runtime.compatibility.auth.nl_el_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.runtime.compatibility.auth.nl_en_AA_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.runtime.compatibility.auth.nl_en_AU_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.runtime.compatibility.auth.nl_en_CA_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.runtime.compatibility.auth.nl_es_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.runtime.compatibility.auth.nl_et_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.runtime.compatibility.auth.nl_fa_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.runtime.compatibility.auth.nl_fi_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.runtime.compatibility.auth.nl_fr_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.runtime.compatibility.auth.nl_hi_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.runtime.compatibility.auth.nl_hu_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.runtime.compatibility.auth.nl_id_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.runtime.compatibility.auth.nl_it_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.runtime.compatibility.auth.nl_iw_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.runtime.compatibility.auth.nl_ja_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.runtime.compatibility.auth.nl_ko_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.runtime.compatibility.auth.nl_ku_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.runtime.compatibility.auth.nl_mn_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.runtime.compatibility.auth.nl_nl_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.runtime.compatibility.auth.nl_no_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.runtime.compatibility.auth.nl_pl_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.runtime.compatibility.auth.nl_pt_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.runtime.compatibility.auth.nl_pt_BR_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.runtime.compatibility.auth.nl_ro_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.runtime.compatibility.auth.nl_ru_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.runtime.compatibility.auth.nl_sr_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.runtime.compatibility.auth.nl_sv_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.runtime.compatibility.auth.nl_tr_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.runtime.compatibility.auth.nl_uk_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.runtime.compatibility.auth.nl_zh_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.core.runtime.compatibility.auth.nl_zh_TW_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../../../Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.equinox.app_1.3.100.v20120522-1841.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.app.nl_ar_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.app.nl_bg_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.app.nl_cs_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.app.nl_da_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.app.nl_de_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.app.nl_el_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.app.nl_en_AA_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.app.nl_en_AU_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.app.nl_es_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.app.nl_et_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.app.nl_fi_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.app.nl_fr_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.app.nl_hi_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.app.nl_hu_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.app.nl_id_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.app.nl_it_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.app.nl_iw_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.app.nl_ja_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.app.nl_ko_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.app.nl_mn_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.app.nl_nl_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.app.nl_no_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.app.nl_pl_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.app.nl_pt_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.app.nl_pt_BR_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.app.nl_ro_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.app.nl_ru_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.app.nl_sv_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.app.nl_tr_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.app.nl_uk_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.app.nl_zh_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.equinox.app.nl_zh_TW_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../../../Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/org.eclipse.osgi.services_3.3.100.v20120522-1822.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.osgi.services.nl_ar_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.osgi.services.nl_bg_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.osgi.services.nl_cs_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.osgi.services.nl_da_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.osgi.services.nl_de_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.osgi.services.nl_el_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.osgi.services.nl_en_AA_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.osgi.services.nl_en_AU_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.osgi.services.nl_es_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.osgi.services.nl_et_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.osgi.services.nl_fi_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.osgi.services.nl_fr_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.osgi.services.nl_hi_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.osgi.services.nl_hu_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.osgi.services.nl_id_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.osgi.services.nl_it_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.osgi.services.nl_iw_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.osgi.services.nl_ja_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.osgi.services.nl_ko_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.osgi.services.nl_mn_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.osgi.services.nl_nl_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.osgi.services.nl_no_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.osgi.services.nl_pl_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.osgi.services.nl_pt_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.osgi.services.nl_pt_BR_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.osgi.services.nl_ro_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.osgi.services.nl_ru_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.osgi.services.nl_sv_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.osgi.services.nl_tr_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.osgi.services.nl_uk_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.osgi.services.nl_zh_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../support/eclipse-babel-juno/plugins/org.eclipse.osgi.services.nl_zh_TW_4.2.0.v20121120043402.jar"/>
+			<pathelement path="../../../../../Applications/eclipse-SDK-3.8.2-macosx-cocoa-x86_64/eclipse/plugins/javax.servlet_3.0.0.v201112011016.jar"/>
+			<pathelement path="../org.xmind.core.command/bin/"/>
+			<pathelement path="${build.result.folder}/../org.xmind.core.command_3.4.0.201311050558/bin/"/>
+			<pathelement path="${build.result.folder}/../org.xmind.core.command/@dot"/>
+			<pathelement path="${build.result.folder}/../org.xmind.core.command_3.4.0.201311050558/@dot"/>
+			<pathelement path="../org.xmind.core.command.nl_da/bin/"/>
+			<pathelement path="../org.xmind.core.command.nl_da/@dot"/>
+			<pathelement path="../org.xmind.core.command.nl_de/bin/"/>
+			<pathelement path="../org.xmind.core.command.nl_de/@dot"/>
+			<pathelement path="../org.xmind.core.command.nl_es/bin/"/>
+			<pathelement path="../org.xmind.core.command.nl_es/@dot"/>
+			<pathelement path="../org.xmind.core.command.nl_fr/bin/"/>
+			<pathelement path="../org.xmind.core.command.nl_fr/@dot"/>
+			<pathelement path="../org.xmind.core.command.nl_ja/bin/"/>
+			<pathelement path="../org.xmind.core.command.nl_ja/@dot"/>
+			<pathelement path="../org.xmind.core.command.nl_ko/bin/"/>
+			<pathelement path="../org.xmind.core.command.nl_ko/@dot"/>
+			<pathelement path="../org.xmind.core.command.nl_zh_CN/bin/"/>
+			<pathelement path="../org.xmind.core.command.nl_zh_CN/@dot"/>
+			<pathelement path="../org.xmind.core.command.nl_zh_TW/bin/"/>
+			<pathelement path="../org.xmind.core.command.nl_zh_TW/@dot"/>
+			<pathelement path="../org.xmind.core.command.remote/bin/"/>
+			<pathelement path="${build.result.folder}/../org.xmind.core.command.remote_3.4.0.201311050558/bin/"/>
+			<pathelement path="${build.result.folder}/../org.xmind.core.command.remote/@dot"/>
+			<pathelement path="${build.result.folder}/../org.xmind.core.command.remote_3.4.0.201311050558/@dot"/>
+			<pathelement path="../org.xmind.core.command.remote.nl_da/bin/"/>
+			<pathelement path="../org.xmind.core.command.remote.nl_da/@dot"/>
+			<pathelement path="../org.xmind.core.command.remote.nl_de/bin/"/>
+			<pathelement path="../org.xmind.core.command.remote.nl_de/@dot"/>
+			<pathelement path="../org.xmind.core.command.remote.nl_es/bin/"/>
+			<pathelement path="../org.xmind.core.command.remote.nl_es/@dot"/>
+			<pathelement path="../org.xmind.core.command.remote.nl_fr/bin/"/>
+			<pathelement path="../org.xmind.core.command.remote.nl_fr/@dot"/>
+			<pathelement path="../org.xmind.core.command.remote.nl_ja/bin/"/>
+			<pathelement path="../org.xmind.core.command.remote.nl_ja/@dot"/>
+			<pathelement path="../org.xmind.core.command.remote.nl_ko/bin/"/>
+			<pathelement path="../org.xmind.core.command.remote.nl_ko/@dot"/>
+			<pathelement path="../org.xmind.core.command.remote.nl_zh_CN/bin/"/>
+			<pathelement path="../org.xmind.core.command.remote.nl_zh_CN/@dot"/>
+			<pathelement path="../org.xmind.core.command.remote.nl_zh_TW/bin/"/>
+			<pathelement path="../org.xmind.core.command.remote.nl_zh_TW/@dot"/>
+		</path>
+		<!-- compile the source code -->
+		<javac destdir="${build.result.folder}/@dot" failonerror="${javacFailOnError}" verbose="${javacVerbose}" debug="${javacDebugInfo}" includeAntRuntime="no" bootclasspath="${bundleBootClasspath}" source="${bundleJavacSource}" target="${bundleJavacTarget}" errorProperty="compilation.error.occured"		>
+			<compilerarg line="${compilerArg}" compiler="${build.compiler}"/>
+			<classpath refid="@dot.classpath" />
+			<src path="src/"			/>
+			<compilerarg value="@${basedir}/javaCompiler...args" compiler="org.eclipse.jdt.core.JDTCompilerAdapter"			/>
+			<compilerarg line="-log &apos;${build.result.folder}/@dot${logExtension}&apos;" compiler="org.eclipse.jdt.core.JDTCompilerAdapter"			/>
+		</javac>
+		<antcall target="checkCompilationResults"/>
+		<!-- Copy necessary resources -->
+		<copy todir="${build.result.folder}/@dot" failonerror="true" overwrite="false">
+			<fileset dir="src/">
+				<exclude name="**/*.java"/>
+				<exclude name="**/package.htm*"/>
+			</fileset>
+		</copy>
+	</target>
+
+	<target name="src.zip" depends="init" unless="src.zip">
+		<mkdir dir="${build.result.folder}"/>
+		<antcall target="zip.src.zip"/>
+	</target>
+	<target name="zip.src.zip">
+		<zip destfile="${build.result.folder}/src.zip" filesonly="false" whenempty="skip" update="false">
+			<fileset dir="src/">
+				<include name="**/*.java"/>
+			</fileset>
+		</zip>
+	</target>
+	<target name="copy.src.zip">
+		<copy todir="${source.destination.folder}/" failonerror="true" overwrite="true">
+			<fileset dir="src/">
+				<include name="**/*.java"/>
+			</fileset>
+		</copy>
+	</target>
+
+	<target name="build.jars" depends="init" description="Compile classes and build nested jars for the plug-in: org.xmind.core.command.remote.lan.">
+		<delete file="${compilation.problem.marker}" quiet="true"/>
+		<available property="@dot" file="${build.result.folder}/@dot"/>
+		<antcall target="@dot"/>
+	</target>
+
+	<target name="checkCompilationResults" if="compilation.error.occured">
+		<echo file="${compilation.problem.marker}" message="org.xmind.core.command.remote.lan_3.4.0.201311050558${line.separator}compilation.error.occured=${compilation.error.occured}"/>
+		<eclipse.logCompileError bundle="org.xmind.core.command.remote.lan_3.4.0.201311050558" log="${compilation.prereq.log}">
+			<include name="/Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core.command.remote.nl_zh_TW/compilation.problem"/>
+			<include name="${pluginTemp}/org.xmind.core.command.remote.nl_zh_TW_3.4.0.201311050558/compilation.problem"/>
+			<include name="/Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core.command.remote.nl_fr/compilation.problem"/>
+			<include name="${pluginTemp}/org.xmind.core.command.remote.nl_fr_3.4.0.201311050558/compilation.problem"/>
+			<include name="/Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core.command.remote.nl_ja/compilation.problem"/>
+			<include name="${pluginTemp}/org.xmind.core.command.remote.nl_ja_3.4.0.201311050558/compilation.problem"/>
+			<include name="/Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core.command.remote.nl_ko/compilation.problem"/>
+			<include name="${pluginTemp}/org.xmind.core.command.remote.nl_ko_3.4.0.201311050558/compilation.problem"/>
+			<include name="/Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core.command.remote.nl_zh_CN/compilation.problem"/>
+			<include name="${pluginTemp}/org.xmind.core.command.remote.nl_zh_CN_3.4.0.201311050558/compilation.problem"/>
+			<include name="/Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core.command.remote.nl_da/compilation.problem"/>
+			<include name="${pluginTemp}/org.xmind.core.command.remote.nl_da_3.4.0.201311050558/compilation.problem"/>
+			<include name="/Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core.command.remote.nl_de/compilation.problem"/>
+			<include name="${pluginTemp}/org.xmind.core.command.remote.nl_de_3.4.0.201311050558/compilation.problem"/>
+			<include name="/Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core.command.remote.nl_es/compilation.problem"/>
+			<include name="${pluginTemp}/org.xmind.core.command.remote.nl_es_3.4.0.201311050558/compilation.problem"/>
+			<include name="/Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core.command.remote/compilation.problem"/>
+			<include name="${pluginTemp}/org.xmind.core.command.remote_3.4.0.201311050558/compilation.problem"/>
+			<include name="/Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core.command.nl_zh_TW/compilation.problem"/>
+			<include name="${pluginTemp}/org.xmind.core.command.nl_zh_TW_3.4.0.201311050558/compilation.problem"/>
+			<include name="/Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core.command.nl_zh_CN/compilation.problem"/>
+			<include name="${pluginTemp}/org.xmind.core.command.nl_zh_CN_3.4.0.201311050558/compilation.problem"/>
+			<include name="/Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core.command.nl_ko/compilation.problem"/>
+			<include name="${pluginTemp}/org.xmind.core.command.nl_ko_3.4.0.201311050558/compilation.problem"/>
+			<include name="/Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core.command.nl_ja/compilation.problem"/>
+			<include name="${pluginTemp}/org.xmind.core.command.nl_ja_3.4.0.201311050558/compilation.problem"/>
+			<include name="/Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core.command.nl_fr/compilation.problem"/>
+			<include name="${pluginTemp}/org.xmind.core.command.nl_fr_3.4.0.201311050558/compilation.problem"/>
+			<include name="/Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core.command.nl_es/compilation.problem"/>
+			<include name="${pluginTemp}/org.xmind.core.command.nl_es_3.4.0.201311050558/compilation.problem"/>
+			<include name="/Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core.command.nl_de/compilation.problem"/>
+			<include name="${pluginTemp}/org.xmind.core.command.nl_de_3.4.0.201311050558/compilation.problem"/>
+			<include name="/Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core.command.nl_da/compilation.problem"/>
+			<include name="${pluginTemp}/org.xmind.core.command.nl_da_3.4.0.201311050558/compilation.problem"/>
+			<include name="/Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core.command/compilation.problem"/>
+			<include name="${pluginTemp}/org.xmind.core.command_3.4.0.201311050558/compilation.problem"/>
+		</eclipse.logCompileError>
+	</target>
+
+	<target name="build.sources" depends="init">
+		<available property="src.zip" file="${build.result.folder}/src.zip"/>
+		<antcall target="src.zip"/>
+	</target>
+
+	<target name="publish.bin.parts" depends="init" if="p2.publish.parts" unless="compilation.problem.marker.exists">
+		<mkdir dir="${build.result.folder}/org.xmind.core.command.remote.lan_3.4.0.201311050558"/>
+		<copy todir="${build.result.folder}" failonerror="true" overwrite="true">
+			<fileset dir="${basedir}">
+				<include name="META-INF/MANIFEST.MF"/>
+				<include name="plugin.xml"/>
+				<include name="fragment.xml"/>
+			</fileset>
+		</copy>
+		<eclipse.versionReplacer path="${build.result.folder}" version="3.4.0.201311050558"/>
+		<antcall target="apitools.generation">
+			<param name="target.folder" value="${build.result.folder}"/>
+			<param name="projectLocation" value="${basedir}"/>
+			<param name="binary.folders" value="${build.result.folder}/@dot"/>
+			<param name="projectName" value="${bundleId}_${bundleVersion}"/>
+		</antcall>
+		<eclipse.gatherBundle 
+		   metadataRepository="${p2.build.repo}"
+		   artifactRepository="${p2.build.repo}"
+		   buildResultFolder="${build.result.folder}"
+		   unpack="false"
+		   baseDirectory="${basedir}"
+		/>
+	</target>
+
+	<target name="gather.bin.parts" depends="init" if="destination.temp.folder">
+		<mkdir dir="${destination.temp.folder}/org.xmind.core.command.remote.lan_3.4.0.201311050558"/>
+		<copy todir="${destination.temp.folder}/org.xmind.core.command.remote.lan_3.4.0.201311050558" failonerror="true" overwrite="false">
+			<fileset dir="${build.result.folder}/@dot">
+				<include name="**"/>
+			</fileset>
+		</copy>
+		<copy todir="${destination.temp.folder}/org.xmind.core.command.remote.lan_3.4.0.201311050558" failonerror="true" overwrite="true">
+			<fileset dir="${basedir}">
+				<include name="META-INF/"/>
+				<include name="plugin.xml"/>
+				<include name="plugin.properties"/>
+			</fileset>
+		</copy>
+		<eclipse.versionReplacer path="${destination.temp.folder}/org.xmind.core.command.remote.lan_3.4.0.201311050558" version="3.4.0.201311050558"/>
+		<antcall target="apitools.generation">
+			<param name="target.folder" value="${destination.temp.folder}/org.xmind.core.command.remote.lan_3.4.0.201311050558"/>
+			<param name="projectLocation" value="${basedir}"/>
+			<param name="binary.folders" value="${build.result.folder}/@dot"/>
+			<param name="projectName" value="${bundleId}_${bundleVersion}"/>
+		</antcall>
+	</target>
+
+	<target name="build.zips" depends="init">
+	</target>
+
+	<target name="gather.sources" depends="init" if="destination.temp.folder">
+		<mkdir dir="${destination.temp.folder}/org.xmind.core.command.remote.lan_3.4.0.201311050558"/>
+		<copy file="${build.result.folder}/src.zip" todir="${destination.temp.folder}/org.xmind.core.command.remote.lan_3.4.0.201311050558" failonerror="false" overwrite="false"/>
+		<antcall target="copy.src.includes">
+			<param name="source.destination.folder" value="${destination.temp.folder}/org.xmind.core.command.remote.lan_3.4.0.201311050558"/>
+		</antcall>
+	</target>
+
+	<target name="gather.individual.sources" depends="init">
+		<antcall target="copy.src.zip">
+			<param name="source.destination.folder" value="${destination.temp.folder}"/>
+		</antcall>
+		<antcall target="copy.src.includes">
+			<param name="source.destination.folder" value="${destination.temp.folder}"/>
+		</antcall>
+	</target>
+
+	<target name="copy.src.includes" depends="init">
+	</target>
+
+	<target name="gather.logs" depends="init" if="destination.temp.folder">
+		<mkdir dir="${destination.temp.folder}/org.xmind.core.command.remote.lan_3.4.0.201311050558"/>
+		<copy todir="${destination.temp.folder}/org.xmind.core.command.remote.lan_3.4.0.201311050558" failonerror="false" overwrite="false">
+			<fileset dir="${build.result.folder}">
+				<include name="@dot${logExtension}"/>
+			</fileset>
+		</copy>
+	</target>
+
+	<target name="clean" depends="init" description="Clean the plug-in: org.xmind.core.command.remote.lan of all the zips, jars and logs created.">
+		<delete dir="${build.result.folder}/@dot"/>
+		<delete file="${build.result.folder}/src.zip"/>
+		<delete file="${plugin.destination}/org.xmind.core.command.remote.lan_3.4.0.201311050558.jar"/>
+		<delete file="${plugin.destination}/org.xmind.core.command.remote.lan_3.4.0.201311050558.zip"/>
+		<delete dir="${temp.folder}"/>
+		<delete file="${compilation.problem.marker}" quiet="true"/>
+	</target>
+
+	<target name="refresh" depends="init" if="eclipse.running" description="Refresh this folder.">
+		<eclipse.convertPath fileSystemPath="/Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core.command.remote.lan" property="resourcePath"/>
+		<eclipse.refreshLocal resource="${resourcePath}" depth="infinite"/>
+	</target>
+
+	<target name="zip.plugin" depends="init" description="Create a zip containing all the elements for the plug-in: org.xmind.core.command.remote.lan.">
+		<delete dir="${temp.folder}"/>
+		<mkdir dir="${temp.folder}"/>
+		<antcall target="build.jars"/>
+		<antcall target="build.sources"/>
+		<antcall target="gather.bin.parts">
+			<param name="destination.temp.folder" value="${temp.folder}/"/>
+		</antcall>
+		<antcall target="gather.sources">
+			<param name="destination.temp.folder" value="${temp.folder}/"/>
+		</antcall>
+		<delete>
+			<fileset dir="${temp.folder}">
+				<include name="**/*.bin${logExtension}"/>
+			</fileset>
+		</delete>
+		<zip destfile="${plugin.destination}/org.xmind.core.command.remote.lan_3.4.0.201311050558.zip" basedir="${temp.folder}" filesonly="true" whenempty="skip" update="false"/>
+		<delete dir="${temp.folder}"/>
+	</target>
+
+	<target name="apitools.generation" if="generateAPIDescription">
+		<apitooling.apigeneration  projectName="${projectName}" project="${projectLocation}" binary="${binary.folders}" target="${target.folder}" extramanifests="${extraManifests}" allownonapiproject="${allowNonApiProject}"		/>
+	</target>
+
+</project>

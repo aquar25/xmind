@@ -1,0 +1,368 @@
+# 11/11/13 8:50:31 PM HKT
+# Eclipse Compiler for Java(TM) bundle_qualifier, 3.8.3, Copyright IBM Corp 2000, 2012. All rights reserved.
+----------
+1. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/src/org/xmind/core/IAdaptable.java (at line 18)
+	Object getAdapter(Class adapter);
+	                  ^^^^^
+Class is a raw type. References to generic type Class<T> should be parameterized
+----------
+----------
+2. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/src/org/xmind/core/internal/Boundary.java (at line 28)
+	public Object getAdapter(Class adapter) {
+	                         ^^^^^
+Class is a raw type. References to generic type Class<T> should be parameterized
+----------
+----------
+3. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/src/org/xmind/core/internal/ControlPoint.java (at line 20)
+	public Object getAdapter(Class adapter) {
+	                         ^^^^^
+Class is a raw type. References to generic type Class<T> should be parameterized
+----------
+----------
+4. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/src/org/xmind/core/internal/EncryptionData.java (at line 29)
+	public Object getAdapter(Class adapter) {
+	                         ^^^^^
+Class is a raw type. References to generic type Class<T> should be parameterized
+----------
+----------
+5. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/src/org/xmind/core/internal/FileEntry.java (at line 28)
+	public Object getAdapter(Class adapter) {
+	                         ^^^^^
+Class is a raw type. References to generic type Class<T> should be parameterized
+----------
+----------
+6. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/src/org/xmind/core/internal/Image.java (at line 22)
+	public Object getAdapter(Class adapter) {
+	                         ^^^^^
+Class is a raw type. References to generic type Class<T> should be parameterized
+----------
+----------
+7. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/src/org/xmind/core/internal/Legend.java (at line 26)
+	public Object getAdapter(Class adapter) {
+	                         ^^^^^
+Class is a raw type. References to generic type Class<T> should be parameterized
+----------
+----------
+8. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/src/org/xmind/core/internal/Manifest.java (at line 26)
+	public Object getAdapter(Class adapter) {
+	                         ^^^^^
+Class is a raw type. References to generic type Class<T> should be parameterized
+----------
+----------
+9. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/src/org/xmind/core/internal/Marker.java (at line 20)
+	public Object getAdapter(Class adapter) {
+	                         ^^^^^
+Class is a raw type. References to generic type Class<T> should be parameterized
+----------
+----------
+10. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/src/org/xmind/core/internal/MarkerGroup.java (at line 32)
+	public Object getAdapter(Class adapter) {
+	                         ^^^^^
+Class is a raw type. References to generic type Class<T> should be parameterized
+----------
+----------
+11. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/src/org/xmind/core/internal/MarkerRef.java (at line 22)
+	public Object getAdapter(Class adapter) {
+	                         ^^^^^
+Class is a raw type. References to generic type Class<T> should be parameterized
+----------
+----------
+12. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/src/org/xmind/core/internal/MarkerSheet.java (at line 24)
+	public Object getAdapter(Class adapter) {
+	                         ^^^^^
+Class is a raw type. References to generic type Class<T> should be parameterized
+----------
+----------
+13. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/src/org/xmind/core/internal/Meta.java (at line 20)
+	public Object getAdapter(Class adapter) {
+	                         ^^^^^
+Class is a raw type. References to generic type Class<T> should be parameterized
+----------
+----------
+14. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/src/org/xmind/core/internal/MetaData.java (at line 20)
+	public Object getAdapter(Class adapter) {
+	                         ^^^^^
+Class is a raw type. References to generic type Class<T> should be parameterized
+----------
+----------
+15. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/src/org/xmind/core/internal/Notes.java (at line 24)
+	public Object getAdapter(Class adapter) {
+	                         ^^^^^
+Class is a raw type. References to generic type Class<T> should be parameterized
+----------
+----------
+16. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/src/org/xmind/core/internal/Numbering.java (at line 21)
+	public Object getAdapter(Class adapter) {
+	                         ^^^^^
+Class is a raw type. References to generic type Class<T> should be parameterized
+----------
+----------
+17. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/src/org/xmind/core/internal/Relationship.java (at line 90)
+	public Object getAdapter(Class adapter) {
+	                         ^^^^^
+Class is a raw type. References to generic type Class<T> should be parameterized
+----------
+----------
+18. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/src/org/xmind/core/internal/Revision.java (at line 25)
+	public Object getAdapter(Class adapter) {
+	                         ^^^^^
+Class is a raw type. References to generic type Class<T> should be parameterized
+----------
+----------
+19. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/src/org/xmind/core/internal/RevisionManager.java (at line 35)
+	public Object getAdapter(Class adapter) {
+	                         ^^^^^
+Class is a raw type. References to generic type Class<T> should be parameterized
+----------
+----------
+20. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/src/org/xmind/core/internal/RevisionRepository.java (at line 7)
+	public Object getAdapter(Class adapter) {
+	                         ^^^^^
+Class is a raw type. References to generic type Class<T> should be parameterized
+----------
+----------
+21. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/src/org/xmind/core/internal/Sheet.java (at line 62)
+	public Object getAdapter(Class adapter) {
+	                         ^^^^^
+Class is a raw type. References to generic type Class<T> should be parameterized
+----------
+----------
+22. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/src/org/xmind/core/internal/Style.java (at line 27)
+	public Object getAdapter(Class adapter) {
+	                         ^^^^^
+Class is a raw type. References to generic type Class<T> should be parameterized
+----------
+----------
+23. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/src/org/xmind/core/internal/StyleSheet.java (at line 31)
+	public Object getAdapter(Class adapter) {
+	                         ^^^^^
+Class is a raw type. References to generic type Class<T> should be parameterized
+----------
+----------
+24. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/src/org/xmind/core/internal/Summary.java (at line 28)
+	public Object getAdapter(Class adapter) {
+	                         ^^^^^
+Class is a raw type. References to generic type Class<T> should be parameterized
+----------
+----------
+25. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/src/org/xmind/core/internal/Topic.java (at line 136)
+	public Object getAdapter(Class adapter) {
+	                         ^^^^^
+Class is a raw type. References to generic type Class<T> should be parameterized
+----------
+----------
+26. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/src/org/xmind/core/internal/TopicExtension.java (at line 27)
+	public Object getAdapter(Class adapter) {
+	                         ^^^^^
+Class is a raw type. References to generic type Class<T> should be parameterized
+----------
+----------
+27. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/src/org/xmind/core/internal/TopicExtensionElement.java (at line 22)
+	public Object getAdapter(Class adapter) {
+	                         ^^^^^
+Class is a raw type. References to generic type Class<T> should be parameterized
+----------
+----------
+28. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/src/org/xmind/core/internal/TopicPath.java (at line 118)
+	return (List) toList();
+	        ^^^^
+List is a raw type. References to generic type List<E> should be parameterized
+----------
+29. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/src/org/xmind/core/internal/TopicPath.java (at line 119)
+	return (List) toList().subList(begin, toList().size());
+	        ^^^^
+List is a raw type. References to generic type List<E> should be parameterized
+----------
+----------
+30. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/src/org/xmind/core/internal/Workbook.java (at line 31)
+	public Object getAdapter(Class adapter) {
+	                         ^^^^^
+Class is a raw type. References to generic type Class<T> should be parameterized
+----------
+----------
+31. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/src/org/xmind/core/internal/dom/BaseNotesContentImpl.java (at line 39)
+	public Object getAdapter(Class adapter) {
+	                         ^^^^^
+Class is a raw type. References to generic type Class<T> should be parameterized
+----------
+----------
+32. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/src/org/xmind/core/internal/dom/BoundaryImpl.java (at line 57)
+	public Object getAdapter(Class adapter) {
+	                         ^^^^^
+Class is a raw type. References to generic type Class<T> should be parameterized
+----------
+----------
+33. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/src/org/xmind/core/internal/dom/ControlPointImpl.java (at line 86)
+	public Object getAdapter(Class adapter) {
+	                         ^^^^^
+Class is a raw type. References to generic type Class<T> should be parameterized
+----------
+----------
+34. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/src/org/xmind/core/internal/dom/EncryptionDataImpl.java (at line 51)
+	public Object getAdapter(Class adapter) {
+	                         ^^^^^
+Class is a raw type. References to generic type Class<T> should be parameterized
+----------
+----------
+35. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/src/org/xmind/core/internal/dom/FileEntryImpl.java (at line 72)
+	public Object getAdapter(Class adapter) {
+	                         ^^^^^
+Class is a raw type. References to generic type Class<T> should be parameterized
+----------
+----------
+36. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/src/org/xmind/core/internal/dom/ImageImpl.java (at line 64)
+	public Object getAdapter(Class adapter) {
+	                         ^^^^^
+Class is a raw type. References to generic type Class<T> should be parameterized
+----------
+----------
+37. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/src/org/xmind/core/internal/dom/ManifestImpl.java (at line 92)
+	public Object getAdapter(Class adapter) {
+	                         ^^^^^
+Class is a raw type. References to generic type Class<T> should be parameterized
+----------
+----------
+38. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/src/org/xmind/core/internal/dom/MarkerGroupImpl.java (at line 52)
+	public Object getAdapter(Class adapter) {
+	                         ^^^^^
+Class is a raw type. References to generic type Class<T> should be parameterized
+----------
+----------
+39. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/src/org/xmind/core/internal/dom/MarkerImpl.java (at line 56)
+	public Object getAdapter(Class adapter) {
+	                         ^^^^^
+Class is a raw type. References to generic type Class<T> should be parameterized
+----------
+----------
+40. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/src/org/xmind/core/internal/dom/MarkerRefImpl.java (at line 61)
+	public Object getAdapter(Class adapter) {
+	                         ^^^^^
+Class is a raw type. References to generic type Class<T> should be parameterized
+----------
+----------
+41. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/src/org/xmind/core/internal/dom/MarkerSheetImpl.java (at line 95)
+	public Object getAdapter(Class adapter) {
+	                         ^^^^^
+Class is a raw type. References to generic type Class<T> should be parameterized
+----------
+----------
+42. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/src/org/xmind/core/internal/dom/MetaDataImpl.java (at line 57)
+	public Object getAdapter(Class adapter) {
+	                         ^^^^^
+Class is a raw type. References to generic type Class<T> should be parameterized
+----------
+----------
+43. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/src/org/xmind/core/internal/dom/MetaImpl.java (at line 81)
+	public Object getAdapter(Class adapter) {
+	                         ^^^^^
+Class is a raw type. References to generic type Class<T> should be parameterized
+----------
+----------
+44. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/src/org/xmind/core/internal/dom/NotesImpl.java (at line 66)
+	public Object getAdapter(Class adapter) {
+	                         ^^^^^
+Class is a raw type. References to generic type Class<T> should be parameterized
+----------
+----------
+45. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/src/org/xmind/core/internal/dom/NumberingImpl.java (at line 51)
+	public Object getAdapter(Class adapter) {
+	                         ^^^^^
+Class is a raw type. References to generic type Class<T> should be parameterized
+----------
+----------
+46. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/src/org/xmind/core/internal/dom/ParagraphImpl.java (at line 84)
+	public Object getAdapter(Class adapter) {
+	                         ^^^^^
+Class is a raw type. References to generic type Class<T> should be parameterized
+----------
+----------
+47. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/src/org/xmind/core/internal/dom/RelationshipImpl.java (at line 214)
+	public Object getAdapter(Class adapter) {
+	                         ^^^^^
+Class is a raw type. References to generic type Class<T> should be parameterized
+----------
+----------
+48. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/src/org/xmind/core/internal/dom/ResourceRefImpl.java (at line 69)
+	public Object getAdapter(Class adapter) {
+	                         ^^^^^
+Class is a raw type. References to generic type Class<T> should be parameterized
+----------
+----------
+49. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/src/org/xmind/core/internal/dom/RevisionImpl.java (at line 68)
+	public Object getAdapter(Class adapter) {
+	                         ^^^^^
+Class is a raw type. References to generic type Class<T> should be parameterized
+----------
+----------
+50. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/src/org/xmind/core/internal/dom/RevisionManagerImpl.java (at line 92)
+	public Object getAdapter(Class adapter) {
+	                         ^^^^^
+Class is a raw type. References to generic type Class<T> should be parameterized
+----------
+----------
+51. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/src/org/xmind/core/internal/dom/SheetImpl.java (at line 104)
+	public Object getAdapter(Class adapter) {
+	                         ^^^^^
+Class is a raw type. References to generic type Class<T> should be parameterized
+----------
+----------
+52. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/src/org/xmind/core/internal/dom/SpanImplBase.java (at line 57)
+	public Object getAdapter(Class adapter) {
+	                         ^^^^^
+Class is a raw type. References to generic type Class<T> should be parameterized
+----------
+----------
+53. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/src/org/xmind/core/internal/dom/StyleImpl.java (at line 178)
+	public Object getAdapter(Class adapter) {
+	                         ^^^^^
+Class is a raw type. References to generic type Class<T> should be parameterized
+----------
+----------
+54. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/src/org/xmind/core/internal/dom/StyleSheetImpl.java (at line 80)
+	public Object getAdapter(Class adapter) {
+	                         ^^^^^
+Class is a raw type. References to generic type Class<T> should be parameterized
+----------
+----------
+55. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/src/org/xmind/core/internal/dom/SummaryImpl.java (at line 57)
+	public Object getAdapter(Class adapter) {
+	                         ^^^^^
+Class is a raw type. References to generic type Class<T> should be parameterized
+----------
+----------
+56. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/src/org/xmind/core/internal/dom/TopicExtensionImpl.java (at line 104)
+	public Object getAdapter(Class adapter) {
+	                         ^^^^^
+Class is a raw type. References to generic type Class<T> should be parameterized
+----------
+----------
+57. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/src/org/xmind/core/internal/dom/TopicImpl.java (at line 142)
+	public Object getAdapter(Class adapter) {
+	                         ^^^^^
+Class is a raw type. References to generic type Class<T> should be parameterized
+----------
+----------
+58. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/src/org/xmind/core/internal/dom/WorkbookImpl.java (at line 178)
+	public Object getAdapter(Class adapter) {
+	                         ^^^^^
+Class is a raw type. References to generic type Class<T> should be parameterized
+----------
+----------
+59. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/src/org/xmind/core/marker/IMarkerSheetBuilder.java (at line 22)
+	import org.xmind.core.util.IPropertiesProvider;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The import org.xmind.core.util.IPropertiesProvider is never used
+----------
+----------
+60. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/src/org/xmind/core/style/IStyle.java (at line 22)
+	import org.xmind.core.ITopic;
+	       ^^^^^^^^^^^^^^^^^^^^^
+The import org.xmind.core.ITopic is never used
+----------
+----------
+61. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/src/org/xmind/core/style/IStyleSheetBuilder.java (at line 22)
+	import org.xmind.core.util.IPropertiesProvider;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The import org.xmind.core.util.IPropertiesProvider is never used
+----------
+61 problems (61 warnings)[259 .class files generated]

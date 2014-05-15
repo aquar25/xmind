@@ -1,0 +1,81 @@
+# 11/11/13 8:50:37 PM HKT
+# Eclipse Compiler for Java(TM) bundle_qualifier, 3.8.3, Copyright IBM Corp 2000, 2012. All rights reserved.
+----------
+1. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.gef/src/org/xmind/gef/AbstractViewer.java (at line 444)
+	public Object getAdapter(Class adapter) {
+	                         ^^^^^
+Class is a raw type. References to generic type Class<T> should be parameterized
+----------
+----------
+2. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.gef/src/org/xmind/gef/GraphicalViewer.java (at line 105)
+	public Object getAdapter(Class adapter) {
+	                         ^^^^^
+Class is a raw type. References to generic type Class<T> should be parameterized
+----------
+----------
+3. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.gef/src/org/xmind/gef/command/CommandStackBase.java (at line 19)
+	import org.eclipse.draw2d.IFigure;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+The import org.eclipse.draw2d.IFigure is never used
+----------
+----------
+4. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.gef/src/org/xmind/gef/draw2d/AdvancedToolbarLayout.java (at line 88)
+	List children = parent.getChildren();
+	^^^^
+List is a raw type. References to generic type List<E> should be parameterized
+----------
+----------
+5. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.gef/src/org/xmind/gef/draw2d/DecoratedConnectionFigure.java (at line 61)
+	Iterator listeners = getListeners(IDecoratedFigureListener.class);
+	^^^^^^^^
+Iterator is a raw type. References to generic type Iterator<E> should be parameterized
+----------
+----------
+6. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.gef/src/org/xmind/gef/draw2d/DecoratedShapeFigure.java (at line 63)
+	Iterator listeners = getListeners(IDecoratedFigureListener.class);
+	^^^^^^^^
+Iterator is a raw type. References to generic type Iterator<E> should be parameterized
+----------
+----------
+7. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.gef/src/org/xmind/gef/draw2d/LabelEx.java (at line 19)
+	import org.eclipse.draw2d.IFigure;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+The import org.eclipse.draw2d.IFigure is never used
+----------
+----------
+8. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.gef/src/org/xmind/gef/event/DragDropEvent.java (at line 17)
+	import org.eclipse.swt.dnd.DND;
+	       ^^^^^^^^^^^^^^^^^^^^^^^
+The import org.eclipse.swt.dnd.DND is never used
+----------
+----------
+9. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.gef/src/org/xmind/gef/image/ViewerExportSourceProvider.java (at line 103)
+	List children = rootFigure.getChildren();
+	^^^^
+List is a raw type. References to generic type List<E> should be parameterized
+----------
+----------
+10. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.gef/src/org/xmind/gef/part/EditPart.java (at line 131)
+	public Object getAdapter(Class adapter) {
+	                         ^^^^^
+Class is a raw type. References to generic type Class<T> should be parameterized
+----------
+----------
+11. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.gef/src/org/xmind/gef/part/GraphicalEditPart.java (at line 136)
+	public Object getAdapter(Class adapter) {
+	                         ^^^^^
+Class is a raw type. References to generic type Class<T> should be parameterized
+----------
+----------
+12. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.gef/src/org/xmind/gef/part/Part.java (at line 282)
+	public Object getAdapter(Class adapter) {
+	                         ^^^^^
+Class is a raw type. References to generic type Class<T> should be parameterized
+----------
+----------
+13. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.gef/src/org/xmind/gef/part/PartSite.java (at line 35)
+	public Object getAdapter(Class adapter) {
+	                         ^^^^^
+Class is a raw type. References to generic type Class<T> should be parameterized
+----------
+13 problems (13 warnings)[347 .class files generated]

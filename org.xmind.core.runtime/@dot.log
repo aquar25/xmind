@@ -1,0 +1,186 @@
+# 11/11/13 8:50:34 PM HKT
+# Eclipse Compiler for Java(TM) bundle_qualifier, 3.8.3, Copyright IBM Corp 2000, 2012. All rights reserved.
+----------
+1. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core.runtime/src/org/xmind/core/internal/XmindCore.java (at line 33)
+	import org.xmind.core.internal.security.Crypto;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type Crypto is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/@dot
+----------
+2. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core.runtime/src/org/xmind/core/internal/XmindCore.java (at line 69)
+	InternalCore.getInstance().setLogger(new DefaultLogger());
+	^^^^^^^^^^^^
+Discouraged access: The type InternalCore is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/@dot
+----------
+3. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core.runtime/src/org/xmind/core/internal/XmindCore.java (at line 69)
+	InternalCore.getInstance().setLogger(new DefaultLogger());
+	^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method getInstance() from the type InternalCore is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/@dot
+----------
+4. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core.runtime/src/org/xmind/core/internal/XmindCore.java (at line 69)
+	InternalCore.getInstance().setLogger(new DefaultLogger());
+	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method setLogger(ILogger) from the type InternalCore is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/@dot
+----------
+5. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core.runtime/src/org/xmind/core/internal/XmindCore.java (at line 75)
+	Crypto.setProvider(new BouncyCastleSecurityProvider());
+	^^^^^^
+Discouraged access: The type Crypto is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/@dot
+----------
+6. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core.runtime/src/org/xmind/core/internal/XmindCore.java (at line 75)
+	Crypto.setProvider(new BouncyCastleSecurityProvider());
+	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method setProvider(ISecurityProvider) from the type Crypto is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/@dot
+----------
+----------
+7. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core.runtime/src/org/xmind/core/internal/factory/CoreAdapterFactory.java (at line 24)
+	@SuppressWarnings("unchecked")
+	                  ^^^^^^^^^^^
+Unnecessary @SuppressWarnings("unchecked")
+----------
+8. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core.runtime/src/org/xmind/core/internal/factory/CoreAdapterFactory.java (at line 27)
+	private static Class[] LIST = { IWorkbook.class };
+	               ^^^^^
+Class is a raw type. References to generic type Class<T> should be parameterized
+----------
+9. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core.runtime/src/org/xmind/core/internal/factory/CoreAdapterFactory.java (at line 29)
+	public Object getAdapter(Object object, Class type) {
+	                                        ^^^^^
+Class is a raw type. References to generic type Class<T> should be parameterized
+----------
+10. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core.runtime/src/org/xmind/core/internal/factory/CoreAdapterFactory.java (at line 60)
+	public Class[] getAdapterList() {
+	       ^^^^^
+Class is a raw type. References to generic type Class<T> should be parameterized
+----------
+----------
+11. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core.runtime/src/org/xmind/core/internal/security/BouncyCastleSecurityProvider.java (at line 40)
+	import org.xmind.core.internal.zip.ArchiveConstants;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type ArchiveConstants is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/@dot
+----------
+12. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core.runtime/src/org/xmind/core/internal/security/BouncyCastleSecurityProvider.java (at line 46)
+	public final class BouncyCastleSecurityProvider implements ISecurityProvider {
+	                                                           ^^^^^^^^^^^^^^^^^
+Discouraged access: The type ISecurityProvider is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/@dot
+----------
+13. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core.runtime/src/org/xmind/core/internal/security/BouncyCastleSecurityProvider.java (at line 80)
+	return ArchiveConstants.CONTENT_XML.equals(entryPath)
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type ArchiveConstants is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/@dot
+----------
+14. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core.runtime/src/org/xmind/core/internal/security/BouncyCastleSecurityProvider.java (at line 80)
+	return ArchiveConstants.CONTENT_XML.equals(entryPath)
+	                        ^^^^^^^^^^^
+Discouraged access: The field CONTENT_XML from the type ArchiveConstants is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/@dot
+----------
+15. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core.runtime/src/org/xmind/core/internal/security/BouncyCastleSecurityProvider.java (at line 81)
+	|| ArchiveConstants.META_XML.equals(entryPath)
+	   ^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type ArchiveConstants is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/@dot
+----------
+16. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core.runtime/src/org/xmind/core/internal/security/BouncyCastleSecurityProvider.java (at line 81)
+	|| ArchiveConstants.META_XML.equals(entryPath)
+	                    ^^^^^^^^
+Discouraged access: The field META_XML from the type ArchiveConstants is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/@dot
+----------
+17. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core.runtime/src/org/xmind/core/internal/security/BouncyCastleSecurityProvider.java (at line 82)
+	|| ArchiveConstants.STYLES_XML.equals(entryPath)
+	   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type ArchiveConstants is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/@dot
+----------
+18. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core.runtime/src/org/xmind/core/internal/security/BouncyCastleSecurityProvider.java (at line 82)
+	|| ArchiveConstants.STYLES_XML.equals(entryPath)
+	                    ^^^^^^^^^^
+Discouraged access: The field STYLES_XML from the type ArchiveConstants is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/@dot
+----------
+19. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core.runtime/src/org/xmind/core/internal/security/BouncyCastleSecurityProvider.java (at line 83)
+	|| ArchiveConstants.PATH_MARKER_SHEET.equals(entryPath);
+	   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type ArchiveConstants is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/@dot
+----------
+20. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core.runtime/src/org/xmind/core/internal/security/BouncyCastleSecurityProvider.java (at line 83)
+	|| ArchiveConstants.PATH_MARKER_SHEET.equals(entryPath);
+	                    ^^^^^^^^^^^^^^^^^
+Discouraged access: The field PATH_MARKER_SHEET from the type ArchiveConstants is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/@dot
+----------
+21. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core.runtime/src/org/xmind/core/internal/security/BouncyCastleSecurityProvider.java (at line 98)
+	encData.setAttribute(ALGORITHM_NAME, TAG_ALGORITHM, ATTR_ALGORITHM_NAME);
+	                                     ^^^^^^^^^^^^^
+Discouraged access: The field TAG_ALGORITHM from the type DOMConstants is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/@dot
+----------
+22. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core.runtime/src/org/xmind/core/internal/security/BouncyCastleSecurityProvider.java (at line 98)
+	encData.setAttribute(ALGORITHM_NAME, TAG_ALGORITHM, ATTR_ALGORITHM_NAME);
+	                                                    ^^^^^^^^^^^^^^^^^^^
+Discouraged access: The field ATTR_ALGORITHM_NAME from the type DOMConstants is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/@dot
+----------
+23. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core.runtime/src/org/xmind/core/internal/security/BouncyCastleSecurityProvider.java (at line 99)
+	encData.setAttribute(KEY_DERIVATION_ALGORITHM_NAME, TAG_KEY_DERIVATION,
+	                                                    ^^^^^^^^^^^^^^^^^^
+Discouraged access: The field TAG_KEY_DERIVATION from the type DOMConstants is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/@dot
+----------
+24. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core.runtime/src/org/xmind/core/internal/security/BouncyCastleSecurityProvider.java (at line 100)
+	ATTR_KEY_DERIVATION_NAME);
+	^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The field ATTR_KEY_DERIVATION_NAME from the type DOMConstants is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/@dot
+----------
+25. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core.runtime/src/org/xmind/core/internal/security/BouncyCastleSecurityProvider.java (at line 101)
+	encData.setAttribute(generateSalt(), TAG_KEY_DERIVATION, ATTR_SALT);
+	                                     ^^^^^^^^^^^^^^^^^^
+Discouraged access: The field TAG_KEY_DERIVATION from the type DOMConstants is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/@dot
+----------
+26. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core.runtime/src/org/xmind/core/internal/security/BouncyCastleSecurityProvider.java (at line 101)
+	encData.setAttribute(generateSalt(), TAG_KEY_DERIVATION, ATTR_SALT);
+	                                                         ^^^^^^^^^
+Discouraged access: The field ATTR_SALT from the type DOMConstants is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/@dot
+----------
+27. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core.runtime/src/org/xmind/core/internal/security/BouncyCastleSecurityProvider.java (at line 102)
+	encData.setAttribute("1024", TAG_KEY_DERIVATION, ATTR_ITERATION_COUNT); //$NON-NLS-1$
+	                             ^^^^^^^^^^^^^^^^^^
+Discouraged access: The field TAG_KEY_DERIVATION from the type DOMConstants is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/@dot
+----------
+28. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core.runtime/src/org/xmind/core/internal/security/BouncyCastleSecurityProvider.java (at line 102)
+	encData.setAttribute("1024", TAG_KEY_DERIVATION, ATTR_ITERATION_COUNT); //$NON-NLS-1$
+	                                                 ^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The field ATTR_ITERATION_COUNT from the type DOMConstants is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/@dot
+----------
+29. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core.runtime/src/org/xmind/core/internal/security/BouncyCastleSecurityProvider.java (at line 107)
+	String algoName = encData.getAttribute(TAG_ALGORITHM,
+	                                       ^^^^^^^^^^^^^
+Discouraged access: The field TAG_ALGORITHM from the type DOMConstants is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/@dot
+----------
+30. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core.runtime/src/org/xmind/core/internal/security/BouncyCastleSecurityProvider.java (at line 108)
+	ATTR_ALGORITHM_NAME);
+	^^^^^^^^^^^^^^^^^^^
+Discouraged access: The field ATTR_ALGORITHM_NAME from the type DOMConstants is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/@dot
+----------
+31. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core.runtime/src/org/xmind/core/internal/security/BouncyCastleSecurityProvider.java (at line 112)
+	String keyAlgoName = encData.getAttribute(TAG_KEY_DERIVATION,
+	                                          ^^^^^^^^^^^^^^^^^^
+Discouraged access: The field TAG_KEY_DERIVATION from the type DOMConstants is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/@dot
+----------
+32. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core.runtime/src/org/xmind/core/internal/security/BouncyCastleSecurityProvider.java (at line 113)
+	ATTR_KEY_DERIVATION_NAME);
+	^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The field ATTR_KEY_DERIVATION_NAME from the type DOMConstants is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/@dot
+----------
+33. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core.runtime/src/org/xmind/core/internal/security/BouncyCastleSecurityProvider.java (at line 120)
+	return encData.getIntAttribute(1024, TAG_KEY_DERIVATION,
+	                                     ^^^^^^^^^^^^^^^^^^
+Discouraged access: The field TAG_KEY_DERIVATION from the type DOMConstants is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/@dot
+----------
+34. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core.runtime/src/org/xmind/core/internal/security/BouncyCastleSecurityProvider.java (at line 121)
+	ATTR_ITERATION_COUNT);
+	^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The field ATTR_ITERATION_COUNT from the type DOMConstants is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/@dot
+----------
+35. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core.runtime/src/org/xmind/core/internal/security/BouncyCastleSecurityProvider.java (at line 125)
+	String saltString = encData.getAttribute(TAG_KEY_DERIVATION, ATTR_SALT);
+	                                         ^^^^^^^^^^^^^^^^^^
+Discouraged access: The field TAG_KEY_DERIVATION from the type DOMConstants is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/@dot
+----------
+36. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core.runtime/src/org/xmind/core/internal/security/BouncyCastleSecurityProvider.java (at line 125)
+	String saltString = encData.getAttribute(TAG_KEY_DERIVATION, ATTR_SALT);
+	                                                             ^^^^^^^^^
+Discouraged access: The field ATTR_SALT from the type DOMConstants is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/@dot
+----------
+36 problems (36 warnings)[12 .class files generated]

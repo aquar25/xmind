@@ -1,0 +1,171 @@
+# 11/11/13 8:50:43 PM HKT
+# Eclipse Compiler for Java(TM) bundle_qualifier, 3.8.3, Copyright IBM Corp 2000, 2012. All rights reserved.
+----------
+1. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/src/net/xmind/signin/XMindNet.java (at line 18)
+	import org.xmind.ui.internal.browser.BrowserUtil;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type BrowserUtil is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.browser/@dot
+----------
+2. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/src/net/xmind/signin/XMindNet.java (at line 49)
+	return BrowserUtil.makeRedirectURL(sourceURL);
+	       ^^^^^^^^^^^
+Discouraged access: The type BrowserUtil is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.browser/@dot
+----------
+3. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/src/net/xmind/signin/XMindNet.java (at line 49)
+	return BrowserUtil.makeRedirectURL(sourceURL);
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method makeRedirectURL(String) from the type BrowserUtil is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.browser/@dot
+----------
+----------
+4. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/src/net/xmind/signin/internal/JSONStore.java (at line 56)
+	Iterator keys = json.keys();
+	^^^^^^^^
+Iterator is a raw type. References to generic type Iterator<E> should be parameterized
+----------
+----------
+5. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/src/net/xmind/signin/internal/SignInDialog.java (at line 40)
+	import org.xmind.ui.internal.browser.InternalBrowser;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type InternalBrowser is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.browser/@dot
+----------
+6. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/src/net/xmind/signin/internal/SignInDialog.java (at line 41)
+	import org.xmind.ui.internal.browser.InternalBrowserEditor;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type InternalBrowserEditor is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.browser/@dot
+----------
+7. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/src/net/xmind/signin/internal/SignInDialog.java (at line 42)
+	import org.xmind.ui.internal.browser.InternalBrowserView;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type InternalBrowserView is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.browser/@dot
+----------
+8. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/src/net/xmind/signin/internal/SignInDialog.java (at line 295)
+	if (browser instanceof InternalBrowser) {
+	                       ^^^^^^^^^^^^^^^
+Discouraged access: The type InternalBrowser is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.browser/@dot
+----------
+9. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/src/net/xmind/signin/internal/SignInDialog.java (at line 296)
+	IWorkbenchPart part = ((InternalBrowser) browser).getPart();
+	                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method getPart() from the type InternalBrowser is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.browser/@dot
+----------
+10. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/src/net/xmind/signin/internal/SignInDialog.java (at line 296)
+	IWorkbenchPart part = ((InternalBrowser) browser).getPart();
+	                        ^^^^^^^^^^^^^^^
+Discouraged access: The type InternalBrowser is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.browser/@dot
+----------
+11. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/src/net/xmind/signin/internal/SignInDialog.java (at line 297)
+	if (part instanceof InternalBrowserEditor) {
+	                    ^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type InternalBrowserEditor is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.browser/@dot
+----------
+12. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/src/net/xmind/signin/internal/SignInDialog.java (at line 298)
+	event.browser = ((InternalBrowserEditor) part).getViewer()
+	                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method getViewer() from the type InternalBrowserEditor is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.browser/@dot
+----------
+13. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/src/net/xmind/signin/internal/SignInDialog.java (at line 298)
+	event.browser = ((InternalBrowserEditor) part).getViewer()
+                            .getBrowser();
+	                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method getBrowser() from the type BrowserViewer is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.browser/@dot
+----------
+14. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/src/net/xmind/signin/internal/SignInDialog.java (at line 298)
+	event.browser = ((InternalBrowserEditor) part).getViewer()
+	                  ^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type InternalBrowserEditor is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.browser/@dot
+----------
+15. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/src/net/xmind/signin/internal/SignInDialog.java (at line 300)
+	} else if (part instanceof InternalBrowserView) {
+	                           ^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type InternalBrowserView is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.browser/@dot
+----------
+16. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/src/net/xmind/signin/internal/SignInDialog.java (at line 301)
+	event.browser = ((InternalBrowserView) part).getViewer()
+	                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method getViewer() from the type InternalBrowserView is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.browser/@dot
+----------
+17. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/src/net/xmind/signin/internal/SignInDialog.java (at line 301)
+	event.browser = ((InternalBrowserView) part).getViewer()
+                            .getBrowser();
+	                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method getBrowser() from the type BrowserViewer is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.browser/@dot
+----------
+18. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/src/net/xmind/signin/internal/SignInDialog.java (at line 301)
+	event.browser = ((InternalBrowserView) part).getViewer()
+	                  ^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type InternalBrowserView is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.browser/@dot
+----------
+----------
+19. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/src/net/xmind/signin/internal/XMindNetCommandSupport.java (at line 31)
+	import org.xmind.ui.internal.browser.BrowserViewer;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type BrowserViewer is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.browser/@dot
+----------
+20. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/src/net/xmind/signin/internal/XMindNetCommandSupport.java (at line 45)
+	&& event.getSource() instanceof BrowserViewer) {
+	                                ^^^^^^^^^^^^^
+Discouraged access: The type BrowserViewer is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.browser/@dot
+----------
+21. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/src/net/xmind/signin/internal/XMindNetCommandSupport.java (at line 46)
+	String url = ((BrowserViewer) event.getSource()).getURL();
+	             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method getURL() from the type BrowserViewer is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.browser/@dot
+----------
+22. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/src/net/xmind/signin/internal/XMindNetCommandSupport.java (at line 46)
+	String url = ((BrowserViewer) event.getSource()).getURL();
+	               ^^^^^^^^^^^^^
+Discouraged access: The type BrowserViewer is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.browser/@dot
+----------
+----------
+23. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/src/net/xmind/signin/internal/XMindNetErrorReporter.java (at line 33)
+	import org.xmind.ui.internal.statushandlers.IErrorReporter;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type IErrorReporter is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.toolkit/@dot
+----------
+24. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/src/net/xmind/signin/internal/XMindNetErrorReporter.java (at line 34)
+	import org.xmind.ui.internal.statushandlers.StatusDetails;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type StatusDetails is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.toolkit/@dot
+----------
+25. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/src/net/xmind/signin/internal/XMindNetErrorReporter.java (at line 36)
+	public class XMindNetErrorReporter implements IErrorReporter {
+	                                              ^^^^^^^^^^^^^^
+Discouraged access: The type IErrorReporter is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.toolkit/@dot
+----------
+26. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/src/net/xmind/signin/internal/XMindNetErrorReporter.java (at line 47)
+	private final StatusDetails error;
+	              ^^^^^^^^^^^^^
+Discouraged access: The type StatusDetails is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.toolkit/@dot
+----------
+27. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/src/net/xmind/signin/internal/XMindNetErrorReporter.java (at line 55)
+	public ReportErrorJob(StatusDetails error, String reporterEmail) {
+	                      ^^^^^^^^^^^^^
+Discouraged access: The type StatusDetails is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.toolkit/@dot
+----------
+28. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/src/net/xmind/signin/internal/XMindNetErrorReporter.java (at line 74)
+	req.addParameter("details", error.getFullText()); //$NON-NLS-1$
+	                            ^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method getFullText() from the type StatusDetails is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.toolkit/@dot
+----------
+29. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/src/net/xmind/signin/internal/XMindNetErrorReporter.java (at line 142)
+	public boolean report(final StatusDetails error)
+	                            ^^^^^^^^^^^^^
+Discouraged access: The type StatusDetails is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.toolkit/@dot
+----------
+----------
+30. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/src/net/xmind/signin/internal/XMindNetNavigator.java (at line 24)
+	import org.xmind.ui.internal.browser.BrowserUtil;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type BrowserUtil is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.browser/@dot
+----------
+31. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/src/net/xmind/signin/internal/XMindNetNavigator.java (at line 55)
+	browser.openURL(BrowserUtil.makeRedirectURL(url));
+	                ^^^^^^^^^^^
+Discouraged access: The type BrowserUtil is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.browser/@dot
+----------
+32. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/net.xmind.signin/src/net/xmind/signin/internal/XMindNetNavigator.java (at line 55)
+	browser.openURL(BrowserUtil.makeRedirectURL(url));
+	                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method makeRedirectURL(String) from the type BrowserUtil is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.browser/@dot
+----------
+32 problems (32 warnings)[84 .class files generated]

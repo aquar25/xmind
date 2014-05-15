@@ -1,0 +1,51 @@
+# 11/11/13 8:50:49 PM HKT
+# Eclipse Compiler for Java(TM) bundle_qualifier, 3.8.3, Copyright IBM Corp 2000, 2012. All rights reserved.
+----------
+1. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.spreadsheet/src/org/xmind/ui/internal/spreadsheet/AddColumnIconTipContributor.java (at line 40)
+	import org.xmind.ui.internal.MindMapMessages;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type MindMapMessages is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+2. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.spreadsheet/src/org/xmind/ui/internal/spreadsheet/AddColumnIconTipContributor.java (at line 125)
+	newTitle = NLS.bind(MindMapMessages.TitleText_MainTopic, index);
+	                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type MindMapMessages is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+3. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.spreadsheet/src/org/xmind/ui/internal/spreadsheet/AddColumnIconTipContributor.java (at line 125)
+	newTitle = NLS.bind(MindMapMessages.TitleText_MainTopic, index);
+	                                    ^^^^^^^^^^^^^^^^^^^
+Discouraged access: The field TitleText_MainTopic from the type MindMapMessages is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+4. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.spreadsheet/src/org/xmind/ui/internal/spreadsheet/AddColumnIconTipContributor.java (at line 127)
+	newTitle = NLS.bind(MindMapMessages.TitleText_Subtopic, index);
+	                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type MindMapMessages is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+5. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.spreadsheet/src/org/xmind/ui/internal/spreadsheet/AddColumnIconTipContributor.java (at line 127)
+	newTitle = NLS.bind(MindMapMessages.TitleText_Subtopic, index);
+	                                    ^^^^^^^^^^^^^^^^^^
+Discouraged access: The field TitleText_Subtopic from the type MindMapMessages is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+----------
+6. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.spreadsheet/src/org/xmind/ui/internal/spreadsheet/ColumnHeadEditTool.java (at line 38)
+	import org.xmind.ui.internal.tools.LabelProposalProvider;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type LabelProposalProvider is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+7. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.spreadsheet/src/org/xmind/ui/internal/spreadsheet/ColumnHeadEditTool.java (at line 153)
+	LabelProposalProvider proposalProvider = new LabelProposalProvider(
+	^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type LabelProposalProvider is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+8. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.spreadsheet/src/org/xmind/ui/internal/spreadsheet/ColumnHeadEditTool.java (at line 153)
+	LabelProposalProvider proposalProvider = new LabelProposalProvider(
+                getSource());
+	                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The constructor LabelProposalProvider(IPart) is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+9. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.spreadsheet/src/org/xmind/ui/internal/spreadsheet/ColumnHeadEditTool.java (at line 153)
+	LabelProposalProvider proposalProvider = new LabelProposalProvider(
+	                                             ^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type LabelProposalProvider is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+9 problems (9 warnings)[33 .class files generated]

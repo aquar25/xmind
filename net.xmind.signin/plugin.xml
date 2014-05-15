@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension
+         point="org.xmind.ui.browser.browserViewerContributions">
+      <contribution
+            class="net.xmind.signin.internal.XMindNetCommandContribution"
+            id="org.xmind.ui.browserContribution.xmindCommandListener">
+      </contribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+      <category
+            id="net.xmind.ui.commands"
+            name="%commandCategory.xmindnet.name">
+      </category>
+   </extension>
+
+</plugin>

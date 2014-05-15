@@ -1,0 +1,76 @@
+# 11/11/13 8:50:51 PM HKT
+# Eclipse Compiler for Java(TM) bundle_qualifier, 3.8.3, Copyright IBM Corp 2000, 2012. All rights reserved.
+----------
+1. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.imports/src/org/xmind/ui/internal/imports/mm/MindManagerImporter.java (at line 64)
+	import org.xmind.core.internal.dom.NumberUtils;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type NumberUtils is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/@dot
+----------
+2. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.imports/src/org/xmind/ui/internal/imports/mm/MindManagerImporter.java (at line 79)
+	import org.xmind.ui.internal.protocols.FilePathParser;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The type FilePathParser is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+3. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.imports/src/org/xmind/ui/internal/imports/mm/MindManagerImporter.java (at line 273)
+	int fontSize = NumberUtils.safeParseInt(value, -1);
+	               ^^^^^^^^^^^
+Discouraged access: The type NumberUtils is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/@dot
+----------
+4. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.imports/src/org/xmind/ui/internal/imports/mm/MindManagerImporter.java (at line 273)
+	int fontSize = NumberUtils.safeParseInt(value, -1);
+	               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method safeParseInt(String, int) from the type NumberUtils is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/@dot
+----------
+5. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.imports/src/org/xmind/ui/internal/imports/mm/MindManagerImporter.java (at line 606)
+	int transparency = NumberUtils.safeParseInt(
+	                   ^^^^^^^^^^^
+Discouraged access: The type NumberUtils is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/@dot
+----------
+6. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.imports/src/org/xmind/ui/internal/imports/mm/MindManagerImporter.java (at line 606)
+	int transparency = NumberUtils.safeParseInt(
+                            att(bgImgEle, "Transparency"), -1); //$NON-NLS-1$
+	                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method safeParseInt(String, int) from the type NumberUtils is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/@dot
+----------
+7. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.imports/src/org/xmind/ui/internal/imports/mm/MindManagerImporter.java (at line 691)
+	int index = NumberUtils.safeParseInt(att(ele, "Index"), -1); //$NON-NLS-1$
+	            ^^^^^^^^^^^
+Discouraged access: The type NumberUtils is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/@dot
+----------
+8. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.imports/src/org/xmind/ui/internal/imports/mm/MindManagerImporter.java (at line 691)
+	int index = NumberUtils.safeParseInt(att(ele, "Index"), -1); //$NON-NLS-1$
+	            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method safeParseInt(String, int) from the type NumberUtils is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/@dot
+----------
+9. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.imports/src/org/xmind/ui/internal/imports/mm/MindManagerImporter.java (at line 744)
+	int level = NumberUtils.safeParseInt(att(subEle, "Level"), -1); //$NON-NLS-1$
+	            ^^^^^^^^^^^
+Discouraged access: The type NumberUtils is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/@dot
+----------
+10. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.imports/src/org/xmind/ui/internal/imports/mm/MindManagerImporter.java (at line 744)
+	int level = NumberUtils.safeParseInt(att(subEle, "Level"), -1); //$NON-NLS-1$
+	            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method safeParseInt(String, int) from the type NumberUtils is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/@dot
+----------
+11. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.imports/src/org/xmind/ui/internal/imports/mm/MindManagerImporter.java (at line 925)
+	int index = NumberUtils.safeParseInt(att(connGroupEle, "Index"), -1); //$NON-NLS-1$
+	            ^^^^^^^^^^^
+Discouraged access: The type NumberUtils is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/@dot
+----------
+12. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.imports/src/org/xmind/ui/internal/imports/mm/MindManagerImporter.java (at line 925)
+	int index = NumberUtils.safeParseInt(att(connGroupEle, "Index"), -1); //$NON-NLS-1$
+	            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method safeParseInt(String, int) from the type NumberUtils is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.core/@dot
+----------
+13. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.imports/src/org/xmind/ui/internal/imports/mm/MindManagerImporter.java (at line 1510)
+	url = FilePathParser.toURI(path,
+	      ^^^^^^^^^^^^^^
+Discouraged access: The type FilePathParser is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+14. WARNING in /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.imports/src/org/xmind/ui/internal/imports/mm/MindManagerImporter.java (at line 1510)
+	url = FilePathParser.toURI(path,
+                        absolute != null && !Boolean.parseBoolean(absolute));
+	      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Discouraged access: The method toURI(String, boolean) from the type FilePathParser is not accessible due to restriction on classpath entry /Users/frankshaka/Documents/xmind-build/cathy/plugins/org.xmind.ui.mindmap/@dot
+----------
+14 problems (14 warnings)[16 .class files generated]
